@@ -1,0 +1,17 @@
+streamlit
+matplotlib
+numpy
+pandas
+seaborn
+scikit-learn
+openpyxl
+plotly
+streamlit_option_menu
+pycaret
+geopandas
+folium
+geopy
+shapely
+streamlit_folium
+networkx
+osmnx
