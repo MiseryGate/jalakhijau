@@ -1,0 +1,5458 @@
+[
+  {
+    "company_id": "PT_0001",
+    "nama_perseroan": "PT. Sena Bangun Aneka Pertiwi",
+    "kbli": "01135",
+    "alamat_lengkap": "Jl. Ciwastra No. 9\nDenpasar, KI 13341",
+    "kode_pos": "68825",
+    "maksud_tujuan": "Usaha perkebunan kelapa sawit dan pengolahan hasil",
+    "modal_dasar": 16606078636,
+    "modal_ditempatkan": 7361264552,
+    "modal_disetor": 6958837633,
+    "nilai_nominal_saham": 5000000,
+    "jumlah_saham": 1472,
+    "pemegang_saham": [
+      {
+        "nama": "Citra Budiman",
+        "nik": "34712506943102",
+        "npwp": "96.175.990.1-701.731",
+        "persentase": 100.0
+      }
+    ],
+    "direktur_utama": "Zaki Budiman",
+    "direktur_nik": "32152106563833",
+    "direktur_npwp": "85.199.273.6-736.383",
+    "komisaris_utama": "Budi Syahputra",
+    "komisaris_nik": "35782904680283",
+    "komisaris_npwp": "17.764.714.4-176.850",
+    "jangka_waktu": "Tidak terbatas",
+    "tanggal_akta": "2018-02-23",
+    "notaris": "Yusuf Andriani",
+    "npwp_perusahaan": "80.327.262.9-231.211",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": false,
+    "risk_score": 31
+  },
+  {
+    "company_id": "PT_0002",
+    "nama_perseroan": "PT. Borneo Indah Marjaya",
+    "kbli": "02200",
+    "alamat_lengkap": "Jalan Astana Anyar No. 68\nBau-Bau, JI 02421",
+    "kode_pos": "54801",
+    "maksud_tujuan": "Usaha perkebunan kelapa sawit dan pengolahan hasil",
+    "modal_dasar": 55886453152,
+    "modal_ditempatkan": 40855227878,
+    "modal_disetor": 30100653269,
+    "nilai_nominal_saham": 1000000,
+    "jumlah_saham": 40855,
+    "pemegang_saham": [
+      {
+        "nama": "Tono Rachmadi",
+        "nik": "32011505711850",
+        "npwp": "87.243.286.6-969.584",
+        "persentase": 33.99
+      },
+      {
+        "nama": "Linda Darmawan",
+        "nik": "64712609551905",
+        "npwp": "86.418.756.1-943.856",
+        "persentase": 23.13
+      },
+      {
+        "nama": "Dewi Kusuma",
+        "nik": "32732507681991",
+        "npwp": "55.980.269.1-782.692",
+        "persentase": 30.08
+      },
+      {
+        "nama": "Wati Rahman",
+        "nik": "64712110907980",
+        "npwp": "79.440.914.8-726.260",
+        "persentase": 12.799999999999997
+      }
+    ],
+    "direktur_utama": "Yudi Putri",
+    "direktur_nik": "34713103741677",
+    "direktur_npwp": "22.889.552.6-817.758",
+    "komisaris_utama": "Sari Wijaya",
+    "komisaris_nik": "32732611633357",
+    "komisaris_npwp": "36.281.799.2-501.397",
+    "jangka_waktu": "Tidak terbatas",
+    "tanggal_akta": "2012-04-17",
+    "notaris": "Dewi Safitri",
+    "npwp_perusahaan": "69.286.601.8-110.423",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": false,
+    "risk_score": 23
+  },
+  {
+    "company_id": "PT_0003",
+    "nama_perseroan": "PT. Dewi Anthika Bahari",
+    "kbli": "02200",
+    "alamat_lengkap": "Gang Ciwastra No. 57\nManado, JB 48855",
+    "kode_pos": "91746",
+    "maksud_tujuan": "Usaha perkebunan kelapa sawit dan pengolahan hasil",
+    "modal_dasar": 87751359106,
+    "modal_ditempatkan": 22496066415,
+    "modal_disetor": 21726951961,
+    "nilai_nominal_saham": 5000000,
+    "jumlah_saham": 4499,
+    "pemegang_saham": [
+      {
+        "nama": "Hadi Wibowo",
+        "nik": "32732408706950",
+        "npwp": "20.442.100.3-364.817",
+        "persentase": 21.38
+      },
+      {
+        "nama": "Sari Pratama",
+        "nik": "31740211914709",
+        "npwp": "74.359.709.4-927.656",
+        "persentase": 45.3
+      },
+      {
+        "nama": "Maya Darmawan",
+        "nik": "18711010797489",
+        "npwp": "52.659.982.5-203.104",
+        "persentase": 25.58
+      },
+      {
+        "nama": "Sinta Rachmadi",
+        "nik": "35780703725160",
+        "npwp": "52.870.642.4-724.590",
+        "persentase": 7.740000000000009
+      }
+    ],
+    "direktur_utama": "Dewi Kusuma",
+    "direktur_nik": "32011405808059",
+    "direktur_npwp": "25.980.664.7-735.546",
+    "komisaris_utama": "Citra Budiman",
+    "komisaris_nik": "34711402907240",
+    "komisaris_npwp": "78.661.341.7-124.288",
+    "jangka_waktu": "Tidak terbatas",
+    "tanggal_akta": "2012-04-26",
+    "notaris": "Humaira Riyanti",
+    "npwp_perusahaan": "56.295.933.8-863.628",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": false,
+    "risk_score": 30
+  },
+  {
+    "company_id": "PT_0004",
+    "nama_perseroan": "PT. Imperindo Hasta Eka",
+    "kbli": "46691",
+    "alamat_lengkap": "Jl. Kendalsari No. 5\nCimahi, Nusa Tenggara Timur 94889",
+    "kode_pos": "77348",
+    "maksud_tujuan": "Usaha perkebunan kelapa sawit dan pengolahan hasil",
+    "modal_dasar": 33012499104,
+    "modal_ditempatkan": 13033439274,
+    "modal_disetor": 9703097474,
+    "nilai_nominal_saham": 5000000,
+    "jumlah_saham": 2606,
+    "pemegang_saham": [
+      {
+        "nama": "Sari Wijaya",
+        "nik": "31741007856865",
+        "npwp": "88.288.707.6-393.107",
+        "persentase": 100.0
+      }
+    ],
+    "direktur_utama": "Dewi Kusuma",
+    "direktur_nik": "32151909757892",
+    "direktur_npwp": "15.629.642.7-814.124",
+    "komisaris_utama": "Sari Sari",
+    "komisaris_nik": "35782307981932",
+    "komisaris_npwp": "44.718.278.7-254.577",
+    "jangka_waktu": "Tidak terbatas",
+    "tanggal_akta": "2017-08-07",
+    "notaris": "Bahuwarna Hartati, S.Pt",
+    "npwp_perusahaan": "14.923.690.6-238.835",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": false,
+    "risk_score": 21
+  },
+  {
+    "company_id": "PT_0005",
+    "nama_perseroan": "PT. Nunukan Sarana Jaya",
+    "kbli": "02200",
+    "alamat_lengkap": "Jl. Pacuan Kuda No. 586\nSubulussalam, Gorontalo 15681",
+    "kode_pos": "04322",
+    "maksud_tujuan": "Usaha perkebunan kelapa sawit dan pengolahan hasil",
+    "modal_dasar": 23585209967,
+    "modal_ditempatkan": 14894405198,
+    "modal_disetor": 10965027488,
+    "nilai_nominal_saham": 10000000,
+    "jumlah_saham": 1489,
+    "pemegang_saham": [
+      {
+        "nama": "Hadi Santoso",
+        "nik": "32011004633789",
+        "npwp": "19.500.512.3-678.732",
+        "persentase": 20.61
+      },
+      {
+        "nama": "Sari Darmawan",
+        "nik": "32013108608293",
+        "npwp": "80.289.387.8-903.560",
+        "persentase": 79.39
+      }
+    ],
+    "direktur_utama": "Endang Wahyudi",
+    "direktur_nik": "32152501858827",
+    "direktur_npwp": "10.234.801.1-221.457",
+    "komisaris_utama": "Ratna Wibowo",
+    "komisaris_nik": "18710710648830",
+    "komisaris_npwp": "57.353.864.4-628.141",
+    "jangka_waktu": "Tidak terbatas",
+    "tanggal_akta": "2018-10-27",
+    "notaris": "Salman Padmasari",
+    "npwp_perusahaan": "36.530.374.2-626.775",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": false,
+    "risk_score": 29
+  },
+  {
+    "company_id": "PT_0006",
+    "nama_perseroan": "PT. Multi Jayantara Abadi",
+    "kbli": "01134",
+    "alamat_lengkap": "Gang Gegerkalong Hilir No. 06\nBekasi, BA 25838",
+    "kode_pos": "14817",
+    "maksud_tujuan": "Usaha perkebunan kelapa sawit dan pengolahan hasil",
+    "modal_dasar": 90908004961,
+    "modal_ditempatkan": 63150859724,
+    "modal_disetor": 53384471700,
+    "nilai_nominal_saham": 5000000,
+    "jumlah_saham": 12630,
+    "pemegang_saham": [
+      {
+        "nama": "Vina Putri",
+        "nik": "35782404826159",
+        "npwp": "80.891.589.5-691.988",
+        "persentase": 27.51
+      },
+      {
+        "nama": "Farid Kurniawan",
+        "nik": "64711808560438",
+        "npwp": "94.989.704.7-744.636",
+        "persentase": 49.75
+      },
+      {
+        "nama": "Tono Wijaya",
+        "nik": "18711905914889",
+        "npwp": "69.483.532.5-366.603",
+        "persentase": 17.94
+      },
+      {
+        "nama": "Umar Kurniawan",
+        "nik": "31741201699046",
+        "npwp": "56.249.771.5-703.771",
+        "persentase": 4.799999999999994
+      }
+    ],
+    "direktur_utama": "Maya Putra",
+    "direktur_nik": "32011107741193",
+    "direktur_npwp": "17.870.502.5-494.392",
+    "komisaris_utama": "Citra Wijaya",
+    "komisaris_nik": "18712808838505",
+    "komisaris_npwp": "99.543.586.5-578.691",
+    "jangka_waktu": "Tidak terbatas",
+    "tanggal_akta": "2012-02-20",
+    "notaris": "Raden Jailani",
+    "npwp_perusahaan": "88.194.298.3-758.388",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": false,
+    "risk_score": 40
+  },
+  {
+    "company_id": "PT_0007",
+    "nama_perseroan": "PT. Nadia Humaira",
+    "kbli": "02200",
+    "alamat_lengkap": "Gang Monginsidi No. 5\nPadangpanjang, Lampung 54572",
+    "kode_pos": "43681",
+    "maksud_tujuan": "Usaha perkebunan kelapa sawit dan pengolahan hasil",
+    "modal_dasar": 74262766316,
+    "modal_ditempatkan": 25402389026,
+    "modal_disetor": 19575369950,
+    "nilai_nominal_saham": 1000000,
+    "jumlah_saham": 25402,
+    "pemegang_saham": [
+      {
+        "nama": "Sinta Setiawan",
+        "nik": "31742809818034",
+        "npwp": "75.263.412.6-176.273",
+        "persentase": 100.0
+      }
+    ],
+    "direktur_utama": "Oki Kusuma",
+    "direktur_nik": "32152312922906",
+    "direktur_npwp": "56.432.584.6-694.487",
+    "komisaris_utama": "Fitri Wardana",
+    "komisaris_nik": "31740411636204",
+    "komisaris_npwp": "38.539.275.3-523.801",
+    "jangka_waktu": "Tidak terbatas",
+    "tanggal_akta": "2007-10-02",
+    "notaris": "Jail Lailasari, M.TI.",
+    "npwp_perusahaan": "65.737.288.3-893.125",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": false,
+    "risk_score": 26
+  },
+  {
+    "company_id": "PT_0008",
+    "nama_perseroan": "PT. Kartika Propitaganda",
+    "kbli": "10411",
+    "alamat_lengkap": "Jalan Cempaka No. 66\nBanjarbaru, DI Yogyakarta 82487",
+    "kode_pos": "25519",
+    "maksud_tujuan": "Usaha perkebunan kelapa sawit dan pengolahan hasil",
+    "modal_dasar": 15096419426,
+    "modal_ditempatkan": 5922952313,
+    "modal_disetor": 5771904432,
+    "nilai_nominal_saham": 1000000,
+    "jumlah_saham": 5922,
+    "pemegang_saham": [
+      {
+        "nama": "Tono Wijaya",
+        "nik": "34711611894699",
+        "npwp": "22.332.524.7-968.548",
+        "persentase": 79.14
+      },
+      {
+        "nama": "Sinta Rachmadi",
+        "nik": "64710403870500",
+        "npwp": "28.297.345.6-862.317",
+        "persentase": 15.93
+      },
+      {
+        "nama": "Sari Pratama",
+        "nik": "64711706777473",
+        "npwp": "60.723.725.4-908.997",
+        "persentase": 4.93
+      }
+    ],
+    "direktur_utama": "Joko Budiman",
+    "direktur_nik": "34710305907508",
+    "direktur_npwp": "51.256.971.9-898.354",
+    "komisaris_utama": "Kartika Gunawan",
+    "komisaris_nik": "32010204649058",
+    "komisaris_npwp": "21.210.818.2-119.601",
+    "jangka_waktu": "Tidak terbatas",
+    "tanggal_akta": "2014-08-08",
+    "notaris": "Xanana Habibi",
+    "npwp_perusahaan": "30.117.813.6-277.276",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": false,
+    "risk_score": 13
+  },
+  {
+    "company_id": "PT_0009",
+    "nama_perseroan": "PT. Sebatin",
+    "kbli": "02200",
+    "alamat_lengkap": "Gang KH Amin Jasuta No. 930\nPurwokerto, SN 55191",
+    "kode_pos": "41049",
+    "maksud_tujuan": "Usaha perkebunan kelapa sawit dan pengolahan hasil",
+    "modal_dasar": 68582663315,
+    "modal_ditempatkan": 29660444793,
+    "modal_disetor": 27895163432,
+    "nilai_nominal_saham": 1000000,
+    "jumlah_saham": 29660,
+    "pemegang_saham": [
+      {
+        "nama": "Citra Permana",
+        "nik": "35780608873939",
+        "npwp": "69.859.168.6-837.134",
+        "persentase": 31.12
+      },
+      {
+        "nama": "Ahmad Wahyudi",
+        "nik": "32011710749686",
+        "npwp": "76.956.417.3-641.190",
+        "persentase": 10.45
+      },
+      {
+        "nama": "Wati Wibowo",
+        "nik": "18712608667093",
+        "npwp": "48.157.609.4-300.820",
+        "persentase": 58.42999999999999
+      }
+    ],
+    "direktur_utama": "Farid Hartono",
+    "direktur_nik": "31740903916304",
+    "direktur_npwp": "58.804.902.8-686.687",
+    "komisaris_utama": "Ratna Wibowo",
+    "komisaris_nik": "32151310939738",
+    "komisaris_npwp": "96.342.284.8-313.847",
+    "jangka_waktu": "Tidak terbatas",
+    "tanggal_akta": "2009-01-01",
+    "notaris": "Yuliana Habibi, S.Sos",
+    "npwp_perusahaan": "63.624.408.6-723.932",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": false,
+    "risk_score": 39
+  },
+  {
+    "company_id": "PT_0010",
+    "nama_perseroan": "PT. Sawit Sukses Sejahtera",
+    "kbli": "46691",
+    "alamat_lengkap": "Gang Gardujati No. 2\nBukittinggi, Kepulauan Riau 31453",
+    "kode_pos": "90893",
+    "maksud_tujuan": "Usaha perkebunan kelapa sawit dan pengolahan hasil",
+    "modal_dasar": 50416466282,
+    "modal_ditempatkan": 36639765895,
+    "modal_disetor": 27662020344,
+    "nilai_nominal_saham": 1000000,
+    "jumlah_saham": 36639,
+    "pemegang_saham": [
+      {
+        "nama": "Ahmad Wahyudi",
+        "nik": "32151001947499",
+        "npwp": "36.408.385.7-558.237",
+        "persentase": 39.94
+      },
+      {
+        "nama": "Budi Permana",
+        "nik": "31742401607895",
+        "npwp": "28.466.336.7-498.399",
+        "persentase": 60.06
+      }
+    ],
+    "direktur_utama": "Fitri Gunawan",
+    "direktur_nik": "32010603741199",
+    "direktur_npwp": "95.723.140.8-680.229",
+    "komisaris_utama": "Sari Rahman",
+    "komisaris_nik": "34710307852692",
+    "komisaris_npwp": "50.726.390.5-396.538",
+    "jangka_waktu": "Tidak terbatas",
+    "tanggal_akta": "2011-02-17",
+    "notaris": "Enteng Mayasari",
+    "npwp_perusahaan": "69.926.297.2-285.928",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": false,
+    "risk_score": 31
+  },
+  {
+    "company_id": "PT_0011",
+    "nama_perseroan": "PT. Batu Sempit Sawit Indonesia",
+    "kbli": "01135",
+    "alamat_lengkap": "Jl. BKR No. 02\nBatu, Papua Barat 55947",
+    "kode_pos": "95378",
+    "maksud_tujuan": "Usaha perkebunan kelapa sawit dan pengolahan hasil",
+    "modal_dasar": 76659471595,
+    "modal_ditempatkan": 39669176983,
+    "modal_disetor": 36843446004,
+    "nilai_nominal_saham": 5000000,
+    "jumlah_saham": 7933,
+    "pemegang_saham": [
+      {
+        "nama": "Yudi Rahman",
+        "nik": "32011203964902",
+        "npwp": "47.826.428.3-235.960",
+        "persentase": 18.11
+      },
+      {
+        "nama": "Citra Budiman",
+        "nik": "34712901947647",
+        "npwp": "46.227.352.7-396.608",
+        "persentase": 81.89
+      }
+    ],
+    "direktur_utama": "Wati Wahyudi",
+    "direktur_nik": "34712902004713",
+    "direktur_npwp": "77.524.914.9-524.255",
+    "komisaris_utama": "Citra Wahyudi",
+    "komisaris_nik": "34712905810736",
+    "komisaris_npwp": "96.448.905.4-788.410",
+    "jangka_waktu": "Tidak terbatas",
+    "tanggal_akta": "2010-03-06",
+    "notaris": "Calista Simanjuntak",
+    "npwp_perusahaan": "33.279.401.9-855.278",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": false,
+    "risk_score": 19
+  },
+  {
+    "company_id": "PT_0012",
+    "nama_perseroan": "PT. Uni Andalan Utama",
+    "kbli": "46691",
+    "alamat_lengkap": "Gg. Raya Setiabudhi No. 1\nPalu, Maluku Utara 20562",
+    "kode_pos": "55118",
+    "maksud_tujuan": "Usaha perkebunan kelapa sawit dan pengolahan hasil",
+    "modal_dasar": 91527182176,
+    "modal_ditempatkan": 55626111862,
+    "modal_disetor": 43981644231,
+    "nilai_nominal_saham": 5000000,
+    "jumlah_saham": 11125,
+    "pemegang_saham": [
+      {
+        "nama": "Andi Permana",
+        "nik": "34710212546976",
+        "npwp": "19.717.724.8-128.490",
+        "persentase": 16.13
+      },
+      {
+        "nama": "Linda Budiman",
+        "nik": "64713112763628",
+        "npwp": "37.209.657.2-917.688",
+        "persentase": 40.32
+      },
+      {
+        "nama": "Sinta Rachmadi",
+        "nik": "35780210689835",
+        "npwp": "22.537.695.3-607.147",
+        "persentase": 43.550000000000004
+      }
+    ],
+    "direktur_utama": "Oki Putri",
+    "direktur_nik": "35782002634899",
+    "direktur_npwp": "81.198.723.3-120.109",
+    "komisaris_utama": "Fitri Rahman",
+    "komisaris_nik": "32012808635604",
+    "komisaris_npwp": "46.112.501.4-181.704",
+    "jangka_waktu": "Tidak terbatas",
+    "tanggal_akta": "2006-01-01",
+    "notaris": "Titin Wasita",
+    "npwp_perusahaan": "14.596.559.9-643.786",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": false,
+    "risk_score": 34
+  },
+  {
+    "company_id": "PT_0013",
+    "nama_perseroan": "PT. Manggala Dharma Putra",
+    "kbli": "02200",
+    "alamat_lengkap": "Gg. W.R. Supratman No. 8\nSingkawang, BB 82148",
+    "kode_pos": "05264",
+    "maksud_tujuan": "Usaha perkebunan kelapa sawit dan pengolahan hasil",
+    "modal_dasar": 40350581797,
+    "modal_ditempatkan": 19208237627,
+    "modal_disetor": 15516469295,
+    "nilai_nominal_saham": 1000000,
+    "jumlah_saham": 19208,
+    "pemegang_saham": [
+      {
+        "nama": "Budi Budiman",
+        "nik": "18711203926185",
+        "npwp": "77.515.818.5-993.408",
+        "persentase": 100.0
+      }
+    ],
+    "direktur_utama": "Budi Budiman",
+    "direktur_nik": "35781107945311",
+    "direktur_npwp": "60.213.756.6-396.275",
+    "komisaris_utama": "Bayu Permana",
+    "komisaris_nik": "32151807594336",
+    "komisaris_npwp": "64.675.831.2-707.614",
+    "jangka_waktu": "Tidak terbatas",
+    "tanggal_akta": "2014-10-28",
+    "notaris": "Mala Rahayu",
+    "npwp_perusahaan": "93.702.361.5-848.663",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": false,
+    "risk_score": 12
+  },
+  {
+    "company_id": "PT_0014",
+    "nama_perseroan": "PT. Mega Benua Utama",
+    "kbli": "46691",
+    "alamat_lengkap": "Jalan Cikapayang No. 771\nLhokseumawe, SG 01138",
+    "kode_pos": "54113",
+    "maksud_tujuan": "Usaha perkebunan kelapa sawit dan pengolahan hasil",
+    "modal_dasar": 35323989494,
+    "modal_ditempatkan": 15064149241,
+    "modal_disetor": 13286764385,
+    "nilai_nominal_saham": 1000000,
+    "jumlah_saham": 15064,
+    "pemegang_saham": [
+      {
+        "nama": "Oki Wibowo",
+        "nik": "64711203689636",
+        "npwp": "90.175.653.4-416.710",
+        "persentase": 26.3
+      },
+      {
+        "nama": "Bayu Firmansyah",
+        "nik": "34711909680044",
+        "npwp": "88.172.763.9-642.471",
+        "persentase": 73.7
+      }
+    ],
+    "direktur_utama": "Ratna Firmansyah",
+    "direktur_nik": "32732702606260",
+    "direktur_npwp": "20.802.916.5-902.375",
+    "komisaris_utama": "Andi Permana",
+    "komisaris_nik": "34711308812455",
+    "komisaris_npwp": "11.823.719.9-364.402",
+    "jangka_waktu": "Tidak terbatas",
+    "tanggal_akta": "2008-04-21",
+    "notaris": "Citra Palastri",
+    "npwp_perusahaan": "60.186.127.1-331.779",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": false,
+    "risk_score": 40
+  },
+  {
+    "company_id": "PT_0015",
+    "nama_perseroan": "PT. Wara Nusantara",
+    "kbli": "02200",
+    "alamat_lengkap": "Jl. Rungkut Industri No. 1\nBatu, Kepulauan Riau 22619",
+    "kode_pos": "46109",
+    "maksud_tujuan": "Usaha perkebunan kelapa sawit dan pengolahan hasil",
+    "modal_dasar": 39930050525,
+    "modal_ditempatkan": 14859421072,
+    "modal_disetor": 14127972936,
+    "nilai_nominal_saham": 10000000,
+    "jumlah_saham": 1485,
+    "pemegang_saham": [
+      {
+        "nama": "Vina Putri",
+        "nik": "31741206692947",
+        "npwp": "28.347.545.3-233.603",
+        "persentase": 51.41
+      },
+      {
+        "nama": "Wati Santoso",
+        "nik": "32150209581727",
+        "npwp": "34.936.193.1-105.399",
+        "persentase": 21.46
+      },
+      {
+        "nama": "Sinta Hakim",
+        "nik": "18712308584965",
+        "npwp": "54.739.301.2-482.655",
+        "persentase": 27.130000000000003
+      }
+    ],
+    "direktur_utama": "Putra Kurniawan",
+    "direktur_nik": "18710401620651",
+    "direktur_npwp": "41.936.756.6-471.970",
+    "komisaris_utama": "Dewi Hartono",
+    "komisaris_nik": "34710107575537",
+    "komisaris_npwp": "48.141.324.5-711.534",
+    "jangka_waktu": "Tidak terbatas",
+    "tanggal_akta": "2019-01-13",
+    "notaris": "Bancar Tampubolon",
+    "npwp_perusahaan": "19.186.207.2-235.997",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": false,
+    "risk_score": 30
+  },
+  {
+    "company_id": "PT_0016",
+    "nama_perseroan": "PT. Kaltim Bangun Jaya",
+    "kbli": "01134",
+    "alamat_lengkap": "Jalan Moch. Toha No. 736\nSingkawang, SG 15349",
+    "kode_pos": "78602",
+    "maksud_tujuan": "Usaha perkebunan kelapa sawit dan pengolahan hasil",
+    "modal_dasar": 69657242897,
+    "modal_ditempatkan": 36210058347,
+    "modal_disetor": 32130603658,
+    "nilai_nominal_saham": 5000000,
+    "jumlah_saham": 7242,
+    "pemegang_saham": [
+      {
+        "nama": "Oki Wijaya",
+        "nik": "32010209561833",
+        "npwp": "49.713.488.2-101.422",
+        "persentase": 69.51
+      },
+      {
+        "nama": "Sari Darmawan",
+        "nik": "35780801866233",
+        "npwp": "58.689.586.2-152.970",
+        "persentase": 30.489999999999995
+      }
+    ],
+    "direktur_utama": "Citra Nugroho",
+    "direktur_nik": "31740104723241",
+    "direktur_npwp": "66.253.617.5-159.325",
+    "komisaris_utama": "Umar Wardana",
+    "komisaris_nik": "31740910874756",
+    "komisaris_npwp": "86.865.915.2-294.322",
+    "jangka_waktu": "Tidak terbatas",
+    "tanggal_akta": "2014-11-27",
+    "notaris": "Lidya Maryati",
+    "npwp_perusahaan": "96.369.293.5-616.599",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": false,
+    "risk_score": 34
+  },
+  {
+    "company_id": "PT_0017",
+    "nama_perseroan": "PT. Agro Indomas-EK",
+    "kbli": "10411",
+    "alamat_lengkap": "Gg. Gedebage Selatan No. 53\nSawahlunto, Bengkulu 26004",
+    "kode_pos": "76303",
+    "maksud_tujuan": "Usaha perkebunan kelapa sawit dan pengolahan hasil",
+    "modal_dasar": 92138334680,
+    "modal_ditempatkan": 64138326946,
+    "modal_disetor": 55140956411,
+    "nilai_nominal_saham": 5000000,
+    "jumlah_saham": 12827,
+    "pemegang_saham": [
+      {
+        "nama": "Budi Rahman",
+        "nik": "64710901988475",
+        "npwp": "71.340.318.8-592.220",
+        "persentase": 16.37
+      },
+      {
+        "nama": "Sari Pratama",
+        "nik": "31743110913332",
+        "npwp": "94.155.625.2-665.727",
+        "persentase": 21.36
+      },
+      {
+        "nama": "Dian Syahputra",
+        "nik": "64712402616790",
+        "npwp": "91.150.752.3-163.349",
+        "persentase": 62.269999999999996
+      }
+    ],
+    "direktur_utama": "Zaki Kusuma",
+    "direktur_nik": "32153010872677",
+    "direktur_npwp": "77.438.339.3-841.725",
+    "komisaris_utama": "Bayu Firmansyah",
+    "komisaris_nik": "18710910662165",
+    "komisaris_npwp": "11.254.700.4-519.756",
+    "jangka_waktu": "Tidak terbatas",
+    "tanggal_akta": "2006-02-26",
+    "notaris": "Prabu Sihombing",
+    "npwp_perusahaan": "77.264.924.5-545.210",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": false,
+    "risk_score": 40
+  },
+  {
+    "company_id": "PT_0018",
+    "nama_perseroan": "PT DITJEN PERIKANAN",
+    "kbli": "02200",
+    "alamat_lengkap": "Gang BKR No. 783\nManado, PA 54887",
+    "kode_pos": "67093",
+    "maksud_tujuan": "Usaha perkebunan kelapa sawit dan pengolahan hasil",
+    "modal_dasar": 62419057054,
+    "modal_ditempatkan": 24870914180,
+    "modal_disetor": 22482816084,
+    "nilai_nominal_saham": 10000000,
+    "jumlah_saham": 2487,
+    "pemegang_saham": [
+      {
+        "nama": "Zaki Permana",
+        "nik": "34710703869002",
+        "npwp": "15.820.219.8-176.331",
+        "persentase": 64.46
+      },
+      {
+        "nama": "Bayu Santoso",
+        "nik": "35783103939339",
+        "npwp": "61.286.167.3-557.448",
+        "persentase": 20.69
+      },
+      {
+        "nama": "Ratna Setiawan",
+        "nik": "34711806618422",
+        "npwp": "48.221.713.6-745.962",
+        "persentase": 14.850000000000005
+      }
+    ],
+    "direktur_utama": "Maya Darmawan",
+    "direktur_nik": "35783010961093",
+    "direktur_npwp": "85.805.397.3-414.594",
+    "komisaris_utama": "Tono Rachmadi",
+    "komisaris_nik": "18713105813876",
+    "komisaris_npwp": "65.242.798.8-828.410",
+    "jangka_waktu": "Tidak terbatas",
+    "tanggal_akta": "2015-04-23",
+    "notaris": "Hadi Handayani, S.Psi",
+    "npwp_perusahaan": "55.458.481.9-527.623",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": false,
+    "risk_score": 30
+  },
+  {
+    "company_id": "PT_0019",
+    "nama_perseroan": "PT. ADI HARDIAN BERSAUDARA",
+    "kbli": "10412",
+    "alamat_lengkap": "Gang Jakarta No. 49\nProbolinggo, JK 75012",
+    "kode_pos": "45414",
+    "maksud_tujuan": "Usaha perkebunan kelapa sawit dan pengolahan hasil",
+    "modal_dasar": 13358859279,
+    "modal_ditempatkan": 5292551311,
+    "modal_disetor": 5237864635,
+    "nilai_nominal_saham": 1000000,
+    "jumlah_saham": 5292,
+    "pemegang_saham": [
+      {
+        "nama": "Linda Darmawan",
+        "nik": "35783008753092",
+        "npwp": "71.585.161.7-667.355",
+        "persentase": 100.0
+      }
+    ],
+    "direktur_utama": "Wati Wibowo",
+    "direktur_nik": "31742312638578",
+    "direktur_npwp": "85.498.713.1-635.639",
+    "komisaris_utama": "Ratna Permana",
+    "komisaris_nik": "18710902774786",
+    "komisaris_npwp": "10.998.926.2-789.484",
+    "jangka_waktu": "Tidak terbatas",
+    "tanggal_akta": "2016-06-17",
+    "notaris": "Perkasa Lestari",
+    "npwp_perusahaan": "52.343.525.5-872.126",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": false,
+    "risk_score": 10
+  },
+  {
+    "company_id": "PT_0020",
+    "nama_perseroan": "PT. TANAH TUNJUNG PLATEU",
+    "kbli": "10412",
+    "alamat_lengkap": "Gang Ciumbuleuit No. 5\nPekalongan, Riau 00013",
+    "kode_pos": "65317",
+    "maksud_tujuan": "Usaha perkebunan kelapa sawit dan pengolahan hasil",
+    "modal_dasar": 91140246256,
+    "modal_ditempatkan": 68157898789,
+    "modal_disetor": 54074942551,
+    "nilai_nominal_saham": 5000000,
+    "jumlah_saham": 13631,
+    "pemegang_saham": [
+      {
+        "nama": "Ratna Permana",
+        "nik": "34710310982050",
+        "npwp": "22.645.536.1-991.375",
+        "persentase": 75.11
+      },
+      {
+        "nama": "Sinta Rahman",
+        "nik": "64711203565111",
+        "npwp": "98.586.134.5-391.120",
+        "persentase": 12.27
+      },
+      {
+        "nama": "Indra Pratama",
+        "nik": "32012007627304",
+        "npwp": "83.906.109.8-330.103",
+        "persentase": 12.620000000000001
+      }
+    ],
+    "direktur_utama": "Oki Hartono",
+    "direktur_nik": "18712109647445",
+    "direktur_npwp": "48.410.630.2-897.699",
+    "komisaris_utama": "Farid Hartono",
+    "komisaris_nik": "35781711854231",
+    "komisaris_npwp": "48.744.497.9-468.430",
+    "jangka_waktu": "Tidak terbatas",
+    "tanggal_akta": "2021-09-16",
+    "notaris": "Laras Lazuardi, S.H.",
+    "npwp_perusahaan": "54.146.404.1-891.191",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": false,
+    "risk_score": 22
+  },
+  {
+    "company_id": "PT_0021",
+    "nama_perseroan": "PTPN XIII",
+    "kbli": "01134",
+    "alamat_lengkap": "Gang Cihampelas No. 56\nGorontalo, SB 03499",
+    "kode_pos": "11010",
+    "maksud_tujuan": "Usaha perkebunan kelapa sawit dan pengolahan hasil",
+    "modal_dasar": 15139493121,
+    "modal_ditempatkan": 7620986261,
+    "modal_disetor": 5498893588,
+    "nilai_nominal_saham": 10000000,
+    "jumlah_saham": 762,
+    "pemegang_saham": [
+      {
+        "nama": "Maya Wijaya",
+        "nik": "32011708853734",
+        "npwp": "79.414.611.3-374.796",
+        "persentase": 52.48
+      },
+      {
+        "nama": "Ahmad Kusuma",
+        "nik": "32011209988096",
+        "npwp": "18.767.263.2-407.628",
+        "persentase": 44.52
+      },
+      {
+        "nama": "Vina Putri",
+        "nik": "18711212644436",
+        "npwp": "81.130.159.7-681.164",
+        "persentase": 9.96
+      },
+      {
+        "nama": "Farid Putra",
+        "nik": "34712709664506",
+        "npwp": "29.759.221.2-271.505",
+        "persentase": -6.960000000000001
+      }
+    ],
+    "direktur_utama": "Gina Putri",
+    "direktur_nik": "32732601730056",
+    "direktur_npwp": "39.949.779.7-127.453",
+    "komisaris_utama": "Sari Darmawan",
+    "komisaris_nik": "32731002733399",
+    "komisaris_npwp": "12.938.193.8-124.489",
+    "jangka_waktu": "Tidak terbatas",
+    "tanggal_akta": "2007-06-12",
+    "notaris": "Tiara Jailani",
+    "npwp_perusahaan": "76.892.462.9-973.665",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": false,
+    "risk_score": 33
+  },
+  {
+    "company_id": "PT_0022",
+    "nama_perseroan": "PT. AGRO CITY KALTIM",
+    "kbli": "01135",
+    "alamat_lengkap": "Jalan Rungkut Industri No. 3\nPadang Sidempuan, Jawa Barat 63120",
+    "kode_pos": "33303",
+    "maksud_tujuan": "Usaha perkebunan kelapa sawit dan pengolahan hasil",
+    "modal_dasar": 15887453697,
+    "modal_ditempatkan": 8862734888,
+    "modal_disetor": 6633297456,
+    "nilai_nominal_saham": 10000000,
+    "jumlah_saham": 886,
+    "pemegang_saham": [
+      {
+        "nama": "Eko Syahputra",
+        "nik": "35780401736188",
+        "npwp": "39.680.176.9-274.639",
+        "persentase": 24.48
+      },
+      {
+        "nama": "Ratna Hidayat",
+        "nik": "18710211762232",
+        "npwp": "11.743.407.4-277.686",
+        "persentase": 24.23
+      },
+      {
+        "nama": "Wati Wahyudi",
+        "nik": "18712611776933",
+        "npwp": "32.518.451.1-769.757",
+        "persentase": 29.8
+      },
+      {
+        "nama": "Wati Rahman",
+        "nik": "35780402756722",
+        "npwp": "40.966.187.6-257.414",
+        "persentase": 21.48999999999999
+      }
+    ],
+    "direktur_utama": "Citra Permana",
+    "direktur_nik": "64710401586925",
+    "direktur_npwp": "42.484.415.3-948.506",
+    "komisaris_utama": "Hadi Santoso",
+    "komisaris_nik": "35783007822650",
+    "komisaris_npwp": "23.916.868.1-559.559",
+    "jangka_waktu": "Tidak terbatas",
+    "tanggal_akta": "2013-10-28",
+    "notaris": "Rafi Najmudin",
+    "npwp_perusahaan": "46.513.318.9-268.634",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": false,
+    "risk_score": 31
+  },
+  {
+    "company_id": "PT_0023",
+    "nama_perseroan": "PT. WANA SAWIT SUBUR LESTARI",
+    "kbli": "01135",
+    "alamat_lengkap": "Gg. R.E Martadinata No. 594\nBontang, Bali 69841",
+    "kode_pos": "80452",
+    "maksud_tujuan": "Usaha perkebunan kelapa sawit dan pengolahan hasil",
+    "modal_dasar": 24373709032,
+    "modal_ditempatkan": 18883845231,
+    "modal_disetor": 17190284308,
+    "nilai_nominal_saham": 5000000,
+    "jumlah_saham": 3776,
+    "pemegang_saham": [
+      {
+        "nama": "Dian Sari",
+        "nik": "64710503674060",
+        "npwp": "17.956.134.1-618.894",
+        "persentase": 42.96
+      },
+      {
+        "nama": "Vina Sari",
+        "nik": "31742805968015",
+        "npwp": "44.773.625.1-669.870",
+        "persentase": 34.85
+      },
+      {
+        "nama": "Maya Putra",
+        "nik": "32732611653665",
+        "npwp": "54.698.994.7-379.360",
+        "persentase": 22.189999999999998
+      }
+    ],
+    "direktur_utama": "Tono Wijaya",
+    "direktur_nik": "32150409961835",
+    "direktur_npwp": "19.763.828.8-438.362",
+    "komisaris_utama": "Yudi Putri",
+    "komisaris_nik": "32732912696817",
+    "komisaris_npwp": "56.305.298.4-611.128",
+    "jangka_waktu": "Tidak terbatas",
+    "tanggal_akta": "2014-07-16",
+    "notaris": "dr. Ilsa Megantara",
+    "npwp_perusahaan": "93.864.307.4-655.711",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": false,
+    "risk_score": 21
+  },
+  {
+    "company_id": "PT_0024",
+    "nama_perseroan": "PT. WANASAWIT SUBUR LESTARI",
+    "kbli": "02200",
+    "alamat_lengkap": "Jl. Suryakencana No. 7\nPangkalpinang, YO 79288",
+    "kode_pos": "96254",
+    "maksud_tujuan": "Usaha perkebunan kelapa sawit dan pengolahan hasil",
+    "modal_dasar": 52976329240,
+    "modal_ditempatkan": 28901290641,
+    "modal_disetor": 25412174706,
+    "nilai_nominal_saham": 10000000,
+    "jumlah_saham": 2890,
+    "pemegang_saham": [
+      {
+        "nama": "Joko Budiman",
+        "nik": "64712711919544",
+        "npwp": "82.204.143.6-914.232",
+        "persentase": 26.52
+      },
+      {
+        "nama": "Indra Wijaya",
+        "nik": "35783012948437",
+        "npwp": "80.146.241.4-680.683",
+        "persentase": 73.48
+      }
+    ],
+    "direktur_utama": "Putra Sari",
+    "direktur_nik": "18712205979405",
+    "direktur_npwp": "54.427.370.7-323.721",
+    "komisaris_utama": "Zaki Santoso",
+    "komisaris_nik": "18711107954774",
+    "komisaris_npwp": "54.670.440.7-486.720",
+    "jangka_waktu": "Tidak terbatas",
+    "tanggal_akta": "2021-06-17",
+    "notaris": "Asmadi Mayasari",
+    "npwp_perusahaan": "68.538.342.3-674.185",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": false,
+    "risk_score": 24
+  },
+  {
+    "company_id": "PT_0025",
+    "nama_perseroan": "PT. SURYA MAS CITRA PERKASA",
+    "kbli": "02200",
+    "alamat_lengkap": "Jalan Moch. Ramdan No. 32\nAmbon, Maluku 31975",
+    "kode_pos": "72726",
+    "maksud_tujuan": "Usaha perkebunan kelapa sawit dan pengolahan hasil",
+    "modal_dasar": 55069795961,
+    "modal_ditempatkan": 19567575340,
+    "modal_disetor": 15733591056,
+    "nilai_nominal_saham": 5000000,
+    "jumlah_saham": 3913,
+    "pemegang_saham": [
+      {
+        "nama": "Citra Wahyudi",
+        "nik": "32732109781904",
+        "npwp": "58.192.303.1-710.449",
+        "persentase": 100.0
+      }
+    ],
+    "direktur_utama": "Putra Kurniawan",
+    "direktur_nik": "18712707694165",
+    "direktur_npwp": "30.220.740.2-999.229",
+    "komisaris_utama": "Oki Kusuma",
+    "komisaris_nik": "32011603556450",
+    "komisaris_npwp": "80.434.987.6-151.147",
+    "jangka_waktu": "Tidak terbatas",
+    "tanggal_akta": "2013-12-21",
+    "notaris": "Kasiyah Samosir, M.Kom.",
+    "npwp_perusahaan": "22.459.101.8-894.394",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": false,
+    "risk_score": 12
+  },
+  {
+    "company_id": "PT_0026",
+    "nama_perseroan": "PT. BERKAH ALAM FAJAR MAS",
+    "kbli": "01135",
+    "alamat_lengkap": "Jl. Antapani Lama No. 510\nSungai Penuh, Riau 31277",
+    "kode_pos": "47962",
+    "maksud_tujuan": "Usaha perkebunan kelapa sawit dan pengolahan hasil",
+    "modal_dasar": 94269914155,
+    "modal_ditempatkan": 26917321263,
+    "modal_disetor": 24699627910,
+    "nilai_nominal_saham": 10000000,
+    "jumlah_saham": 2691,
+    "pemegang_saham": [
+      {
+        "nama": "Bayu Hakim",
+        "nik": "64710105807372",
+        "npwp": "72.261.283.1-249.276",
+        "persentase": 44.16
+      },
+      {
+        "nama": "Joko Budiman",
+        "nik": "18712808855597",
+        "npwp": "84.227.380.3-213.325",
+        "persentase": 48.65
+      },
+      {
+        "nama": "Budi Permana",
+        "nik": "18712406897724",
+        "npwp": "62.727.554.4-902.706",
+        "persentase": 6.77
+      },
+      {
+        "nama": "Wati Nugroho",
+        "nik": "35782207925185",
+        "npwp": "20.599.756.5-513.842",
+        "persentase": 0.42000000000000526
+      }
+    ],
+    "direktur_utama": "Joko Putri",
+    "direktur_nik": "32731708767262",
+    "direktur_npwp": "40.796.407.4-325.419",
+    "komisaris_utama": "Ratna Firmansyah",
+    "komisaris_nik": "32151611940673",
+    "komisaris_npwp": "56.515.821.3-914.800",
+    "jangka_waktu": "Tidak terbatas",
+    "tanggal_akta": "2006-10-11",
+    "notaris": "Puti Ani Mandala",
+    "npwp_perusahaan": "59.858.209.5-189.315",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": false,
+    "risk_score": 23
+  },
+  {
+    "company_id": "PT_0027",
+    "nama_perseroan": "PT. KAHAYAN AGRO LESTARI",
+    "kbli": "02200",
+    "alamat_lengkap": "Jl. Cihampelas No. 40\nBitung, Kalimantan Utara 96139",
+    "kode_pos": "89288",
+    "maksud_tujuan": "Usaha perkebunan kelapa sawit dan pengolahan hasil",
+    "modal_dasar": 2087007574,
+    "modal_ditempatkan": 520614502,
+    "modal_disetor": 230035003,
+    "nilai_nominal_saham": 10000000,
+    "jumlah_saham": 52,
+    "pemegang_saham": [
+      {
+        "nama": "Hadi Pratama",
+        "nik": "32730502648583",
+        "npwp": "51.972.409.4-512.619",
+        "persentase": 57.73
+      },
+      {
+        "nama": "Endang Kusuma",
+        "nik": "32151901614719",
+        "npwp": "79.143.303.5-416.744",
+        "persentase": 34.4
+      },
+      {
+        "nama": "Citra Hidayat",
+        "nik": "31742809543703",
+        "npwp": "32.774.880.1-791.879",
+        "persentase": 7.22
+      },
+      {
+        "nama": "Wati Pratama",
+        "nik": "18710501919018",
+        "npwp": "83.163.252.9-867.167",
+        "persentase": 0.6500000000000048
+      }
+    ],
+    "direktur_utama": "Farid Putra",
+    "direktur_nik": "32152203721854",
+    "direktur_npwp": "45.200.565.2-836.434",
+    "komisaris_utama": "Indra Pratama",
+    "komisaris_nik": "64713110961833",
+    "komisaris_npwp": "49.566.606.9-139.929",
+    "jangka_waktu": "13 tahun",
+    "tanggal_akta": "2024-02-13",
+    "notaris": "Panca Mandasari",
+    "npwp_perusahaan": "30.893.356.8-280.451",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": true,
+    "risk_score": 78
+  },
+  {
+    "company_id": "PT_0028",
+    "nama_perseroan": "PT KOP. WARGA JAYA",
+    "kbli": "10411",
+    "alamat_lengkap": "Gang Rawamangun No. 79\nTarakan, ST 69410",
+    "kode_pos": "67168",
+    "maksud_tujuan": "Usaha perkebunan kelapa sawit dan pengolahan hasil",
+    "modal_dasar": 86033381112,
+    "modal_ditempatkan": 23152458761,
+    "modal_disetor": 22526490275,
+    "nilai_nominal_saham": 5000000,
+    "jumlah_saham": 4630,
+    "pemegang_saham": [
+      {
+        "nama": "Fitri Gunawan",
+        "nik": "32151112864428",
+        "npwp": "71.739.368.6-133.321",
+        "persentase": 78.94
+      },
+      {
+        "nama": "Oki Sari",
+        "nik": "32011610565860",
+        "npwp": "35.185.217.4-156.576",
+        "persentase": 13.81
+      },
+      {
+        "nama": "Putra Putri",
+        "nik": "31742706605698",
+        "npwp": "26.708.728.1-504.186",
+        "persentase": 9.38
+      },
+      {
+        "nama": "Kartika Hartono",
+        "nik": "32010912992527",
+        "npwp": "25.752.497.7-480.209",
+        "persentase": -2.129999999999999
+      }
+    ],
+    "direktur_utama": "Linda Wibowo",
+    "direktur_nik": "32730312837352",
+    "direktur_npwp": "35.540.274.6-544.342",
+    "komisaris_utama": "Citra Budiman",
+    "komisaris_nik": "64712612928226",
+    "komisaris_npwp": "18.221.946.8-567.264",
+    "jangka_waktu": "Tidak terbatas",
+    "tanggal_akta": "2021-10-11",
+    "notaris": "Nilam Haryanto",
+    "npwp_perusahaan": "56.542.424.1-852.743",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": false,
+    "risk_score": 28
+  },
+  {
+    "company_id": "PT_0029",
+    "nama_perseroan": "PT. SANGKOWONG SINTA",
+    "kbli": "10411",
+    "alamat_lengkap": "Gg. Kiaracondong No. 1\nSawahlunto, YO 26808",
+    "kode_pos": "87112",
+    "maksud_tujuan": "Usaha perkebunan kelapa sawit dan pengolahan hasil",
+    "modal_dasar": 17076915261,
+    "modal_ditempatkan": 5935906565,
+    "modal_disetor": 4168452723,
+    "nilai_nominal_saham": 1000000,
+    "jumlah_saham": 5935,
+    "pemegang_saham": [
+      {
+        "nama": "Vina Putri",
+        "nik": "18712201699032",
+        "npwp": "86.325.807.8-425.331",
+        "persentase": 100.0
+      }
+    ],
+    "direktur_utama": "Citra Nugroho",
+    "direktur_nik": "32731503809650",
+    "direktur_npwp": "16.597.277.5-341.582",
+    "komisaris_utama": "Andi Wahyudi",
+    "komisaris_nik": "32731408911657",
+    "komisaris_npwp": "93.225.401.9-484.613",
+    "jangka_waktu": "Tidak terbatas",
+    "tanggal_akta": "2011-03-31",
+    "notaris": "Ade Salahudin",
+    "npwp_perusahaan": "52.193.144.1-416.456",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": false,
+    "risk_score": 33
+  },
+  {
+    "company_id": "PT_0030",
+    "nama_perseroan": "PT. PULANG PISAU PERDANA",
+    "kbli": "10411",
+    "alamat_lengkap": "Gang Erlangga No. 164\nBanjarbaru, Aceh 53412",
+    "kode_pos": "47249",
+    "maksud_tujuan": "Usaha perkebunan kelapa sawit dan pengolahan hasil",
+    "modal_dasar": 12237073317,
+    "modal_ditempatkan": 3262297777,
+    "modal_disetor": 2830020134,
+    "nilai_nominal_saham": 5000000,
+    "jumlah_saham": 652,
+    "pemegang_saham": [
+      {
+        "nama": "Oki Putri",
+        "nik": "18710408581374",
+        "npwp": "47.905.136.4-289.803",
+        "persentase": 57.43
+      },
+      {
+        "nama": "Farid Putra",
+        "nik": "18712802691642",
+        "npwp": "39.716.184.3-663.160",
+        "persentase": 42.57
+      }
+    ],
+    "direktur_utama": "Wati Pratama",
+    "direktur_nik": "34712708673851",
+    "direktur_npwp": "98.589.585.8-459.983",
+    "komisaris_utama": "Oki Putri",
+    "komisaris_nik": "32731910547224",
+    "komisaris_npwp": "53.611.940.9-489.959",
+    "jangka_waktu": "Tidak terbatas",
+    "tanggal_akta": "2009-02-08",
+    "notaris": "Ikin Puspita",
+    "npwp_perusahaan": "73.119.813.7-569.466",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": false,
+    "risk_score": 25
+  },
+  {
+    "company_id": "PT_0031",
+    "nama_perseroan": "PT. LEMO JAYA",
+    "kbli": "01135",
+    "alamat_lengkap": "Gg. S. Parman No. 136\nYogyakarta, JT 88119",
+    "kode_pos": "12918",
+    "maksud_tujuan": "Usaha perkebunan kelapa sawit dan pengolahan hasil",
+    "modal_dasar": 97185032210,
+    "modal_ditempatkan": 24783064117,
+    "modal_disetor": 23767429886,
+    "nilai_nominal_saham": 5000000,
+    "jumlah_saham": 4956,
+    "pemegang_saham": [
+      {
+        "nama": "Oki Hartono",
+        "nik": "64711703560618",
+        "npwp": "39.178.314.9-465.347",
+        "persentase": 70.06
+      },
+      {
+        "nama": "Eko Permana",
+        "nik": "32012301880584",
+        "npwp": "84.616.215.6-202.978",
+        "persentase": 18.58
+      },
+      {
+        "nama": "Maya Wibowo",
+        "nik": "32012106846317",
+        "npwp": "66.893.232.9-487.245",
+        "persentase": 10.14
+      },
+      {
+        "nama": "Umar Permana",
+        "nik": "35781004662133",
+        "npwp": "20.640.970.8-429.689",
+        "persentase": 1.2199999999999989
+      }
+    ],
+    "direktur_utama": "Dian Sari",
+    "direktur_nik": "34712604615713",
+    "direktur_npwp": "22.397.972.7-947.584",
+    "komisaris_utama": "Bayu Firmansyah",
+    "komisaris_nik": "32151412984709",
+    "komisaris_npwp": "59.245.688.1-121.269",
+    "jangka_waktu": "Tidak terbatas",
+    "tanggal_akta": "2011-09-03",
+    "notaris": "Dagel Haryanti",
+    "npwp_perusahaan": "76.900.185.3-474.984",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": false,
+    "risk_score": 32
+  },
+  {
+    "company_id": "PT_0032",
+    "nama_perseroan": "PT. GLOBALINDO AGUNG LESTARI",
+    "kbli": "02200",
+    "alamat_lengkap": "Jalan Erlangga No. 25\nTebingtinggi, Sulawesi Tengah 25792",
+    "kode_pos": "24276",
+    "maksud_tujuan": "Usaha perkebunan kelapa sawit dan pengolahan hasil",
+    "modal_dasar": 92241573595,
+    "modal_ditempatkan": 64407736974,
+    "modal_disetor": 57229221474,
+    "nilai_nominal_saham": 5000000,
+    "jumlah_saham": 12881,
+    "pemegang_saham": [
+      {
+        "nama": "Ahmad Kusuma",
+        "nik": "31743003568370",
+        "npwp": "84.678.962.2-826.992",
+        "persentase": 21.12
+      },
+      {
+        "nama": "Dewi Sari",
+        "nik": "64711910982123",
+        "npwp": "41.123.308.3-103.140",
+        "persentase": 78.88
+      }
+    ],
+    "direktur_utama": "Farid Hidayat",
+    "direktur_nik": "35780109647874",
+    "direktur_npwp": "77.511.140.3-513.802",
+    "komisaris_utama": "Andi Santoso",
+    "komisaris_nik": "32151906818533",
+    "komisaris_npwp": "88.512.897.2-241.499",
+    "jangka_waktu": "Tidak terbatas",
+    "tanggal_akta": "2006-03-17",
+    "notaris": "Drajat Widodo, S.Psi",
+    "npwp_perusahaan": "72.701.260.3-864.930",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": false,
+    "risk_score": 30
+  },
+  {
+    "company_id": "PT_0033",
+    "nama_perseroan": "PT. GRAHA INDO SAWIT ANDAL TUNGGAL",
+    "kbli": "01134",
+    "alamat_lengkap": "Gg. Dr. Djunjunan No. 76\nBitung, Aceh 96363",
+    "kode_pos": "18372",
+    "maksud_tujuan": "Usaha perkebunan kelapa sawit dan pengolahan hasil",
+    "modal_dasar": 24508040311,
+    "modal_ditempatkan": 17647448186,
+    "modal_disetor": 12997625283,
+    "nilai_nominal_saham": 10000000,
+    "jumlah_saham": 1764,
+    "pemegang_saham": [
+      {
+        "nama": "Gina Wahyudi",
+        "nik": "35780901732967",
+        "npwp": "99.180.202.6-757.666",
+        "persentase": 65.28
+      },
+      {
+        "nama": "Ratna Firmansyah",
+        "nik": "64712705719415",
+        "npwp": "17.165.427.7-858.698",
+        "persentase": 34.72
+      }
+    ],
+    "direktur_utama": "Kartika Hartono",
+    "direktur_nik": "32731910563097",
+    "direktur_npwp": "63.201.565.7-953.720",
+    "komisaris_utama": "Putra Santoso",
+    "komisaris_nik": "64713008843821",
+    "komisaris_npwp": "59.474.350.3-307.377",
+    "jangka_waktu": "Tidak terbatas",
+    "tanggal_akta": "2016-08-25",
+    "notaris": "Bakda Wulandari",
+    "npwp_perusahaan": "19.777.392.7-878.120",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": false,
+    "risk_score": 35
+  },
+  {
+    "company_id": "PT_0034",
+    "nama_perseroan": "PT. RIMBA SAWIT UTAMA PLANINDO",
+    "kbli": "10411",
+    "alamat_lengkap": "Gg. Wonoayu No. 169\nMeulaboh, PB 13069",
+    "kode_pos": "14337",
+    "maksud_tujuan": "Usaha perkebunan kelapa sawit dan pengolahan hasil",
+    "modal_dasar": 54561092982,
+    "modal_ditempatkan": 42095756971,
+    "modal_disetor": 33961434066,
+    "nilai_nominal_saham": 1000000,
+    "jumlah_saham": 42095,
+    "pemegang_saham": [
+      {
+        "nama": "Joko Putri",
+        "nik": "32152607852735",
+        "npwp": "49.921.797.6-745.169",
+        "persentase": 38.49
+      },
+      {
+        "nama": "Wati Wardana",
+        "nik": "35780103618346",
+        "npwp": "44.933.548.2-344.826",
+        "persentase": 22.26
+      },
+      {
+        "nama": "Ratna Hidayat",
+        "nik": "64712811907593",
+        "npwp": "33.306.526.2-453.535",
+        "persentase": 19.52
+      },
+      {
+        "nama": "Bayu Firmansyah",
+        "nik": "35782912638045",
+        "npwp": "35.424.544.6-155.998",
+        "persentase": 19.73
+      }
+    ],
+    "direktur_utama": "Joko Hartono",
+    "direktur_nik": "64712209719450",
+    "direktur_npwp": "46.320.449.9-760.693",
+    "komisaris_utama": "Eko Syahputra",
+    "komisaris_nik": "18711012644752",
+    "komisaris_npwp": "29.437.358.3-949.904",
+    "jangka_waktu": "Tidak terbatas",
+    "tanggal_akta": "2020-03-24",
+    "notaris": "Unggul Situmorang",
+    "npwp_perusahaan": "55.634.239.8-429.531",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": false,
+    "risk_score": 23
+  },
+  {
+    "company_id": "PT_0035",
+    "nama_perseroan": "PT. BORNEO EKA SAWIT TANGGUH",
+    "kbli": "02200",
+    "alamat_lengkap": "Jalan Gardujati No. 50\nLubuklinggau, KI 05648",
+    "kode_pos": "40939",
+    "maksud_tujuan": "Usaha perkebunan kelapa sawit dan pengolahan hasil",
+    "modal_dasar": 2934859547,
+    "modal_ditempatkan": 634718391,
+    "modal_disetor": 117386699,
+    "nilai_nominal_saham": 1000000,
+    "jumlah_saham": 634,
+    "pemegang_saham": [
+      {
+        "nama": "Maya Putra",
+        "nik": "34711810848117",
+        "npwp": "76.415.563.9-517.526",
+        "persentase": 47.74
+      },
+      {
+        "nama": "Tono Wibowo",
+        "nik": "18711211749899",
+        "npwp": "48.959.617.2-249.239",
+        "persentase": 44.59
+      },
+      {
+        "nama": "Vina Putri",
+        "nik": "31741309550506",
+        "npwp": "51.772.876.8-821.263",
+        "persentase": 8.18
+      },
+      {
+        "nama": "Sari Pratama",
+        "nik": "18710901625628",
+        "npwp": "44.667.334.5-846.527",
+        "persentase": -0.5100000000000051
+      }
+    ],
+    "direktur_utama": "Ahmad Gunawan",
+    "direktur_nik": "31742209900014",
+    "direktur_npwp": "45.129.446.3-308.413",
+    "komisaris_utama": "Wati Pratama",
+    "komisaris_nik": "18710203954958",
+    "komisaris_npwp": "15.529.929.3-552.750",
+    "jangka_waktu": "10 tahun",
+    "tanggal_akta": "2023-12-30",
+    "notaris": "Ajeng Wahyuni",
+    "npwp_perusahaan": "22.318.405.7-351.158",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": true,
+    "risk_score": 76
+  },
+  {
+    "company_id": "PT_0036",
+    "nama_perseroan": "PT. Malindo Jaya Diraja",
+    "kbli": "01134",
+    "alamat_lengkap": "Jl. Cikutra Barat No. 42\nBanjarmasin, KB 23121",
+    "kode_pos": "91075",
+    "maksud_tujuan": "Usaha perkebunan kelapa sawit dan pengolahan hasil",
+    "modal_dasar": 41044341548,
+    "modal_ditempatkan": 25652758800,
+    "modal_disetor": 22946586358,
+    "nilai_nominal_saham": 10000000,
+    "jumlah_saham": 2565,
+    "pemegang_saham": [
+      {
+        "nama": "Joko Gunawan",
+        "nik": "64711102938203",
+        "npwp": "82.700.470.7-929.382",
+        "persentase": 76.77
+      },
+      {
+        "nama": "Andi Permana",
+        "nik": "64710106550252",
+        "npwp": "84.814.591.7-856.613",
+        "persentase": 18.71
+      },
+      {
+        "nama": "Citra Wahyudi",
+        "nik": "32150506691320",
+        "npwp": "54.145.100.6-218.395",
+        "persentase": 9.32
+      },
+      {
+        "nama": "Farid Kurniawan",
+        "nik": "34711610762172",
+        "npwp": "24.985.938.6-428.279",
+        "persentase": -4.799999999999997
+      }
+    ],
+    "direktur_utama": "Sari Wijaya",
+    "direktur_nik": "64711210892655",
+    "direktur_npwp": "32.101.906.3-276.333",
+    "komisaris_utama": "Fitri Gunawan",
+    "komisaris_nik": "35780506951236",
+    "komisaris_npwp": "32.609.102.1-323.993",
+    "jangka_waktu": "Tidak terbatas",
+    "tanggal_akta": "2019-11-25",
+    "notaris": "Galuh Nashiruddin",
+    "npwp_perusahaan": "47.668.664.9-197.739",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": false,
+    "risk_score": 28
+  },
+  {
+    "company_id": "PT_0037",
+    "nama_perseroan": "PT. Kintap Jaya Wattindo",
+    "kbli": "10412",
+    "alamat_lengkap": "Gang Jend. A. Yani No. 508\nBogor, JT 36908",
+    "kode_pos": "38762",
+    "maksud_tujuan": "Usaha perkebunan kelapa sawit dan pengolahan hasil",
+    "modal_dasar": 23885636434,
+    "modal_ditempatkan": 10617326880,
+    "modal_disetor": 7524169266,
+    "nilai_nominal_saham": 5000000,
+    "jumlah_saham": 2123,
+    "pemegang_saham": [
+      {
+        "nama": "Umar Hakim",
+        "nik": "32012201661990",
+        "npwp": "58.868.656.7-631.372",
+        "persentase": 32.99
+      },
+      {
+        "nama": "Dian Syahputra",
+        "nik": "35780206857846",
+        "npwp": "17.624.962.5-985.251",
+        "persentase": 38.7
+      },
+      {
+        "nama": "Yudi Firmansyah",
+        "nik": "35781210956019",
+        "npwp": "79.426.599.2-543.339",
+        "persentase": 27.16
+      },
+      {
+        "nama": "Wati Pratama",
+        "nik": "32012608591215",
+        "npwp": "56.821.890.8-849.575",
+        "persentase": 1.149999999999988
+      }
+    ],
+    "direktur_utama": "Kartika Rahman",
+    "direktur_nik": "18711510573811",
+    "direktur_npwp": "21.800.812.2-633.110",
+    "komisaris_utama": "Maya Wibowo",
+    "komisaris_nik": "34710810551539",
+    "komisaris_npwp": "54.659.560.2-990.109",
+    "jangka_waktu": "Tidak terbatas",
+    "tanggal_akta": "2012-04-25",
+    "notaris": "R.A. Vivi Uyainah, S.E.I",
+    "npwp_perusahaan": "70.297.523.3-669.314",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": false,
+    "risk_score": 30
+  },
+  {
+    "company_id": "PT_0038",
+    "nama_perseroan": "PT. Damit Mitra Sekawan",
+    "kbli": "46691",
+    "alamat_lengkap": "Jalan Cempaka No. 417\nSurabaya, RI 50009",
+    "kode_pos": "41912",
+    "maksud_tujuan": "Usaha perkebunan kelapa sawit dan pengolahan hasil",
+    "modal_dasar": 4686874178,
+    "modal_ditempatkan": 475055078,
+    "modal_disetor": 61703272,
+    "nilai_nominal_saham": 1000000,
+    "jumlah_saham": 475,
+    "pemegang_saham": [
+      {
+        "nama": "Maya Wibowo",
+        "nik": "31740904984957",
+        "npwp": "84.712.534.2-722.901",
+        "persentase": 15.1
+      },
+      {
+        "nama": "Dewi Sari",
+        "nik": "34713107635994",
+        "npwp": "35.732.718.1-613.913",
+        "persentase": 44.39
+      },
+      {
+        "nama": "Ahmad Kusuma",
+        "nik": "34710210859484",
+        "npwp": "12.387.850.7-444.790",
+        "persentase": 40.510000000000005
+      }
+    ],
+    "direktur_utama": "Kartika Hartono",
+    "direktur_nik": "32153007874029",
+    "direktur_npwp": "44.399.366.5-978.643",
+    "komisaris_utama": "Zaki Permana",
+    "komisaris_nik": "32730112698583",
+    "komisaris_npwp": "47.332.195.7-290.974",
+    "jangka_waktu": "25 tahun",
+    "tanggal_akta": "2025-03-15",
+    "notaris": "Nrima Zulaika",
+    "npwp_perusahaan": "88.551.356.8-754.940",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": true,
+    "risk_score": 80
+  },
+  {
+    "company_id": "PT_0039",
+    "nama_perseroan": "PT. Bersama Sejahtera Sakti",
+    "kbli": "10411",
+    "alamat_lengkap": "Gg. Suniaraja No. 468\nKotamobagu, SN 97710",
+    "kode_pos": "18263",
+    "maksud_tujuan": "Usaha perkebunan kelapa sawit dan pengolahan hasil",
+    "modal_dasar": 23150262191,
+    "modal_ditempatkan": 16147248997,
+    "modal_disetor": 15032308693,
+    "nilai_nominal_saham": 5000000,
+    "jumlah_saham": 3229,
+    "pemegang_saham": [
+      {
+        "nama": "Putra Kurniawan",
+        "nik": "35781805991225",
+        "npwp": "72.587.355.5-338.210",
+        "persentase": 52.13
+      },
+      {
+        "nama": "Budi Rahman",
+        "nik": "31740908553737",
+        "npwp": "11.773.168.7-501.694",
+        "persentase": 25.47
+      },
+      {
+        "nama": "Gina Wahyudi",
+        "nik": "18711908981345",
+        "npwp": "24.559.848.4-875.196",
+        "persentase": 22.4
+      }
+    ],
+    "direktur_utama": "Zaki Permana",
+    "direktur_nik": "35781008722734",
+    "direktur_npwp": "52.121.973.2-596.435",
+    "komisaris_utama": "Umar Wahyudi",
+    "komisaris_nik": "18712703736626",
+    "komisaris_npwp": "99.412.680.9-754.124",
+    "jangka_waktu": "Tidak terbatas",
+    "tanggal_akta": "2021-02-25",
+    "notaris": "Cawisadi Firmansyah",
+    "npwp_perusahaan": "55.691.544.6-546.865",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": false,
+    "risk_score": 39
+  },
+  {
+    "company_id": "PT_0040",
+    "nama_perseroan": "PT. Inti Gerak Maju",
+    "kbli": "02200",
+    "alamat_lengkap": "Gg. Moch. Ramdan No. 598\nCilegon, Jambi 94134",
+    "kode_pos": "64632",
+    "maksud_tujuan": "Usaha perkebunan kelapa sawit dan pengolahan hasil",
+    "modal_dasar": 59120877785,
+    "modal_ditempatkan": 26997159431,
+    "modal_disetor": 25042720598,
+    "nilai_nominal_saham": 1000000,
+    "jumlah_saham": 26997,
+    "pemegang_saham": [
+      {
+        "nama": "Gina Wahyudi",
+        "nik": "35782007894389",
+        "npwp": "66.786.302.8-908.153",
+        "persentase": 79.3
+      },
+      {
+        "nama": "Zaki Budiman",
+        "nik": "64711206696180",
+        "npwp": "71.767.951.7-126.674",
+        "persentase": 15.03
+      },
+      {
+        "nama": "Budi Syahputra",
+        "nik": "35782008594640",
+        "npwp": "99.534.545.8-789.929",
+        "persentase": 9.79
+      },
+      {
+        "nama": "Yudi Putri",
+        "nik": "32011606660474",
+        "npwp": "80.386.412.7-207.997",
+        "persentase": -4.119999999999996
+      }
+    ],
+    "direktur_utama": "Sari Wijaya",
+    "direktur_nik": "18710910996778",
+    "direktur_npwp": "97.888.430.3-950.654",
+    "komisaris_utama": "Wati Setiawan",
+    "komisaris_nik": "18710809907346",
+    "komisaris_npwp": "95.500.525.9-428.897",
+    "jangka_waktu": "Tidak terbatas",
+    "tanggal_akta": "2011-02-01",
+    "notaris": "Martani Prastuti",
+    "npwp_perusahaan": "54.440.496.7-146.146",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": false,
+    "risk_score": 19
+  },
+  {
+    "company_id": "PT_0041",
+    "nama_perseroan": "PT. Sawita Karya Manunggal (SKM)",
+    "kbli": "10412",
+    "alamat_lengkap": "Jalan Rawamangun No. 749\nBitung, JB 78752",
+    "kode_pos": "63886",
+    "maksud_tujuan": "Usaha perkebunan kelapa sawit dan pengolahan hasil",
+    "modal_dasar": 1852133497,
+    "modal_ditempatkan": 446030548,
+    "modal_disetor": 110384346,
+    "nilai_nominal_saham": 1000000,
+    "jumlah_saham": 446,
+    "pemegang_saham": [
+      {
+        "nama": "Endang Hidayat",
+        "nik": "32731802872739",
+        "npwp": "48.473.382.2-424.642",
+        "persentase": 41.47
+      },
+      {
+        "nama": "Dewi Pratama",
+        "nik": "35782703837213",
+        "npwp": "84.374.696.6-776.371",
+        "persentase": 38.1
+      },
+      {
+        "nama": "Dewi Santoso",
+        "nik": "35781709847039",
+        "npwp": "84.788.142.6-436.675",
+        "persentase": 16.56
+      },
+      {
+        "nama": "Farid Kurniawan",
+        "nik": "64710807845905",
+        "npwp": "18.811.753.8-270.849",
+        "persentase": 3.870000000000001
+      }
+    ],
+    "direktur_utama": "Maya Sari",
+    "direktur_nik": "34710708638094",
+    "direktur_npwp": "64.435.383.8-330.497",
+    "komisaris_utama": "Joko Wijaya",
+    "komisaris_nik": "32150410982063",
+    "komisaris_npwp": "36.596.411.7-906.879",
+    "jangka_waktu": "14 tahun",
+    "tanggal_akta": "2025-02-01",
+    "notaris": "Zelaya Winarno",
+    "npwp_perusahaan": "78.235.586.6-345.621",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": true,
+    "risk_score": 94
+  },
+  {
+    "company_id": "PT_0042",
+    "nama_perseroan": "PT. Golden Land Makmur",
+    "kbli": "01135",
+    "alamat_lengkap": "Jl. Sukabumi No. 8\nMadiun, Sulawesi Selatan 97028",
+    "kode_pos": "66932",
+    "maksud_tujuan": "Usaha perkebunan kelapa sawit dan pengolahan hasil",
+    "modal_dasar": 66191736860,
+    "modal_ditempatkan": 42768560834,
+    "modal_disetor": 37121306626,
+    "nilai_nominal_saham": 10000000,
+    "jumlah_saham": 4276,
+    "pemegang_saham": [
+      {
+        "nama": "Sari Pratama",
+        "nik": "34711606762494",
+        "npwp": "62.327.788.5-996.716",
+        "persentase": 100.0
+      }
+    ],
+    "direktur_utama": "Hadi Wibowo",
+    "direktur_nik": "31742101717645",
+    "direktur_npwp": "98.686.864.8-535.996",
+    "komisaris_utama": "Vina Wardana",
+    "komisaris_nik": "64710801804771",
+    "komisaris_npwp": "90.368.947.8-484.269",
+    "jangka_waktu": "Tidak terbatas",
+    "tanggal_akta": "2008-04-29",
+    "notaris": "R. Harimurti Hutagalung",
+    "npwp_perusahaan": "74.700.543.6-386.373",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": false,
+    "risk_score": 38
+  },
+  {
+    "company_id": "PT_0043",
+    "nama_perseroan": "PT. Natuna Inti Makmur",
+    "kbli": "01135",
+    "alamat_lengkap": "Jl. Yos Sudarso No. 38\nTegal, SR 98820",
+    "kode_pos": "26992",
+    "maksud_tujuan": "Usaha perkebunan kelapa sawit dan pengolahan hasil",
+    "modal_dasar": 46331138727,
+    "modal_ditempatkan": 22331850119,
+    "modal_disetor": 16992201354,
+    "nilai_nominal_saham": 1000000,
+    "jumlah_saham": 22331,
+    "pemegang_saham": [
+      {
+        "nama": "Citra Hakim",
+        "nik": "32012402960259",
+        "npwp": "20.307.507.6-639.197",
+        "persentase": 62.64
+      },
+      {
+        "nama": "Ratna Wijaya",
+        "nik": "64710611920891",
+        "npwp": "67.215.831.3-113.221",
+        "persentase": 33.87
+      },
+      {
+        "nama": "Joko Darmawan",
+        "nik": "32732712631124",
+        "npwp": "78.437.786.6-393.284",
+        "persentase": 3.490000000000002
+      }
+    ],
+    "direktur_utama": "Endang Hartono",
+    "direktur_nik": "32010107819503",
+    "direktur_npwp": "74.131.974.1-176.342",
+    "komisaris_utama": "Budi Rahman",
+    "komisaris_nik": "64711807911687",
+    "komisaris_npwp": "85.569.141.9-465.294",
+    "jangka_waktu": "Tidak terbatas",
+    "tanggal_akta": "2017-02-01",
+    "notaris": "Kayla Utama",
+    "npwp_perusahaan": "52.628.660.9-833.941",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": false,
+    "risk_score": 27
+  },
+  {
+    "company_id": "PT_0044",
+    "nama_perseroan": "PT. Kaliau Mas Perkasa",
+    "kbli": "01134",
+    "alamat_lengkap": "Gang Kebonjati No. 258\nKota Administrasi Jakarta Barat, LA 66056",
+    "kode_pos": "03211",
+    "maksud_tujuan": "Usaha perkebunan kelapa sawit dan pengolahan hasil",
+    "modal_dasar": 85630748848,
+    "modal_ditempatkan": 22731940683,
+    "modal_disetor": 20660141430,
+    "nilai_nominal_saham": 10000000,
+    "jumlah_saham": 2273,
+    "pemegang_saham": [
+      {
+        "nama": "Bayu Wibowo",
+        "nik": "32151212637596",
+        "npwp": "91.988.989.4-262.769",
+        "persentase": 72.84
+      },
+      {
+        "nama": "Ahmad Gunawan",
+        "nik": "18711106623156",
+        "npwp": "94.504.884.3-664.386",
+        "persentase": 21.99
+      },
+      {
+        "nama": "Budi Syahputra",
+        "nik": "32731712597218",
+        "npwp": "17.417.258.8-119.657",
+        "persentase": 5.169999999999998
+      }
+    ],
+    "direktur_utama": "Oki Sari",
+    "direktur_nik": "64710106724284",
+    "direktur_npwp": "73.259.196.1-412.116",
+    "komisaris_utama": "Maya Sari",
+    "komisaris_nik": "34712910863205",
+    "komisaris_npwp": "89.781.736.2-337.144",
+    "jangka_waktu": "Tidak terbatas",
+    "tanggal_akta": "2006-03-29",
+    "notaris": "R.M. Cakrabuana Suryono, M.Farm",
+    "npwp_perusahaan": "75.357.348.1-322.619",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": false,
+    "risk_score": 40
+  },
+  {
+    "company_id": "PT_0045",
+    "nama_perseroan": "PT. Surya Mukti Perkasa",
+    "kbli": "02200",
+    "alamat_lengkap": "Gang Pasir Koja No. 4\nBitung, Riau 63426",
+    "kode_pos": "85821",
+    "maksud_tujuan": "Usaha perkebunan kelapa sawit dan pengolahan hasil",
+    "modal_dasar": 33634232882,
+    "modal_ditempatkan": 17725531963,
+    "modal_disetor": 15189129063,
+    "nilai_nominal_saham": 1000000,
+    "jumlah_saham": 17725,
+    "pemegang_saham": [
+      {
+        "nama": "Bayu Permana",
+        "nik": "31741310875795",
+        "npwp": "78.912.997.5-947.756",
+        "persentase": 44.28
+      },
+      {
+        "nama": "Kartika Hartono",
+        "nik": "31740706690507",
+        "npwp": "66.970.653.4-768.616",
+        "persentase": 43.7
+      },
+      {
+        "nama": "Dewi Santoso",
+        "nik": "18711505718983",
+        "npwp": "59.658.598.8-507.912",
+        "persentase": 12.019999999999996
+      }
+    ],
+    "direktur_utama": "Wati Pratama",
+    "direktur_nik": "18711709579462",
+    "direktur_npwp": "54.283.401.7-945.437",
+    "komisaris_utama": "Maya Hakim",
+    "komisaris_nik": "32150904963256",
+    "komisaris_npwp": "31.255.908.9-817.605",
+    "jangka_waktu": "Tidak terbatas",
+    "tanggal_akta": "2019-03-26",
+    "notaris": "Puti Sihotang",
+    "npwp_perusahaan": "73.250.402.9-320.368",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": false,
+    "risk_score": 17
+  },
+  {
+    "company_id": "PT_0046",
+    "nama_perseroan": "PT. Sepanjang Inti Surya Abadi",
+    "kbli": "01135",
+    "alamat_lengkap": "Gang M.H Thamrin No. 861\nLangsa, Sulawesi Tenggara 86646",
+    "kode_pos": "32759",
+    "maksud_tujuan": "Usaha perkebunan kelapa sawit dan pengolahan hasil",
+    "modal_dasar": 95315671676,
+    "modal_ditempatkan": 66945138254,
+    "modal_disetor": 60953546158,
+    "nilai_nominal_saham": 1000000,
+    "jumlah_saham": 66945,
+    "pemegang_saham": [
+      {
+        "nama": "Zaki Santoso",
+        "nik": "18712409693986",
+        "npwp": "89.833.680.8-632.393",
+        "persentase": 70.4
+      },
+      {
+        "nama": "Eko Syahputra",
+        "nik": "34712406756508",
+        "npwp": "44.720.786.4-483.470",
+        "persentase": 17.86
+      },
+      {
+        "nama": "Zaki Kusuma",
+        "nik": "32151508681864",
+        "npwp": "20.367.274.9-454.360",
+        "persentase": 11.739999999999995
+      }
+    ],
+    "direktur_utama": "Sari Darmawan",
+    "direktur_nik": "64713011611132",
+    "direktur_npwp": "57.406.325.2-383.149",
+    "komisaris_utama": "Dian Wibowo",
+    "komisaris_nik": "32010212824068",
+    "komisaris_npwp": "82.156.913.7-887.755",
+    "jangka_waktu": "Tidak terbatas",
+    "tanggal_akta": "2020-12-21",
+    "notaris": "Cengkal Fujiati",
+    "npwp_perusahaan": "29.457.164.5-993.607",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": false,
+    "risk_score": 36
+  },
+  {
+    "company_id": "PT_0047",
+    "nama_perseroan": "PT. Wira Karya Nusantari",
+    "kbli": "01134",
+    "alamat_lengkap": "Jalan Kutai No. 51\nSolok, NB 67687",
+    "kode_pos": "95771",
+    "maksud_tujuan": "Usaha perkebunan kelapa sawit dan pengolahan hasil",
+    "modal_dasar": 65545658749,
+    "modal_ditempatkan": 35961209539,
+    "modal_disetor": 26145313857,
+    "nilai_nominal_saham": 5000000,
+    "jumlah_saham": 7192,
+    "pemegang_saham": [
+      {
+        "nama": "Vina Putra",
+        "nik": "64710511638332",
+        "npwp": "83.766.154.4-290.649",
+        "persentase": 72.93
+      },
+      {
+        "nama": "Farid Putra",
+        "nik": "31740709844758",
+        "npwp": "48.879.103.5-175.662",
+        "persentase": 24.09
+      },
+      {
+        "nama": "Ahmad Kusuma",
+        "nik": "34711811992256",
+        "npwp": "10.950.116.2-414.107",
+        "persentase": 8.21
+      },
+      {
+        "nama": "Gina Wibowo",
+        "nik": "64712906893157",
+        "npwp": "65.510.836.7-604.295",
+        "persentase": -5.2300000000000075
+      }
+    ],
+    "direktur_utama": "Fitri Gunawan",
+    "direktur_nik": "32011510684479",
+    "direktur_npwp": "50.761.189.3-191.656",
+    "komisaris_utama": "Citra Hidayat",
+    "komisaris_nik": "18712509926385",
+    "komisaris_npwp": "97.458.484.7-864.700",
+    "jangka_waktu": "Tidak terbatas",
+    "tanggal_akta": "2006-08-13",
+    "notaris": "Jaswadi Tamba",
+    "npwp_perusahaan": "91.741.233.6-691.532",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": false,
+    "risk_score": 27
+  },
+  {
+    "company_id": "PT_0048",
+    "nama_perseroan": "PT. Khatulistiwa Agro Abadi",
+    "kbli": "10411",
+    "alamat_lengkap": "Gang Waringin No. 433\nSibolga, Aceh 60886",
+    "kode_pos": "85586",
+    "maksud_tujuan": "Usaha perkebunan kelapa sawit dan pengolahan hasil",
+    "modal_dasar": 20596341340,
+    "modal_ditempatkan": 10754867643,
+    "modal_disetor": 10212736350,
+    "nilai_nominal_saham": 5000000,
+    "jumlah_saham": 2150,
+    "pemegang_saham": [
+      {
+        "nama": "Putra Sari",
+        "nik": "31742910839019",
+        "npwp": "46.618.757.1-246.968",
+        "persentase": 100.0
+      }
+    ],
+    "direktur_utama": "Vina Putri",
+    "direktur_nik": "34710208551174",
+    "direktur_npwp": "38.516.668.4-894.256",
+    "komisaris_utama": "Vina Putra",
+    "komisaris_nik": "31740101795072",
+    "komisaris_npwp": "38.998.641.1-352.695",
+    "jangka_waktu": "Tidak terbatas",
+    "tanggal_akta": "2019-12-06",
+    "notaris": "T. Adinata Napitupulu",
+    "npwp_perusahaan": "61.588.744.7-867.284",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": false,
+    "risk_score": 24
+  },
+  {
+    "company_id": "PT_0049",
+    "nama_perseroan": "PT. Kayung Agro Lestari",
+    "kbli": "01135",
+    "alamat_lengkap": "Jalan Ahmad Dahlan No. 568\nPadang, KT 51051",
+    "kode_pos": "48289",
+    "maksud_tujuan": "Usaha perkebunan kelapa sawit dan pengolahan hasil",
+    "modal_dasar": 23569236348,
+    "modal_ditempatkan": 6911975874,
+    "modal_disetor": 5180307974,
+    "nilai_nominal_saham": 1000000,
+    "jumlah_saham": 6911,
+    "pemegang_saham": [
+      {
+        "nama": "Dewi Pratama",
+        "nik": "32730303596886",
+        "npwp": "31.393.163.6-160.974",
+        "persentase": 45.71
+      },
+      {
+        "nama": "Farid Hartono",
+        "nik": "32010301811110",
+        "npwp": "11.484.996.2-159.565",
+        "persentase": 36.86
+      },
+      {
+        "nama": "Farid Putra",
+        "nik": "34712908924854",
+        "npwp": "81.278.640.3-500.483",
+        "persentase": 14.13
+      },
+      {
+        "nama": "Dewi Sari",
+        "nik": "32732905859528",
+        "npwp": "57.195.891.1-904.426",
+        "persentase": 3.299999999999999
+      }
+    ],
+    "direktur_utama": "Citra Permana",
+    "direktur_nik": "64710809689955",
+    "direktur_npwp": "75.720.196.1-289.858",
+    "komisaris_utama": "Indra Wahyudi",
+    "komisaris_nik": "18712003600983",
+    "komisaris_npwp": "83.523.987.4-150.184",
+    "jangka_waktu": "Tidak terbatas",
+    "tanggal_akta": "2020-08-07",
+    "notaris": "Opan Hakim, S.Ked",
+    "npwp_perusahaan": "61.562.335.8-730.452",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": false,
+    "risk_score": 10
+  },
+  {
+    "company_id": "PT_0050",
+    "nama_perseroan": "PT. Jalin Vaneo",
+    "kbli": "01135",
+    "alamat_lengkap": "Jl. Kapten Muslihat No. 655\nCilegon, Bengkulu 45525",
+    "kode_pos": "75003",
+    "maksud_tujuan": "Usaha perkebunan kelapa sawit dan pengolahan hasil",
+    "modal_dasar": 4353592461,
+    "modal_ditempatkan": 934162425,
+    "modal_disetor": 179758174,
+    "nilai_nominal_saham": 1000000,
+    "jumlah_saham": 934,
+    "pemegang_saham": [
+      {
+        "nama": "Sinta Hakim",
+        "nik": "32012706736328",
+        "npwp": "92.630.188.4-401.859",
+        "persentase": 66.43
+      },
+      {
+        "nama": "Endang Pratama",
+        "nik": "32010902723581",
+        "npwp": "38.112.703.6-928.501",
+        "persentase": 24.06
+      },
+      {
+        "nama": "Budi Putri",
+        "nik": "34712110870849",
+        "npwp": "47.461.986.2-524.522",
+        "persentase": 9.509999999999994
+      }
+    ],
+    "direktur_utama": "Yudi Rahman",
+    "direktur_nik": "32730603769512",
+    "direktur_npwp": "40.795.571.9-358.724",
+    "komisaris_utama": "Citra Gunawan",
+    "komisaris_nik": "32151111799628",
+    "komisaris_npwp": "59.551.874.1-267.499",
+    "jangka_waktu": "16 tahun",
+    "tanggal_akta": "2023-09-19",
+    "notaris": "Dirja Usamah, S.IP",
+    "npwp_perusahaan": "21.808.866.2-399.954",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": true,
+    "risk_score": 84
+  },
+  {
+    "company_id": "PT_0051",
+    "nama_perseroan": "PT. Airlangga Sawit Jaya",
+    "kbli": "10411",
+    "alamat_lengkap": "Jalan Lembong No. 957\nAmbon, Kalimantan Tengah 22744",
+    "kode_pos": "86181",
+    "maksud_tujuan": "Usaha perkebunan kelapa sawit dan pengolahan hasil",
+    "modal_dasar": 25726100791,
+    "modal_ditempatkan": 10554400071,
+    "modal_disetor": 8136548847,
+    "nilai_nominal_saham": 10000000,
+    "jumlah_saham": 1055,
+    "pemegang_saham": [
+      {
+        "nama": "Joko Putri",
+        "nik": "32010511796407",
+        "npwp": "78.962.983.4-530.739",
+        "persentase": 26.85
+      },
+      {
+        "nama": "Citra Hidayat",
+        "nik": "64712511708337",
+        "npwp": "81.184.692.8-141.581",
+        "persentase": 73.15
+      }
+    ],
+    "direktur_utama": "Hadi Wibowo",
+    "direktur_nik": "34712604889330",
+    "direktur_npwp": "59.645.459.1-897.693",
+    "komisaris_utama": "Hadi Santoso",
+    "komisaris_nik": "31740312867000",
+    "komisaris_npwp": "22.565.573.6-413.825",
+    "jangka_waktu": "Tidak terbatas",
+    "tanggal_akta": "2011-08-20",
+    "notaris": "T. Narji Mayasari, S.Pd",
+    "npwp_perusahaan": "78.169.938.4-306.681",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": false,
+    "risk_score": 32
+  },
+  {
+    "company_id": "PT_0052",
+    "nama_perseroan": "PT. Kapuas Bio Agro",
+    "kbli": "10412",
+    "alamat_lengkap": "Gang Raya Ujungberung No. 58\nKota Administrasi Jakarta Timur, Sumatera Utara 78458",
+    "kode_pos": "14535",
+    "maksud_tujuan": "Usaha perkebunan kelapa sawit dan pengolahan hasil",
+    "modal_dasar": 52460203891,
+    "modal_ditempatkan": 28225643002,
+    "modal_disetor": 25071203460,
+    "nilai_nominal_saham": 1000000,
+    "jumlah_saham": 28225,
+    "pemegang_saham": [
+      {
+        "nama": "Dewi Kusuma",
+        "nik": "32731003853592",
+        "npwp": "66.173.545.7-847.843",
+        "persentase": 53.47
+      },
+      {
+        "nama": "Indra Permana",
+        "nik": "32732208903335",
+        "npwp": "56.520.644.3-556.643",
+        "persentase": 31.21
+      },
+      {
+        "nama": "Wati Setiawan",
+        "nik": "35780901679447",
+        "npwp": "50.427.229.1-385.139",
+        "persentase": 15.32
+      }
+    ],
+    "direktur_utama": "Putra Wahyudi",
+    "direktur_nik": "35782005605959",
+    "direktur_npwp": "92.439.751.1-924.759",
+    "komisaris_utama": "Eko Santoso",
+    "komisaris_nik": "31742405939879",
+    "komisaris_npwp": "29.677.458.1-297.808",
+    "jangka_waktu": "Tidak terbatas",
+    "tanggal_akta": "2006-04-11",
+    "notaris": "Kamidin Widodo",
+    "npwp_perusahaan": "16.907.490.7-339.874",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": false,
+    "risk_score": 27
+  },
+  {
+    "company_id": "PT_0053",
+    "nama_perseroan": "PT. Bumi Tani Jaya",
+    "kbli": "10412",
+    "alamat_lengkap": "Jalan Waringin No. 5\nKota Administrasi Jakarta Barat, NT 98192",
+    "kode_pos": "41273",
+    "maksud_tujuan": "Usaha perkebunan kelapa sawit dan pengolahan hasil",
+    "modal_dasar": 74218491321,
+    "modal_ditempatkan": 52006375577,
+    "modal_disetor": 38254182320,
+    "nilai_nominal_saham": 1000000,
+    "jumlah_saham": 52006,
+    "pemegang_saham": [
+      {
+        "nama": "Dian Wibowo",
+        "nik": "35781808660530",
+        "npwp": "93.567.271.8-684.726",
+        "persentase": 42.15
+      },
+      {
+        "nama": "Sinta Rahman",
+        "nik": "35781609863829",
+        "npwp": "12.280.910.7-332.793",
+        "persentase": 31.04
+      },
+      {
+        "nama": "Sari Pratama",
+        "nik": "18710110605840",
+        "npwp": "62.500.913.9-837.943",
+        "persentase": 16.72
+      },
+      {
+        "nama": "Indra Budiman",
+        "nik": "34712410724005",
+        "npwp": "69.350.637.1-788.153",
+        "persentase": 10.090000000000003
+      }
+    ],
+    "direktur_utama": "Zaki Santoso",
+    "direktur_nik": "31740503857867",
+    "direktur_npwp": "49.579.920.8-570.528",
+    "komisaris_utama": "Endang Hartono",
+    "komisaris_nik": "64711211865017",
+    "komisaris_npwp": "23.834.484.3-897.619",
+    "jangka_waktu": "Tidak terbatas",
+    "tanggal_akta": "2016-05-08",
+    "notaris": "Widya Nasyiah",
+    "npwp_perusahaan": "85.991.691.5-118.303",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": false,
+    "risk_score": 12
+  },
+  {
+    "company_id": "PT_0054",
+    "nama_perseroan": "PT. Buana Tunas Sejahtera",
+    "kbli": "01134",
+    "alamat_lengkap": "Jalan Cikapayang No. 113\nBanda Aceh, Kepulauan Bangka Belitung 67452",
+    "kode_pos": "20117",
+    "maksud_tujuan": "Usaha perkebunan kelapa sawit dan pengolahan hasil",
+    "modal_dasar": 4741051750,
+    "modal_ditempatkan": 904523920,
+    "modal_disetor": 431276632,
+    "nilai_nominal_saham": 5000000,
+    "jumlah_saham": 180,
+    "pemegang_saham": [
+      {
+        "nama": "Hadi Pratama",
+        "nik": "32730111880174",
+        "npwp": "21.335.797.6-288.659",
+        "persentase": 48.84
+      },
+      {
+        "nama": "Oki Hartono",
+        "nik": "32151002900898",
+        "npwp": "74.280.635.3-112.279",
+        "persentase": 23.3
+      },
+      {
+        "nama": "Indra Budiman",
+        "nik": "32011306718500",
+        "npwp": "33.179.918.2-251.373",
+        "persentase": 22.96
+      },
+      {
+        "nama": "Sari Pratama",
+        "nik": "64711004893416",
+        "npwp": "15.376.711.6-834.532",
+        "persentase": 8.54
+      },
+      {
+        "nama": "Hadi Darmawan",
+        "nik": "32732911663055",
+        "npwp": "44.105.354.7-696.452",
+        "persentase": -0.23
+      },
+      {
+        "nama": "Bayu Firmansyah",
+        "nik": "32151812618705",
+        "npwp": "89.712.452.2-966.326",
+        "persentase": -3.410000000000004
+      }
+    ],
+    "direktur_utama": "Tono Wibowo",
+    "direktur_nik": "18710209867192",
+    "direktur_npwp": "81.560.121.1-514.412",
+    "komisaris_utama": "Putra Kusuma",
+    "komisaris_nik": "32732802974324",
+    "komisaris_npwp": "47.731.952.8-949.450",
+    "jangka_waktu": "15 tahun",
+    "tanggal_akta": "2023-12-27",
+    "notaris": "Novi Samosir, S.Pt",
+    "npwp_perusahaan": "95.209.449.3-144.698",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": true,
+    "risk_score": 79
+  },
+  {
+    "company_id": "PT_0055",
+    "nama_perseroan": "PT. Bumi Suka Swakarsa",
+    "kbli": "10412",
+    "alamat_lengkap": "Gang Lembong No. 552\nTernate, GO 39768",
+    "kode_pos": "42987",
+    "maksud_tujuan": "Usaha perkebunan kelapa sawit dan pengolahan hasil",
+    "modal_dasar": 82981089612,
+    "modal_ditempatkan": 57233043461,
+    "modal_disetor": 46497982505,
+    "nilai_nominal_saham": 5000000,
+    "jumlah_saham": 11446,
+    "pemegang_saham": [
+      {
+        "nama": "Tono Rachmadi",
+        "nik": "32150403681897",
+        "npwp": "29.291.876.8-974.180",
+        "persentase": 100.0
+      }
+    ],
+    "direktur_utama": "Kartika Hartono",
+    "direktur_nik": "64712905923584",
+    "direktur_npwp": "76.395.538.6-496.880",
+    "komisaris_utama": "Andi Wahyudi",
+    "komisaris_nik": "35780510673652",
+    "komisaris_npwp": "88.684.799.2-754.920",
+    "jangka_waktu": "Tidak terbatas",
+    "tanggal_akta": "2015-04-06",
+    "notaris": "Puti Ilsa Pratiwi, S.T.",
+    "npwp_perusahaan": "19.688.796.9-434.461",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": false,
+    "risk_score": 20
+  },
+  {
+    "company_id": "PT_0056",
+    "nama_perseroan": "PT. Natura Agrotani",
+    "kbli": "10411",
+    "alamat_lengkap": "Gg. Rungkut Industri No. 4\nSingkawang, KT 86721",
+    "kode_pos": "34390",
+    "maksud_tujuan": "Usaha perkebunan kelapa sawit dan pengolahan hasil",
+    "modal_dasar": 14625255085,
+    "modal_ditempatkan": 9694863722,
+    "modal_disetor": 8734703385,
+    "nilai_nominal_saham": 1000000,
+    "jumlah_saham": 9694,
+    "pemegang_saham": [
+      {
+        "nama": "Kartika Hartono",
+        "nik": "34712607713214",
+        "npwp": "61.344.305.5-766.595",
+        "persentase": 37.07
+      },
+      {
+        "nama": "Sari Darmawan",
+        "nik": "32733105842933",
+        "npwp": "75.779.866.2-264.728",
+        "persentase": 20.92
+      },
+      {
+        "nama": "Citra Permana",
+        "nik": "32152205863971",
+        "npwp": "51.268.332.8-950.484",
+        "persentase": 42.01
+      }
+    ],
+    "direktur_utama": "Endang Hakim",
+    "direktur_nik": "32011302586084",
+    "direktur_npwp": "47.569.388.7-931.527",
+    "komisaris_utama": "Oki Budiman",
+    "komisaris_nik": "64711709802718",
+    "komisaris_npwp": "37.465.124.2-837.434",
+    "jangka_waktu": "Tidak terbatas",
+    "tanggal_akta": "2010-11-21",
+    "notaris": "Budi Latupono",
+    "npwp_perusahaan": "26.474.848.5-893.728",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": false,
+    "risk_score": 10
+  },
+  {
+    "company_id": "PT_0057",
+    "nama_perseroan": "PT. Sumber Sawit Sintang",
+    "kbli": "10411",
+    "alamat_lengkap": "Gg. Gegerkalong Hilir No. 10\nGorontalo, Jawa Timur 13117",
+    "kode_pos": "16473",
+    "maksud_tujuan": "Usaha perkebunan kelapa sawit dan pengolahan hasil",
+    "modal_dasar": 97493677436,
+    "modal_ditempatkan": 49360786368,
+    "modal_disetor": 45425343513,
+    "nilai_nominal_saham": 1000000,
+    "jumlah_saham": 49360,
+    "pemegang_saham": [
+      {
+        "nama": "Oki Budiman",
+        "nik": "64710511632865",
+        "npwp": "65.281.403.2-958.561",
+        "persentase": 61.79
+      },
+      {
+        "nama": "Maya Darmawan",
+        "nik": "18711601753814",
+        "npwp": "38.651.129.4-824.285",
+        "persentase": 33.3
+      },
+      {
+        "nama": "Kartika Hartono",
+        "nik": "32733009574655",
+        "npwp": "46.597.966.6-390.636",
+        "persentase": 3.97
+      },
+      {
+        "nama": "Tono Rachmadi",
+        "nik": "32151712928420",
+        "npwp": "59.402.240.8-851.203",
+        "persentase": 0.9400000000000035
+      }
+    ],
+    "direktur_utama": "Citra Nugroho",
+    "direktur_nik": "18711503581424",
+    "direktur_npwp": "54.964.566.8-520.740",
+    "komisaris_utama": "Umar Kurniawan",
+    "komisaris_nik": "64710807716711",
+    "komisaris_npwp": "82.123.625.9-565.299",
+    "jangka_waktu": "Tidak terbatas",
+    "tanggal_akta": "2011-08-12",
+    "notaris": "Jasmin Simanjuntak",
+    "npwp_perusahaan": "70.456.670.2-796.115",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": false,
+    "risk_score": 18
+  },
+  {
+    "company_id": "PT_0058",
+    "nama_perseroan": "PT. ADI JAYA MULIA",
+    "kbli": "01134",
+    "alamat_lengkap": "Gg. Ir. H. Djuanda No. 491\nSalatiga, Kalimantan Barat 85537",
+    "kode_pos": "66432",
+    "maksud_tujuan": "Usaha perkebunan kelapa sawit dan pengolahan hasil",
+    "modal_dasar": 77987384548,
+    "modal_ditempatkan": 53479347170,
+    "modal_disetor": 52105615721,
+    "nilai_nominal_saham": 10000000,
+    "jumlah_saham": 5347,
+    "pemegang_saham": [
+      {
+        "nama": "Wati Nugroho",
+        "nik": "18713107709836",
+        "npwp": "81.237.527.7-763.542",
+        "persentase": 20.06
+      },
+      {
+        "nama": "Budi Putri",
+        "nik": "32152103738054",
+        "npwp": "63.863.956.3-151.871",
+        "persentase": 26.99
+      },
+      {
+        "nama": "Hadi Santoso",
+        "nik": "64712301776213",
+        "npwp": "42.302.436.6-678.787",
+        "persentase": 23.9
+      },
+      {
+        "nama": "Farid Kurniawan",
+        "nik": "35782302640589",
+        "npwp": "73.446.536.6-739.455",
+        "persentase": 29.050000000000004
+      }
+    ],
+    "direktur_utama": "Farid Rachmadi",
+    "direktur_nik": "18712701690843",
+    "direktur_npwp": "64.290.999.7-294.949",
+    "komisaris_utama": "Ahmad Wahyudi",
+    "komisaris_nik": "18712102003714",
+    "komisaris_npwp": "23.954.752.5-966.149",
+    "jangka_waktu": "Tidak terbatas",
+    "tanggal_akta": "2018-04-24",
+    "notaris": "Drs. Ira Yolanda, S.H.",
+    "npwp_perusahaan": "53.522.359.1-777.246",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": false,
+    "risk_score": 20
+  },
+  {
+    "company_id": "PT_0059",
+    "nama_perseroan": "PT. HENRISON INTI PERSADA",
+    "kbli": "01134",
+    "alamat_lengkap": "Gang Cikutra Barat No. 9\nPurwokerto, PB 64888",
+    "kode_pos": "04951",
+    "maksud_tujuan": "Usaha perkebunan kelapa sawit dan pengolahan hasil",
+    "modal_dasar": 66867943286,
+    "modal_ditempatkan": 17520955098,
+    "modal_disetor": 14773378942,
+    "nilai_nominal_saham": 1000000,
+    "jumlah_saham": 17520,
+    "pemegang_saham": [
+      {
+        "nama": "Vina Sari",
+        "nik": "35780701748117",
+        "npwp": "23.796.662.9-610.513",
+        "persentase": 33.02
+      },
+      {
+        "nama": "Maya Darmawan",
+        "nik": "18711011688632",
+        "npwp": "11.800.724.8-978.114",
+        "persentase": 29.65
+      },
+      {
+        "nama": "Umar Permana",
+        "nik": "32150706973936",
+        "npwp": "47.193.868.2-862.618",
+        "persentase": 24.51
+      },
+      {
+        "nama": "Joko Darmawan",
+        "nik": "32151407857617",
+        "npwp": "95.697.389.8-746.848",
+        "persentase": 12.81999999999999
+      }
+    ],
+    "direktur_utama": "Budi Budiman",
+    "direktur_nik": "32731603621669",
+    "direktur_npwp": "10.440.859.4-240.388",
+    "komisaris_utama": "Endang Kusuma",
+    "komisaris_nik": "34710306656331",
+    "komisaris_npwp": "41.969.731.1-824.104",
+    "jangka_waktu": "Tidak terbatas",
+    "tanggal_akta": "2011-01-28",
+    "notaris": "Balidin Prasasta, M.M.",
+    "npwp_perusahaan": "75.360.680.1-256.217",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": false,
+    "risk_score": 38
+  },
+  {
+    "company_id": "PT_0060",
+    "nama_perseroan": "PT. IRMASULINDO",
+    "kbli": "10412",
+    "alamat_lengkap": "Gang Joyoboyo No. 260\nPontianak, Kalimantan Barat 93185",
+    "kode_pos": "38491",
+    "maksud_tujuan": "Usaha perkebunan kelapa sawit dan pengolahan hasil",
+    "modal_dasar": 33755283468,
+    "modal_ditempatkan": 11389706355,
+    "modal_disetor": 8732038700,
+    "nilai_nominal_saham": 1000000,
+    "jumlah_saham": 11389,
+    "pemegang_saham": [
+      {
+        "nama": "Wati Santoso",
+        "nik": "32732405625201",
+        "npwp": "16.372.868.8-557.816",
+        "persentase": 100.0
+      }
+    ],
+    "direktur_utama": "Eko Santoso",
+    "direktur_nik": "34710607893029",
+    "direktur_npwp": "83.356.823.2-149.300",
+    "komisaris_utama": "Dewi Santoso",
+    "komisaris_nik": "31740112979134",
+    "komisaris_npwp": "31.666.982.9-376.674",
+    "jangka_waktu": "Tidak terbatas",
+    "tanggal_akta": "2018-06-15",
+    "notaris": "Unjani Sinaga",
+    "npwp_perusahaan": "22.628.829.8-373.257",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": false,
+    "risk_score": 28
+  },
+  {
+    "company_id": "PT_0061",
+    "nama_perseroan": "PT. IRMASULINDO BLOK 1",
+    "kbli": "02200",
+    "alamat_lengkap": "Jl. R.E Martadinata No. 84\nSawahlunto, Kalimantan Barat 65861",
+    "kode_pos": "29736",
+    "maksud_tujuan": "Usaha perkebunan kelapa sawit dan pengolahan hasil",
+    "modal_dasar": 4852909359,
+    "modal_ditempatkan": 1393984850,
+    "modal_disetor": 214690118,
+    "nilai_nominal_saham": 1000000,
+    "jumlah_saham": 1393,
+    "pemegang_saham": [
+      {
+        "nama": "Zaki Permana",
+        "nik": "32151408946457",
+        "npwp": "46.718.162.3-483.961",
+        "persentase": 75.03
+      },
+      {
+        "nama": "Joko Budiman",
+        "nik": "64711409952399",
+        "npwp": "69.454.124.8-677.450",
+        "persentase": 12.78
+      },
+      {
+        "nama": "Oki Budiman",
+        "nik": "35783103003281",
+        "npwp": "46.325.363.6-242.698",
+        "persentase": 10.31
+      },
+      {
+        "nama": "Dewi Hartono",
+        "nik": "34711507862775",
+        "npwp": "83.725.536.6-524.752",
+        "persentase": 1.879999999999999
+      }
+    ],
+    "direktur_utama": "Hadi Wibowo",
+    "direktur_nik": "32011010741320",
+    "direktur_npwp": "54.281.466.2-165.606",
+    "komisaris_utama": "Tono Wijaya",
+    "komisaris_nik": "31740303994964",
+    "komisaris_npwp": "39.630.732.8-258.344",
+    "jangka_waktu": "25 tahun",
+    "tanggal_akta": "2023-08-29",
+    "notaris": "Laila Sihombing, S.IP",
+    "npwp_perusahaan": "38.488.612.9-158.573",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": true,
+    "risk_score": 89
+  },
+  {
+    "company_id": "PT_0062",
+    "nama_perseroan": "PT. IRMASULINDO BLOK 2",
+    "kbli": "01135",
+    "alamat_lengkap": "Jl. Rajawali Timur No. 575\nTangerang, GO 13948",
+    "kode_pos": "78408",
+    "maksud_tujuan": "Usaha perkebunan kelapa sawit dan pengolahan hasil",
+    "modal_dasar": 22789246227,
+    "modal_ditempatkan": 14850645905,
+    "modal_disetor": 13588414862,
+    "nilai_nominal_saham": 1000000,
+    "jumlah_saham": 14850,
+    "pemegang_saham": [
+      {
+        "nama": "Hadi Pratama",
+        "nik": "18710207605476",
+        "npwp": "83.254.162.3-609.433",
+        "persentase": 52.38
+      },
+      {
+        "nama": "Putra Wahyudi",
+        "nik": "18710108593420",
+        "npwp": "31.351.517.9-244.160",
+        "persentase": 47.62
+      }
+    ],
+    "direktur_utama": "Joko Wijaya",
+    "direktur_nik": "32153006688889",
+    "direktur_npwp": "38.769.199.5-431.170",
+    "komisaris_utama": "Linda Darmawan",
+    "komisaris_nik": "34712601758416",
+    "komisaris_npwp": "85.406.690.4-699.358",
+    "jangka_waktu": "Tidak terbatas",
+    "tanggal_akta": "2013-03-25",
+    "notaris": "Silvia Pratiwi",
+    "npwp_perusahaan": "23.256.643.5-285.409",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": false,
+    "risk_score": 18
+  },
+  {
+    "company_id": "PT_0063",
+    "nama_perseroan": "PT. NUSA IRIAN JAYA INDAH",
+    "kbli": "01135",
+    "alamat_lengkap": "Gg. M.H Thamrin No. 59\nMetro, SS 36710",
+    "kode_pos": "73150",
+    "maksud_tujuan": "Usaha perkebunan kelapa sawit dan pengolahan hasil",
+    "modal_dasar": 97138012143,
+    "modal_ditempatkan": 74201317437,
+    "modal_disetor": 73303347450,
+    "nilai_nominal_saham": 1000000,
+    "jumlah_saham": 74201,
+    "pemegang_saham": [
+      {
+        "nama": "Bayu Firmansyah",
+        "nik": "32150404911707",
+        "npwp": "44.898.116.4-785.441",
+        "persentase": 100.0
+      }
+    ],
+    "direktur_utama": "Bayu Rachmadi",
+    "direktur_nik": "18710611853470",
+    "direktur_npwp": "60.569.829.1-391.674",
+    "komisaris_utama": "Putra Santoso",
+    "komisaris_nik": "32733007720787",
+    "komisaris_npwp": "74.599.197.9-141.242",
+    "jangka_waktu": "Tidak terbatas",
+    "tanggal_akta": "2012-02-04",
+    "notaris": "Almira Puspita",
+    "npwp_perusahaan": "36.514.141.6-464.630",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": false,
+    "risk_score": 20
+  },
+  {
+    "company_id": "PT_0064",
+    "nama_perseroan": "PT. VARITA MAJUTAMA (BLOK A)",
+    "kbli": "01135",
+    "alamat_lengkap": "Jalan Sadang Serang No. 6\nTasikmalaya, Kepulauan Riau 02139",
+    "kode_pos": "19418",
+    "maksud_tujuan": "Usaha perkebunan kelapa sawit dan pengolahan hasil",
+    "modal_dasar": 4149104023,
+    "modal_ditempatkan": 714239506,
+    "modal_disetor": 230465746,
+    "nilai_nominal_saham": 5000000,
+    "jumlah_saham": 142,
+    "pemegang_saham": [
+      {
+        "nama": "Citra Kusuma",
+        "nik": "35782502596828",
+        "npwp": "33.711.830.4-857.881",
+        "persentase": 39.38
+      },
+      {
+        "nama": "Budi Rahman",
+        "nik": "32731205856245",
+        "npwp": "71.380.735.4-421.575",
+        "persentase": 18.13
+      },
+      {
+        "nama": "Kartika Hartono",
+        "nik": "35780711941552",
+        "npwp": "17.182.615.3-631.181",
+        "persentase": 20.85
+      },
+      {
+        "nama": "Ratna Hidayat",
+        "nik": "32730103755361",
+        "npwp": "74.128.616.7-691.345",
+        "persentase": 10.87
+      },
+      {
+        "nama": "Vina Putra",
+        "nik": "35781005599220",
+        "npwp": "20.840.692.4-864.610",
+        "persentase": 10.769999999999994
+      }
+    ],
+    "direktur_utama": "Vina Putri",
+    "direktur_nik": "64710103589846",
+    "direktur_npwp": "22.938.754.3-492.399",
+    "komisaris_utama": "Maya Sari",
+    "komisaris_nik": "32730203000064",
+    "komisaris_npwp": "56.799.780.3-142.484",
+    "jangka_waktu": "24 tahun",
+    "tanggal_akta": "2024-09-16",
+    "notaris": "Jessica Anggraini, M.Ak",
+    "npwp_perusahaan": "86.588.116.1-904.118",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": true,
+    "risk_score": 71
+  },
+  {
+    "company_id": "PT_0065",
+    "nama_perseroan": "PT. KODECO MAMBERAMO",
+    "kbli": "02200",
+    "alamat_lengkap": "Jalan M.H Thamrin No. 4\nPekanbaru, GO 87339",
+    "kode_pos": "60356",
+    "maksud_tujuan": "Usaha perkebunan kelapa sawit dan pengolahan hasil",
+    "modal_dasar": 56948154222,
+    "modal_ditempatkan": 41046336386,
+    "modal_disetor": 34383806320,
+    "nilai_nominal_saham": 1000000,
+    "jumlah_saham": 41046,
+    "pemegang_saham": [
+      {
+        "nama": "Vina Sari",
+        "nik": "34712309550831",
+        "npwp": "54.774.329.4-883.328",
+        "persentase": 50.47
+      },
+      {
+        "nama": "Budi Budiman",
+        "nik": "34711804861784",
+        "npwp": "23.657.555.2-900.126",
+        "persentase": 49.53
+      }
+    ],
+    "direktur_utama": "Dewi Hartono",
+    "direktur_nik": "35782212941938",
+    "direktur_npwp": "68.986.201.1-128.627",
+    "komisaris_utama": "Sinta Rahman",
+    "komisaris_nik": "35782808824082",
+    "komisaris_npwp": "25.430.300.8-459.369",
+    "jangka_waktu": "Tidak terbatas",
+    "tanggal_akta": "2005-11-10",
+    "notaris": "R.A. Michelle Sirait, S.Pd",
+    "npwp_perusahaan": "73.614.489.1-814.403",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": false,
+    "risk_score": 21
+  },
+  {
+    "company_id": "PT_0066",
+    "nama_perseroan": "PT. PENGEMBANGAN SUTRA ALAM",
+    "kbli": "46691",
+    "alamat_lengkap": "Gang Monginsidi No. 44\nBukittinggi, JT 17547",
+    "kode_pos": "98757",
+    "maksud_tujuan": "Usaha perkebunan kelapa sawit dan pengolahan hasil",
+    "modal_dasar": 69046851542,
+    "modal_ditempatkan": 30933541145,
+    "modal_disetor": 25155913886,
+    "nilai_nominal_saham": 10000000,
+    "jumlah_saham": 3093,
+    "pemegang_saham": [
+      {
+        "nama": "Joko Wijaya",
+        "nik": "18711807884730",
+        "npwp": "23.376.516.8-229.560",
+        "persentase": 44.5
+      },
+      {
+        "nama": "Sari Pratama",
+        "nik": "32150509976016",
+        "npwp": "74.912.181.1-131.500",
+        "persentase": 44.17
+      },
+      {
+        "nama": "Eko Santoso",
+        "nik": "64710404827281",
+        "npwp": "15.164.122.7-740.886",
+        "persentase": 10.27
+      },
+      {
+        "nama": "Bayu Wibowo",
+        "nik": "34712507765439",
+        "npwp": "41.140.885.4-864.970",
+        "persentase": 1.0599999999999987
+      }
+    ],
+    "direktur_utama": "Sari Sari",
+    "direktur_nik": "32011810773564",
+    "direktur_npwp": "85.468.803.4-957.936",
+    "komisaris_utama": "Dewi Sari",
+    "komisaris_nik": "64710806894968",
+    "komisaris_npwp": "96.287.892.9-836.450",
+    "jangka_waktu": "Tidak terbatas",
+    "tanggal_akta": "2022-01-17",
+    "notaris": "Banara Maryati",
+    "npwp_perusahaan": "66.257.498.7-234.766",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": false,
+    "risk_score": 20
+  },
+  {
+    "company_id": "PT_0067",
+    "nama_perseroan": "PT. HASFARM NAPU",
+    "kbli": "01135",
+    "alamat_lengkap": "Gang Gegerkalong Hilir No. 4\nBekasi, Kalimantan Utara 44732",
+    "kode_pos": "06526",
+    "maksud_tujuan": "Usaha perkebunan kelapa sawit dan pengolahan hasil",
+    "modal_dasar": 76913272594,
+    "modal_ditempatkan": 48371957832,
+    "modal_disetor": 42084421638,
+    "nilai_nominal_saham": 10000000,
+    "jumlah_saham": 4837,
+    "pemegang_saham": [
+      {
+        "nama": "Budi Budiman",
+        "nik": "32012302974218",
+        "npwp": "20.256.275.8-213.900",
+        "persentase": 16.01
+      },
+      {
+        "nama": "Farid Hartono",
+        "nik": "34713004009867",
+        "npwp": "37.793.486.8-812.964",
+        "persentase": 30.54
+      },
+      {
+        "nama": "Wati Wibowo",
+        "nik": "32152403991890",
+        "npwp": "33.166.162.8-633.481",
+        "persentase": 53.449999999999996
+      }
+    ],
+    "direktur_utama": "Farid Pratama",
+    "direktur_nik": "32012706905672",
+    "direktur_npwp": "16.198.694.5-424.490",
+    "komisaris_utama": "Budi Budiman",
+    "komisaris_nik": "64712412628940",
+    "komisaris_npwp": "69.449.119.4-186.954",
+    "jangka_waktu": "Tidak terbatas",
+    "tanggal_akta": "2019-02-03",
+    "notaris": "Rahmi Simanjuntak",
+    "npwp_perusahaan": "71.108.110.4-799.194",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": false,
+    "risk_score": 19
+  },
+  {
+    "company_id": "PT_0068",
+    "nama_perseroan": "PT. KURNIA LUWUK SEJATI",
+    "kbli": "01135",
+    "alamat_lengkap": "Gang Abdul Muis No. 600\nSubulussalam, JI 34713",
+    "kode_pos": "89616",
+    "maksud_tujuan": "Usaha perkebunan kelapa sawit dan pengolahan hasil",
+    "modal_dasar": 94684048769,
+    "modal_ditempatkan": 36487990313,
+    "modal_disetor": 31769897188,
+    "nilai_nominal_saham": 10000000,
+    "jumlah_saham": 3648,
+    "pemegang_saham": [
+      {
+        "nama": "Budi Budiman",
+        "nik": "32151908732449",
+        "npwp": "22.971.896.9-637.138",
+        "persentase": 100.0
+      }
+    ],
+    "direktur_utama": "Sari Pratama",
+    "direktur_nik": "18711501990273",
+    "direktur_npwp": "96.404.473.2-736.635",
+    "komisaris_utama": "Oki Wijaya",
+    "komisaris_nik": "32152809845620",
+    "komisaris_npwp": "93.808.469.6-727.944",
+    "jangka_waktu": "Tidak terbatas",
+    "tanggal_akta": "2005-10-04",
+    "notaris": "Uli Mayasari",
+    "npwp_perusahaan": "83.834.851.5-664.921",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": false,
+    "risk_score": 30
+  },
+  {
+    "company_id": "PT_0069",
+    "nama_perseroan": "PT. KAWISAN CENTRAL ASIA",
+    "kbli": "46691",
+    "alamat_lengkap": "Jalan Jend. A. Yani No. 9\nTegal, Kalimantan Selatan 49252",
+    "kode_pos": "81433",
+    "maksud_tujuan": "Usaha perkebunan kelapa sawit dan pengolahan hasil",
+    "modal_dasar": 48560589602,
+    "modal_ditempatkan": 32797687563,
+    "modal_disetor": 25287096301,
+    "nilai_nominal_saham": 10000000,
+    "jumlah_saham": 3279,
+    "pemegang_saham": [
+      {
+        "nama": "Indra Firmansyah",
+        "nik": "34713103594607",
+        "npwp": "65.522.134.7-238.658",
+        "persentase": 100.0
+      }
+    ],
+    "direktur_utama": "Maya Wibowo",
+    "direktur_nik": "34712502651221",
+    "direktur_npwp": "79.842.249.7-865.415",
+    "komisaris_utama": "Bayu Firmansyah",
+    "komisaris_nik": "18711610721450",
+    "komisaris_npwp": "53.316.341.4-513.327",
+    "jangka_waktu": "Tidak terbatas",
+    "tanggal_akta": "2010-06-11",
+    "notaris": "Cawuk Utami, S.IP",
+    "npwp_perusahaan": "38.696.668.1-854.572",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": false,
+    "risk_score": 15
+  },
+  {
+    "company_id": "PT_0070",
+    "nama_perseroan": "PT. TOILI INDOTAMA",
+    "kbli": "01134",
+    "alamat_lengkap": "Gg. Jend. Sudirman No. 9\nSemarang, Riau 45134",
+    "kode_pos": "77416",
+    "maksud_tujuan": "Usaha perkebunan kelapa sawit dan pengolahan hasil",
+    "modal_dasar": 3506282966,
+    "modal_ditempatkan": 888953343,
+    "modal_disetor": 292527609,
+    "nilai_nominal_saham": 10000000,
+    "jumlah_saham": 88,
+    "pemegang_saham": [
+      {
+        "nama": "Sinta Rachmadi",
+        "nik": "32730203625455",
+        "npwp": "29.649.190.4-229.577",
+        "persentase": 79.99
+      },
+      {
+        "nama": "Citra Budiman",
+        "nik": "35780305876409",
+        "npwp": "61.801.382.1-370.663",
+        "persentase": 20.010000000000005
+      }
+    ],
+    "direktur_utama": "Eko Santoso",
+    "direktur_nik": "32731507634380",
+    "direktur_npwp": "46.985.583.6-882.689",
+    "komisaris_utama": "Indra Setiawan",
+    "komisaris_nik": "18711807679927",
+    "komisaris_npwp": "46.174.202.8-814.918",
+    "jangka_waktu": "15 tahun",
+    "tanggal_akta": "2025-04-19",
+    "notaris": "R. Baktiono Jailani",
+    "npwp_perusahaan": "80.926.248.5-220.754",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": true,
+    "risk_score": 86
+  },
+  {
+    "company_id": "PT_0071",
+    "nama_perseroan": "PTGUNUNG SYNAJI",
+    "kbli": "10411",
+    "alamat_lengkap": "Gg. Cikutra Barat No. 188\nMadiun, KS 97952",
+    "kode_pos": "12312",
+    "maksud_tujuan": "Usaha perkebunan kelapa sawit dan pengolahan hasil",
+    "modal_dasar": 39724820124,
+    "modal_ditempatkan": 29068056797,
+    "modal_disetor": 29052492825,
+    "nilai_nominal_saham": 1000000,
+    "jumlah_saham": 29068,
+    "pemegang_saham": [
+      {
+        "nama": "Endang Hidayat",
+        "nik": "32732503005872",
+        "npwp": "63.541.854.5-147.851",
+        "persentase": 13.1
+      },
+      {
+        "nama": "Fitri Wardana",
+        "nik": "35781301980324",
+        "npwp": "77.282.786.2-699.505",
+        "persentase": 86.9
+      }
+    ],
+    "direktur_utama": "Vina Sari",
+    "direktur_nik": "32730609818496",
+    "direktur_npwp": "39.220.623.2-984.469",
+    "komisaris_utama": "Ahmad Kusuma",
+    "komisaris_nik": "35781901635718",
+    "komisaris_npwp": "60.304.617.7-344.897",
+    "jangka_waktu": "Tidak terbatas",
+    "tanggal_akta": "2010-12-20",
+    "notaris": "Jarwadi Maulana",
+    "npwp_perusahaan": "97.611.140.8-421.959",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": false,
+    "risk_score": 31
+  },
+  {
+    "company_id": "PT_0072",
+    "nama_perseroan": "PTPERKEBUNAN XVIII/PN VII",
+    "kbli": "01135",
+    "alamat_lengkap": "Gg. Ahmad Yani No. 26\nJayapura, Sulawesi Selatan 07211",
+    "kode_pos": "55643",
+    "maksud_tujuan": "Usaha perkebunan kelapa sawit dan pengolahan hasil",
+    "modal_dasar": 42683560494,
+    "modal_ditempatkan": 31391626993,
+    "modal_disetor": 24304624404,
+    "nilai_nominal_saham": 10000000,
+    "jumlah_saham": 3139,
+    "pemegang_saham": [
+      {
+        "nama": "Endang Wahyudi",
+        "nik": "35782810571072",
+        "npwp": "25.843.268.9-859.621",
+        "persentase": 100.0
+      }
+    ],
+    "direktur_utama": "Maya Firmansyah",
+    "direktur_nik": "32150411761357",
+    "direktur_npwp": "88.464.350.2-895.817",
+    "komisaris_utama": "Vina Putri",
+    "komisaris_nik": "32011208767680",
+    "komisaris_npwp": "46.928.806.7-499.472",
+    "jangka_waktu": "Tidak terbatas",
+    "tanggal_akta": "2014-07-10",
+    "notaris": "Pangeran Prastuti",
+    "npwp_perusahaan": "81.768.244.8-280.213",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": false,
+    "risk_score": 20
+  },
+  {
+    "company_id": "PT_0073",
+    "nama_perseroan": "PT. Naga Manis Plantation",
+    "kbli": "10412",
+    "alamat_lengkap": "Jalan Kutai No. 54\nKota Administrasi Jakarta Barat, Sumatera Barat 74427",
+    "kode_pos": "53134",
+    "maksud_tujuan": "Usaha perkebunan kelapa sawit dan pengolahan hasil",
+    "modal_dasar": 12945568436,
+    "modal_ditempatkan": 6935004750,
+    "modal_disetor": 4977435294,
+    "nilai_nominal_saham": 5000000,
+    "jumlah_saham": 1387,
+    "pemegang_saham": [
+      {
+        "nama": "Dewi Hartono",
+        "nik": "35783006917768",
+        "npwp": "54.557.247.4-971.253",
+        "persentase": 75.58
+      },
+      {
+        "nama": "Sinta Rachmadi",
+        "nik": "32732711803380",
+        "npwp": "89.523.116.3-679.398",
+        "persentase": 20.6
+      },
+      {
+        "nama": "Farid Rachmadi",
+        "nik": "35780804760424",
+        "npwp": "48.733.426.1-538.422",
+        "persentase": 6.2
+      },
+      {
+        "nama": "Oki Hartono",
+        "nik": "34710208845483",
+        "npwp": "13.303.861.6-110.151",
+        "persentase": -2.38
+      }
+    ],
+    "direktur_utama": "Budi Rahman",
+    "direktur_nik": "32152711901416",
+    "direktur_npwp": "22.386.565.7-814.418",
+    "komisaris_utama": "Sinta Rachmadi",
+    "komisaris_nik": "18711112828210",
+    "komisaris_npwp": "21.772.137.3-538.218",
+    "jangka_waktu": "Tidak terbatas",
+    "tanggal_akta": "2020-07-31",
+    "notaris": "Dt. Makara Suryatmi, S.H.",
+    "npwp_perusahaan": "25.968.665.3-720.386",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": false,
+    "risk_score": 31
+  },
+  {
+    "company_id": "PT_0074",
+    "nama_perseroan": "PT. PERKEBUNAN I (SEBULUSSALAM)",
+    "kbli": "01134",
+    "alamat_lengkap": "Jl. Stasiun Wonokromo No. 67\nMagelang, Jawa Timur 13812",
+    "kode_pos": "84233",
+    "maksud_tujuan": "Usaha perkebunan kelapa sawit dan pengolahan hasil",
+    "modal_dasar": 48933283024,
+    "modal_ditempatkan": 28815035686,
+    "modal_disetor": 24137386274,
+    "nilai_nominal_saham": 5000000,
+    "jumlah_saham": 5763,
+    "pemegang_saham": [
+      {
+        "nama": "Yudi Rahman",
+        "nik": "18712303584989",
+        "npwp": "69.914.713.3-646.629",
+        "persentase": 100.0
+      }
+    ],
+    "direktur_utama": "Wati Nugroho",
+    "direktur_nik": "35781003642704",
+    "direktur_npwp": "41.891.266.2-408.970",
+    "komisaris_utama": "Dian Wibowo",
+    "komisaris_nik": "18712401943555",
+    "komisaris_npwp": "11.265.965.1-508.547",
+    "jangka_waktu": "Tidak terbatas",
+    "tanggal_akta": "2006-01-03",
+    "notaris": "R. Ghaliyati Ramadan",
+    "npwp_perusahaan": "26.576.170.1-685.975",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": false,
+    "risk_score": 37
+  },
+  {
+    "company_id": "PT_0075",
+    "nama_perseroan": "PT. BAHRUNY",
+    "kbli": "46691",
+    "alamat_lengkap": "Gang Joyoboyo No. 412\nCirebon, NB 19334",
+    "kode_pos": "39304",
+    "maksud_tujuan": "Usaha perkebunan kelapa sawit dan pengolahan hasil",
+    "modal_dasar": 97998364847,
+    "modal_ditempatkan": 36342633854,
+    "modal_disetor": 26296522090,
+    "nilai_nominal_saham": 10000000,
+    "jumlah_saham": 3634,
+    "pemegang_saham": [
+      {
+        "nama": "Dewi Pratama",
+        "nik": "34711104972157",
+        "npwp": "58.828.183.8-192.646",
+        "persentase": 54.82
+      },
+      {
+        "nama": "Dewi Kusuma",
+        "nik": "18711511759355",
+        "npwp": "64.422.374.1-440.851",
+        "persentase": 45.18
+      }
+    ],
+    "direktur_utama": "Maya Rachmadi",
+    "direktur_nik": "34711707542647",
+    "direktur_npwp": "72.879.771.8-137.524",
+    "komisaris_utama": "Ahmad Wahyudi",
+    "komisaris_nik": "35781604667381",
+    "komisaris_npwp": "90.847.668.1-169.753",
+    "jangka_waktu": "Tidak terbatas",
+    "tanggal_akta": "2007-09-06",
+    "notaris": "Tgk. Tami Rajata, M.M.",
+    "npwp_perusahaan": "13.887.716.7-820.826",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": false,
+    "risk_score": 15
+  },
+  {
+    "company_id": "PT_0076",
+    "nama_perseroan": "PT. ACEH TIMUR RUBBER COY",
+    "kbli": "46691",
+    "alamat_lengkap": "Gang Jamika No. 166\nBontang, KI 78127",
+    "kode_pos": "83020",
+    "maksud_tujuan": "Usaha perkebunan kelapa sawit dan pengolahan hasil",
+    "modal_dasar": 3290300821,
+    "modal_ditempatkan": 421604001,
+    "modal_disetor": 52320593,
+    "nilai_nominal_saham": 5000000,
+    "jumlah_saham": 84,
+    "pemegang_saham": [
+      {
+        "nama": "Indra Wijaya",
+        "nik": "32731002603836",
+        "npwp": "83.947.686.7-218.853",
+        "persentase": 43.27
+      },
+      {
+        "nama": "Linda Budiman",
+        "nik": "35782407681505",
+        "npwp": "45.141.214.1-720.349",
+        "persentase": 22.11
+      },
+      {
+        "nama": "Sinta Rachmadi",
+        "nik": "35782805932447",
+        "npwp": "21.794.531.1-321.483",
+        "persentase": 12.14
+      },
+      {
+        "nama": "Indra Wijaya",
+        "nik": "34711207778238",
+        "npwp": "62.439.433.5-965.228",
+        "persentase": 11.5
+      },
+      {
+        "nama": "Yudi Rahman",
+        "nik": "18711201741584",
+        "npwp": "97.129.229.8-904.374",
+        "persentase": 9.99
+      },
+      {
+        "nama": "Dewi Santoso",
+        "nik": "18712207617849",
+        "npwp": "89.681.718.2-849.323",
+        "persentase": 0.9899999999999967
+      }
+    ],
+    "direktur_utama": "Wati Santoso",
+    "direktur_nik": "32011305619273",
+    "direktur_npwp": "55.738.312.3-585.449",
+    "komisaris_utama": "Budi Budiman",
+    "komisaris_nik": "32151506675718",
+    "komisaris_npwp": "17.201.275.2-916.479",
+    "jangka_waktu": "22 tahun",
+    "tanggal_akta": "2024-08-18",
+    "notaris": "Septi Utami, S.T.",
+    "npwp_perusahaan": "56.182.315.4-437.775",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": true,
+    "risk_score": 73
+  },
+  {
+    "company_id": "PT_0077",
+    "nama_perseroan": "PT. INCASI RAYA",
+    "kbli": "10411",
+    "alamat_lengkap": "Gg. Ciwastra No. 539\nBau-Bau, MA 61778",
+    "kode_pos": "29453",
+    "maksud_tujuan": "Usaha perkebunan kelapa sawit dan pengolahan hasil",
+    "modal_dasar": 72364864385,
+    "modal_ditempatkan": 18923853502,
+    "modal_disetor": 18874833200,
+    "nilai_nominal_saham": 5000000,
+    "jumlah_saham": 3784,
+    "pemegang_saham": [
+      {
+        "nama": "Citra Nugroho",
+        "nik": "34711707845548",
+        "npwp": "73.272.594.1-357.309",
+        "persentase": 26.31
+      },
+      {
+        "nama": "Ratna Permana",
+        "nik": "18710901783404",
+        "npwp": "63.723.890.5-420.370",
+        "persentase": 40.49
+      },
+      {
+        "nama": "Ratna Permana",
+        "nik": "34710111905425",
+        "npwp": "57.397.744.5-631.498",
+        "persentase": 33.199999999999996
+      }
+    ],
+    "direktur_utama": "Fitri Gunawan",
+    "direktur_nik": "18710305761097",
+    "direktur_npwp": "27.388.711.8-313.696",
+    "komisaris_utama": "Putra Kusuma",
+    "komisaris_nik": "31742610918489",
+    "komisaris_npwp": "74.660.792.2-628.767",
+    "jangka_waktu": "Tidak terbatas",
+    "tanggal_akta": "2009-03-04",
+    "notaris": "Mahdi Novitasari, M.Farm",
+    "npwp_perusahaan": "90.842.907.8-942.904",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": false,
+    "risk_score": 39
+  },
+  {
+    "company_id": "PT_0078",
+    "nama_perseroan": "PT. CIMELATI UTAMA",
+    "kbli": "01135",
+    "alamat_lengkap": "Gg. Antapani Lama No. 3\nPalembang, LA 36643",
+    "kode_pos": "95338",
+    "maksud_tujuan": "Usaha perkebunan kelapa sawit dan pengolahan hasil",
+    "modal_dasar": 37340959558,
+    "modal_ditempatkan": 19337456290,
+    "modal_disetor": 15325725784,
+    "nilai_nominal_saham": 5000000,
+    "jumlah_saham": 3867,
+    "pemegang_saham": [
+      {
+        "nama": "Gina Putri",
+        "nik": "18711507722447",
+        "npwp": "63.677.497.7-841.280",
+        "persentase": 49.59
+      },
+      {
+        "nama": "Putra Kurniawan",
+        "nik": "64710110988585",
+        "npwp": "74.314.588.4-461.676",
+        "persentase": 13.09
+      },
+      {
+        "nama": "Ahmad Kusuma",
+        "nik": "18710310923652",
+        "npwp": "81.118.580.8-156.880",
+        "persentase": 24.48
+      },
+      {
+        "nama": "Wati Santoso",
+        "nik": "18713004722396",
+        "npwp": "17.781.346.6-830.215",
+        "persentase": 12.839999999999993
+      }
+    ],
+    "direktur_utama": "Dewi Kusuma",
+    "direktur_nik": "35780508739866",
+    "direktur_npwp": "97.208.779.6-244.884",
+    "komisaris_utama": "Gina Wibowo",
+    "komisaris_nik": "32152710817326",
+    "komisaris_npwp": "90.320.478.7-201.264",
+    "jangka_waktu": "Tidak terbatas",
+    "tanggal_akta": "2018-04-18",
+    "notaris": "Gading Utami, M.Pd",
+    "npwp_perusahaan": "62.516.546.8-276.170",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": false,
+    "risk_score": 20
+  },
+  {
+    "company_id": "PT_0079",
+    "nama_perseroan": "PT. LARAS EKAMULIA",
+    "kbli": "02200",
+    "alamat_lengkap": "Gang Monginsidi No. 2\nPekanbaru, Maluku 49688",
+    "kode_pos": "57151",
+    "maksud_tujuan": "Usaha perkebunan kelapa sawit dan pengolahan hasil",
+    "modal_dasar": 40865022512,
+    "modal_ditempatkan": 14049944122,
+    "modal_disetor": 11114665450,
+    "nilai_nominal_saham": 5000000,
+    "jumlah_saham": 2809,
+    "pemegang_saham": [
+      {
+        "nama": "Wati Wahyudi",
+        "nik": "18711311956057",
+        "npwp": "18.821.650.9-199.905",
+        "persentase": 100.0
+      }
+    ],
+    "direktur_utama": "Farid Kurniawan",
+    "direktur_nik": "64711108729693",
+    "direktur_npwp": "89.183.265.1-385.495",
+    "komisaris_utama": "Maya Rachmadi",
+    "komisaris_nik": "32151604584179",
+    "komisaris_npwp": "90.148.143.4-811.998",
+    "jangka_waktu": "Tidak terbatas",
+    "tanggal_akta": "2020-11-18",
+    "notaris": "Tgk. Halima Anggriawan",
+    "npwp_perusahaan": "84.269.655.4-115.323",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": false,
+    "risk_score": 38
+  },
+  {
+    "company_id": "PT_0080",
+    "nama_perseroan": "PT. SECONA PERSADA (I)",
+    "kbli": "01134",
+    "alamat_lengkap": "Jalan Soekarno Hatta No. 3\nJambi, DKI Jakarta 77458",
+    "kode_pos": "24868",
+    "maksud_tujuan": "Usaha perkebunan kelapa sawit dan pengolahan hasil",
+    "modal_dasar": 89364647068,
+    "modal_ditempatkan": 68259448920,
+    "modal_disetor": 58378030462,
+    "nilai_nominal_saham": 10000000,
+    "jumlah_saham": 6825,
+    "pemegang_saham": [
+      {
+        "nama": "Putra Wijaya",
+        "nik": "64712908885508",
+        "npwp": "77.353.370.7-426.529",
+        "persentase": 16.06
+      },
+      {
+        "nama": "Linda Wibowo",
+        "nik": "35783001629036",
+        "npwp": "87.563.275.7-114.531",
+        "persentase": 29.35
+      },
+      {
+        "nama": "Wati Nugroho",
+        "nik": "32152405981096",
+        "npwp": "56.186.445.6-993.945",
+        "persentase": 54.589999999999996
+      }
+    ],
+    "direktur_utama": "Farid Pratama",
+    "direktur_nik": "34711703862111",
+    "direktur_npwp": "56.538.556.8-444.193",
+    "komisaris_utama": "Endang Hartono",
+    "komisaris_nik": "35781907740820",
+    "komisaris_npwp": "53.470.486.1-929.708",
+    "jangka_waktu": "Tidak terbatas",
+    "tanggal_akta": "2017-11-15",
+    "notaris": "Titi Megantara",
+    "npwp_perusahaan": "83.911.740.3-280.498",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": false,
+    "risk_score": 17
+  },
+  {
+    "company_id": "SH_0001",
+    "nama_perseroan": "CV EMAS KENCANA",
+    "kbli": "68100",
+    "alamat_lengkap": "Gg. Rajawali Timur No. 86\nKota Administrasi Jakarta Timur, SG 95112",
+    "kode_pos": "69442",
+    "maksud_tujuan": "Perdagangan umum dan jasa konsultan",
+    "modal_dasar": 1408541897,
+    "modal_ditempatkan": 393507023,
+    "modal_disetor": 104677501,
+    "nilai_nominal_saham": 1000000,
+    "jumlah_saham": 393,
+    "pemegang_saham": [
+      {
+        "nama": "Maya Wibowo",
+        "nik": "31740509757855",
+        "npwp": "65.709.239.5-793.547",
+        "persentase": 24.79
+      },
+      {
+        "nama": "Citra Nugroho",
+        "nik": "31742105790675",
+        "npwp": "89.413.371.8-450.839",
+        "persentase": 14.9
+      },
+      {
+        "nama": "Ratna Wibowo",
+        "nik": "32152409764986",
+        "npwp": "45.324.766.4-448.689",
+        "persentase": 11.62
+      },
+      {
+        "nama": "Citra Budiman",
+        "nik": "18712011707155",
+        "npwp": "83.101.106.8-171.972",
+        "persentase": 23.46
+      },
+      {
+        "nama": "Oki Wibowo",
+        "nik": "32152701598811",
+        "npwp": "43.489.777.5-364.944",
+        "persentase": 28.07
+      },
+      {
+        "nama": "Sinta Santoso",
+        "nik": "18710106692795",
+        "npwp": "51.339.273.3-319.476",
+        "persentase": 26.19
+      },
+      {
+        "nama": "Indra Permana",
+        "nik": "35780101878323",
+        "npwp": "14.345.744.3-507.577",
+        "persentase": -29.02999999999999
+      }
+    ],
+    "direktur_utama": "Oki Hartono",
+    "direktur_nik": "64711704845876",
+    "direktur_npwp": "96.521.579.5-758.306",
+    "komisaris_utama": "Sari Nugroho",
+    "komisaris_nik": "64711208875326",
+    "komisaris_npwp": "23.444.171.9-716.361",
+    "jangka_waktu": "13 tahun",
+    "tanggal_akta": "2025-02-12",
+    "notaris": "Cakrabuana Sitorus",
+    "npwp_perusahaan": "69.554.254.4-447.824",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": true,
+    "risk_score": 83
+  },
+  {
+    "company_id": "SH_0002",
+    "nama_perseroan": "UD HARAPAN BARU",
+    "kbli": "08910",
+    "alamat_lengkap": "Gang Rajawali Timur No. 202\nSalatiga, NB 38102",
+    "kode_pos": "26574",
+    "maksud_tujuan": "Perdagangan umum dan jasa konsultan",
+    "modal_dasar": 1728127056,
+    "modal_ditempatkan": 578293230,
+    "modal_disetor": 84540824,
+    "nilai_nominal_saham": 1000000,
+    "jumlah_saham": 578,
+    "pemegang_saham": [
+      {
+        "nama": "Zaki Maulana",
+        "nik": "35782309690400",
+        "npwp": "52.220.378.5-189.822",
+        "persentase": 29.29
+      },
+      {
+        "nama": "Indra Wijaya",
+        "nik": "31741702854739",
+        "npwp": "38.228.131.4-401.663",
+        "persentase": 20.4
+      },
+      {
+        "nama": "Putra Hartono",
+        "nik": "64712811832591",
+        "npwp": "52.593.533.7-893.426",
+        "persentase": 10.37
+      },
+      {
+        "nama": "Ratna Permana",
+        "nik": "32732701694829",
+        "npwp": "51.126.953.9-518.960",
+        "persentase": 39.94000000000001
+      }
+    ],
+    "direktur_utama": "Umar Hakim",
+    "direktur_nik": "18712211781487",
+    "direktur_npwp": "73.368.179.2-387.880",
+    "komisaris_utama": "Zaki Santoso",
+    "komisaris_nik": "32733011886338",
+    "komisaris_npwp": "51.485.447.6-260.742",
+    "jangka_waktu": "12 tahun",
+    "tanggal_akta": "2025-02-25",
+    "notaris": "Winda Halimah",
+    "npwp_perusahaan": "55.723.617.3-802.898",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": true,
+    "risk_score": 85
+  },
+  {
+    "company_id": "SH_0003",
+    "nama_perseroan": "UD INDAH PERMAI",
+    "kbli": "08910",
+    "alamat_lengkap": "Jl. R.E Martadinata No. 820\nCirebon, Kalimantan Tengah 08276",
+    "kode_pos": "39980",
+    "maksud_tujuan": "Perdagangan umum dan jasa konsultan",
+    "modal_dasar": 1746952869,
+    "modal_ditempatkan": 487203778,
+    "modal_disetor": 72517660,
+    "nilai_nominal_saham": 1000000,
+    "jumlah_saham": 487,
+    "pemegang_saham": [
+      {
+        "nama": "Yudi Nugroho",
+        "nik": "32013006899547",
+        "npwp": "70.803.102.1-323.600",
+        "persentase": 11.58
+      },
+      {
+        "nama": "Indra Wahyudi",
+        "nik": "32152111665112",
+        "npwp": "52.220.734.3-536.994",
+        "persentase": 16.29
+      },
+      {
+        "nama": "Sinta Setiawan",
+        "nik": "35780403598570",
+        "npwp": "95.867.393.7-496.603",
+        "persentase": 8.17
+      },
+      {
+        "nama": "Hadi Santoso",
+        "nik": "31740704880175",
+        "npwp": "98.193.516.3-636.762",
+        "persentase": 28.49
+      },
+      {
+        "nama": "Putra Wahyudi",
+        "nik": "34711502815096",
+        "npwp": "82.419.471.7-530.549",
+        "persentase": 20.15
+      },
+      {
+        "nama": "Oki Kusuma",
+        "nik": "31742507730053",
+        "npwp": "72.358.324.5-141.675",
+        "persentase": 15.32
+      }
+    ],
+    "direktur_utama": "Endang Wahyudi",
+    "direktur_nik": "32732806873839",
+    "direktur_npwp": "25.824.468.2-238.857",
+    "komisaris_utama": "Budi Budiman",
+    "komisaris_nik": "64710610954736",
+    "komisaris_npwp": "19.491.175.8-115.927",
+    "jangka_waktu": "11 tahun",
+    "tanggal_akta": "2024-12-25",
+    "notaris": "Lembah Lestari",
+    "npwp_perusahaan": "30.682.304.5-968.781",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": true,
+    "risk_score": 86
+  },
+  {
+    "company_id": "SH_0004",
+    "nama_perseroan": "PT OMEGA PRIMA",
+    "kbli": "08910",
+    "alamat_lengkap": "Jalan Kutisari Selatan No. 023\nMataram, MU 01039",
+    "kode_pos": "38144",
+    "maksud_tujuan": "Perdagangan umum dan jasa konsultan",
+    "modal_dasar": 1708038583,
+    "modal_ditempatkan": 683267544,
+    "modal_disetor": 114664156,
+    "nilai_nominal_saham": 1000000,
+    "jumlah_saham": 683,
+    "pemegang_saham": [
+      {
+        "nama": "Maya Putra",
+        "nik": "34712404773132",
+        "npwp": "30.460.945.7-877.683",
+        "persentase": 9.97
+      },
+      {
+        "nama": "Endang Hartono",
+        "nik": "35782001727798",
+        "npwp": "92.750.278.9-278.352",
+        "persentase": 23.09
+      },
+      {
+        "nama": "Bayu Firmansyah",
+        "nik": "32013012853254",
+        "npwp": "37.830.788.5-938.821",
+        "persentase": 20.35
+      },
+      {
+        "nama": "Bayu Darmawan",
+        "nik": "34712212986952",
+        "npwp": "31.921.994.7-147.472",
+        "persentase": 14.66
+      },
+      {
+        "nama": "Andi Kusuma",
+        "nik": "34710901560527",
+        "npwp": "68.138.495.2-819.448",
+        "persentase": 12.99
+      },
+      {
+        "nama": "Zaki Santoso",
+        "nik": "31742310858571",
+        "npwp": "82.513.889.5-917.600",
+        "persentase": 18.939999999999998
+      }
+    ],
+    "direktur_utama": "Joko Hartono",
+    "direktur_nik": "31742606656765",
+    "direktur_npwp": "48.210.156.4-504.129",
+    "komisaris_utama": "Budi Rahman",
+    "komisaris_nik": "64711004869984",
+    "komisaris_npwp": "84.530.320.4-126.942",
+    "jangka_waktu": "13 tahun",
+    "tanggal_akta": "2025-01-31",
+    "notaris": "Intan Wibowo",
+    "npwp_perusahaan": "14.169.469.4-148.900",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": true,
+    "risk_score": 93
+  },
+  {
+    "company_id": "SH_0005",
+    "nama_perseroan": "CV KARYA UTAMA",
+    "kbli": "68100",
+    "alamat_lengkap": "Jalan Otto Iskandardinata No. 981\nBanjarbaru, Sulawesi Barat 74724",
+    "kode_pos": "69496",
+    "maksud_tujuan": "Perdagangan umum dan jasa konsultan",
+    "modal_dasar": 861048631,
+    "modal_ditempatkan": 422994024,
+    "modal_disetor": 85704274,
+    "nilai_nominal_saham": 1000000,
+    "jumlah_saham": 422,
+    "pemegang_saham": [
+      {
+        "nama": "Maya Wibowo",
+        "nik": "18712806558345",
+        "npwp": "31.996.396.9-122.698",
+        "persentase": 19.3
+      },
+      {
+        "nama": "Wati Wibowo",
+        "nik": "32152303720431",
+        "npwp": "96.660.858.8-537.661",
+        "persentase": 21.93
+      },
+      {
+        "nama": "Joko Gunawan",
+        "nik": "32011502002099",
+        "npwp": "13.616.479.3-438.372",
+        "persentase": 21.46
+      },
+      {
+        "nama": "Andi Maulana",
+        "nik": "31741304552476",
+        "npwp": "85.877.502.7-552.802",
+        "persentase": 25.1
+      },
+      {
+        "nama": "Vina Putri",
+        "nik": "18712601003897",
+        "npwp": "22.267.946.8-907.901",
+        "persentase": 27.32
+      },
+      {
+        "nama": "Maya Wijaya",
+        "nik": "18712202824345",
+        "npwp": "73.848.975.7-500.184",
+        "persentase": 6.1
+      },
+      {
+        "nama": "Endang Hidayat",
+        "nik": "32730212837128",
+        "npwp": "10.509.820.3-936.382",
+        "persentase": 14.39
+      },
+      {
+        "nama": "Budi Budiman",
+        "nik": "32732011917501",
+        "npwp": "89.930.555.6-876.908",
+        "persentase": -35.6
+      }
+    ],
+    "direktur_utama": "Wati Pratama",
+    "direktur_nik": "32010407940459",
+    "direktur_npwp": "38.368.621.8-941.439",
+    "komisaris_utama": "Citra Budiman",
+    "komisaris_nik": "32011209636017",
+    "komisaris_npwp": "55.805.539.8-482.740",
+    "jangka_waktu": "8 tahun",
+    "tanggal_akta": "2025-01-12",
+    "notaris": "Tgk. Edi Yolanda",
+    "npwp_perusahaan": "31.331.716.4-484.312",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": true,
+    "risk_score": 87
+  },
+  {
+    "company_id": "SH_0006",
+    "nama_perseroan": "CV NUSA INDAH",
+    "kbli": "58190",
+    "alamat_lengkap": "Gg. Soekarno Hatta No. 734\nDumai, Jawa Tengah 74219",
+    "kode_pos": "94556",
+    "maksud_tujuan": "Perdagangan umum dan jasa konsultan",
+    "modal_dasar": 1826548641,
+    "modal_ditempatkan": 887716518,
+    "modal_disetor": 150986554,
+    "nilai_nominal_saham": 1000000,
+    "jumlah_saham": 887,
+    "pemegang_saham": [
+      {
+        "nama": "Sinta Rachmadi",
+        "nik": "18710804873095",
+        "npwp": "51.374.193.4-222.329",
+        "persentase": 27.69
+      },
+      {
+        "nama": "Citra Hakim",
+        "nik": "64710404744943",
+        "npwp": "10.138.823.4-490.659",
+        "persentase": 5.86
+      },
+      {
+        "nama": "Joko Gunawan",
+        "nik": "32732811731409",
+        "npwp": "23.896.390.3-319.496",
+        "persentase": 27.24
+      },
+      {
+        "nama": "Farid Kurniawan",
+        "nik": "31741501825329",
+        "npwp": "53.910.974.6-560.966",
+        "persentase": 19.26
+      },
+      {
+        "nama": "Citra Wahyudi",
+        "nik": "31742907812916",
+        "npwp": "26.619.299.7-636.976",
+        "persentase": 15.86
+      },
+      {
+        "nama": "Maya Sari",
+        "nik": "35780701866146",
+        "npwp": "45.778.609.6-593.592",
+        "persentase": 27.6
+      },
+      {
+        "nama": "Joko Gunawan",
+        "nik": "35782406876364",
+        "npwp": "65.304.701.2-357.179",
+        "persentase": 7.87
+      },
+      {
+        "nama": "Vina Putri",
+        "nik": "34710801840196",
+        "npwp": "31.434.891.8-654.804",
+        "persentase": -31.379999999999995
+      }
+    ],
+    "direktur_utama": "Oki Sari",
+    "direktur_nik": "31741803976873",
+    "direktur_npwp": "12.632.320.9-907.771",
+    "komisaris_utama": "Putra Darmawan",
+    "komisaris_nik": "64711106779891",
+    "komisaris_npwp": "70.293.883.6-187.401",
+    "jangka_waktu": "13 tahun",
+    "tanggal_akta": "2025-04-12",
+    "notaris": "Eman Pranowo",
+    "npwp_perusahaan": "92.227.623.9-444.103",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": true,
+    "risk_score": 98
+  },
+  {
+    "company_id": "SH_0007",
+    "nama_perseroan": "CV KARYA UTAMA",
+    "kbli": "82990",
+    "alamat_lengkap": "Gang Jakarta No. 232\nPekanbaru, Lampung 17317",
+    "kode_pos": "64689",
+    "maksud_tujuan": "Perdagangan umum dan jasa konsultan",
+    "modal_dasar": 1378071129,
+    "modal_ditempatkan": 452197641,
+    "modal_disetor": 70216959,
+    "nilai_nominal_saham": 1000000,
+    "jumlah_saham": 452,
+    "pemegang_saham": [
+      {
+        "nama": "Oki Syahputra",
+        "nik": "64710211868104",
+        "npwp": "91.805.563.4-966.161",
+        "persentase": 23.96
+      },
+      {
+        "nama": "Endang Pratama",
+        "nik": "34710510987456",
+        "npwp": "41.937.432.4-960.776",
+        "persentase": 17.08
+      },
+      {
+        "nama": "Dewi Kusuma",
+        "nik": "35781006946721",
+        "npwp": "16.160.349.7-664.938",
+        "persentase": 22.95
+      },
+      {
+        "nama": "Oki Budiman",
+        "nik": "18712206952390",
+        "npwp": "76.234.940.4-523.908",
+        "persentase": 29.85
+      },
+      {
+        "nama": "Dewi Hartono",
+        "nik": "31740304943144",
+        "npwp": "15.411.822.1-409.723",
+        "persentase": 10.67
+      },
+      {
+        "nama": "Dian Syahputra",
+        "nik": "18710809601527",
+        "npwp": "84.286.281.8-742.855",
+        "persentase": 12.28
+      },
+      {
+        "nama": "Endang Kusuma",
+        "nik": "34712010643856",
+        "npwp": "52.306.598.1-898.724",
+        "persentase": -16.79000000000001
+      }
+    ],
+    "direktur_utama": "Ratna Hidayat",
+    "direktur_nik": "18713108958668",
+    "direktur_npwp": "44.222.867.8-728.688",
+    "komisaris_utama": "Dewi Pratama",
+    "komisaris_nik": "32731205651262",
+    "komisaris_npwp": "37.662.113.4-473.887",
+    "jangka_waktu": "11 tahun",
+    "tanggal_akta": "2025-02-16",
+    "notaris": "Kamila Haryanto",
+    "npwp_perusahaan": "66.269.514.6-907.512",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": true,
+    "risk_score": 98
+  },
+  {
+    "company_id": "SH_0008",
+    "nama_perseroan": "UD HARAPAN BARU",
+    "kbli": "77100",
+    "alamat_lengkap": "Jalan Otto Iskandardinata No. 287\nDenpasar, Kalimantan Selatan 23907",
+    "kode_pos": "91263",
+    "maksud_tujuan": "Perdagangan umum dan jasa konsultan",
+    "modal_dasar": 1817999136,
+    "modal_ditempatkan": 743514020,
+    "modal_disetor": 114635881,
+    "nilai_nominal_saham": 1000000,
+    "jumlah_saham": 743,
+    "pemegang_saham": [
+      {
+        "nama": "Vina Hakim",
+        "nik": "35782806908829",
+        "npwp": "39.878.645.7-743.625",
+        "persentase": 13.3
+      },
+      {
+        "nama": "Sari Nugroho",
+        "nik": "64711210690978",
+        "npwp": "89.143.722.8-804.295",
+        "persentase": 21.32
+      },
+      {
+        "nama": "Oki Putri",
+        "nik": "32731209736618",
+        "npwp": "35.877.791.7-807.878",
+        "persentase": 24.44
+      },
+      {
+        "nama": "Fitri Wardana",
+        "nik": "32012608755374",
+        "npwp": "46.213.417.9-463.737",
+        "persentase": 8.61
+      },
+      {
+        "nama": "Vina Sari",
+        "nik": "32732306940893",
+        "npwp": "11.120.983.1-396.920",
+        "persentase": 32.33
+      }
+    ],
+    "direktur_utama": "Dewi Sari",
+    "direktur_nik": "32012203811957",
+    "direktur_npwp": "86.272.277.6-475.994",
+    "komisaris_utama": "Sari Pratama",
+    "komisaris_nik": "18712509936741",
+    "komisaris_npwp": "17.304.849.8-501.792",
+    "jangka_waktu": "6 tahun",
+    "tanggal_akta": "2025-05-09",
+    "notaris": "drg. Bahuwirya Wibisono",
+    "npwp_perusahaan": "30.255.619.5-873.935",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": true,
+    "risk_score": 94
+  },
+  {
+    "company_id": "SH_0009",
+    "nama_perseroan": "CV EMAS KENCANA",
+    "kbli": "82990",
+    "alamat_lengkap": "Gg. Setiabudhi No. 787\nLhokseumawe, NT 14780",
+    "kode_pos": "08320",
+    "maksud_tujuan": "Perdagangan umum dan jasa konsultan",
+    "modal_dasar": 1810235234,
+    "modal_ditempatkan": 468541611,
+    "modal_disetor": 106393238,
+    "nilai_nominal_saham": 1000000,
+    "jumlah_saham": 468,
+    "pemegang_saham": [
+      {
+        "nama": "Ahmad Gunawan",
+        "nik": "32731404933246",
+        "npwp": "32.398.930.5-938.415",
+        "persentase": 13.05
+      },
+      {
+        "nama": "Sinta Rachmadi",
+        "nik": "18713004793406",
+        "npwp": "13.220.386.7-495.333",
+        "persentase": 8.16
+      },
+      {
+        "nama": "Linda Budiman",
+        "nik": "34710304665350",
+        "npwp": "58.175.265.8-795.241",
+        "persentase": 78.79
+      }
+    ],
+    "direktur_utama": "Bayu Firmansyah",
+    "direktur_nik": "34710907630094",
+    "direktur_npwp": "79.805.144.5-780.739",
+    "komisaris_utama": "Putra Kusuma",
+    "komisaris_nik": "32152607710137",
+    "komisaris_npwp": "46.786.391.5-318.128",
+    "jangka_waktu": "6 tahun",
+    "tanggal_akta": "2025-01-14",
+    "notaris": "Rahmi Kuswoyo",
+    "npwp_perusahaan": "78.959.290.6-559.997",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": true,
+    "risk_score": 96
+  },
+  {
+    "company_id": "SH_0010",
+    "nama_perseroan": "UD INDAH PERMAI",
+    "kbli": "77100",
+    "alamat_lengkap": "Jalan Dipenogoro No. 037\nSolok, AC 67809",
+    "kode_pos": "09911",
+    "maksud_tujuan": "Perdagangan umum dan jasa konsultan",
+    "modal_dasar": 1493120062,
+    "modal_ditempatkan": 560899427,
+    "modal_disetor": 127787755,
+    "nilai_nominal_saham": 1000000,
+    "jumlah_saham": 560,
+    "pemegang_saham": [
+      {
+        "nama": "Citra Wahyudi",
+        "nik": "35782508996271",
+        "npwp": "74.539.413.4-241.233",
+        "persentase": 27.87
+      },
+      {
+        "nama": "Indra Syahputra",
+        "nik": "32731212671184",
+        "npwp": "95.178.371.6-111.504",
+        "persentase": 29.5
+      },
+      {
+        "nama": "Andi Wahyudi",
+        "nik": "34710309984626",
+        "npwp": "78.196.236.6-978.737",
+        "persentase": 12.86
+      },
+      {
+        "nama": "Sari Pratama",
+        "nik": "32150304553694",
+        "npwp": "40.131.156.5-230.497",
+        "persentase": 28.59
+      },
+      {
+        "nama": "Endang Hidayat",
+        "nik": "18712207654407",
+        "npwp": "33.368.704.1-409.805",
+        "persentase": 18.95
+      },
+      {
+        "nama": "Oki Syahputra",
+        "nik": "35781110549927",
+        "npwp": "67.784.428.4-438.656",
+        "persentase": 7.01
+      },
+      {
+        "nama": "Sari Wijaya",
+        "nik": "31740602638153",
+        "npwp": "34.349.406.2-391.289",
+        "persentase": 19.46
+      },
+      {
+        "nama": "Ratna Wibowo",
+        "nik": "32011012775429",
+        "npwp": "21.327.175.1-571.623",
+        "persentase": -44.24
+      }
+    ],
+    "direktur_utama": "Zaki Kusuma",
+    "direktur_nik": "32732212820106",
+    "direktur_npwp": "73.975.792.6-148.497",
+    "komisaris_utama": "Wati Pratama",
+    "komisaris_nik": "32152807909871",
+    "komisaris_npwp": "47.675.453.5-837.658",
+    "jangka_waktu": "6 tahun",
+    "tanggal_akta": "2025-01-21",
+    "notaris": "Septi Hastuti",
+    "npwp_perusahaan": "95.976.134.1-366.450",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": true,
+    "risk_score": 82
+  },
+  {
+    "company_id": "SH_0011",
+    "nama_perseroan": "CV BERKAH NUSANTARA",
+    "kbli": "68100",
+    "alamat_lengkap": "Jl. Rumah Sakit No. 24\nJambi, BT 82913",
+    "kode_pos": "84436",
+    "maksud_tujuan": "Perdagangan umum dan jasa konsultan",
+    "modal_dasar": 1686605398,
+    "modal_ditempatkan": 703937054,
+    "modal_disetor": 70588808,
+    "nilai_nominal_saham": 1000000,
+    "jumlah_saham": 703,
+    "pemegang_saham": [
+      {
+        "nama": "Ratna Wijaya",
+        "nik": "32152812932770",
+        "npwp": "79.119.479.2-387.395",
+        "persentase": 27.55
+      },
+      {
+        "nama": "Budi Permana",
+        "nik": "64712411649946",
+        "npwp": "88.106.899.4-361.811",
+        "persentase": 8.08
+      },
+      {
+        "nama": "Wati Setiawan",
+        "nik": "32732004954788",
+        "npwp": "81.576.227.7-395.824",
+        "persentase": 5.25
+      },
+      {
+        "nama": "Eko Budiman",
+        "nik": "32010901764544",
+        "npwp": "44.566.474.9-184.717",
+        "persentase": 59.120000000000005
+      }
+    ],
+    "direktur_utama": "Wati Wardana",
+    "direktur_nik": "64710108662887",
+    "direktur_npwp": "61.205.818.2-614.420",
+    "komisaris_utama": "Andi Maulana",
+    "komisaris_nik": "31740708877850",
+    "komisaris_npwp": "57.401.731.2-675.845",
+    "jangka_waktu": "11 tahun",
+    "tanggal_akta": "2025-02-19",
+    "notaris": "Harto Hakim",
+    "npwp_perusahaan": "38.517.787.2-494.848",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": true,
+    "risk_score": 89
+  },
+  {
+    "company_id": "SH_0012",
+    "nama_perseroan": "UD CAHAYA MANDIRI",
+    "kbli": "62010",
+    "alamat_lengkap": "Jl. BKR No. 04\nSalatiga, NT 74333",
+    "kode_pos": "45550",
+    "maksud_tujuan": "Perdagangan umum dan jasa konsultan",
+    "modal_dasar": 1059533155,
+    "modal_ditempatkan": 370289666,
+    "modal_disetor": 62473147,
+    "nilai_nominal_saham": 1000000,
+    "jumlah_saham": 370,
+    "pemegang_saham": [
+      {
+        "nama": "Linda Wibowo",
+        "nik": "35782103726315",
+        "npwp": "21.325.354.1-496.769",
+        "persentase": 16.32
+      },
+      {
+        "nama": "Joko Putri",
+        "nik": "32150408615546",
+        "npwp": "25.394.560.5-447.557",
+        "persentase": 26.68
+      },
+      {
+        "nama": "Sinta Rahman",
+        "nik": "32150312772815",
+        "npwp": "61.162.501.9-661.536",
+        "persentase": 10.46
+      },
+      {
+        "nama": "Sinta Setiawan",
+        "nik": "32151302680666",
+        "npwp": "91.805.547.3-117.671",
+        "persentase": 23.83
+      },
+      {
+        "nama": "Vina Sari",
+        "nik": "31743012654067",
+        "npwp": "58.132.179.1-184.397",
+        "persentase": 22.710000000000008
+      }
+    ],
+    "direktur_utama": "Oki Syahputra",
+    "direktur_nik": "32731107806944",
+    "direktur_npwp": "11.379.681.4-862.703",
+    "komisaris_utama": "Citra Budiman",
+    "komisaris_nik": "35781706891619",
+    "komisaris_npwp": "68.686.479.4-521.326",
+    "jangka_waktu": "7 tahun",
+    "tanggal_akta": "2024-12-21",
+    "notaris": "Eva Pratiwi, S.Pd",
+    "npwp_perusahaan": "14.275.216.8-603.906",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": true,
+    "risk_score": 92
+  },
+  {
+    "company_id": "SH_0013",
+    "nama_perseroan": "CV NUSA INDAH",
+    "kbli": "47911",
+    "alamat_lengkap": "Gg. Kiaracondong No. 33\nMojokerto, Jawa Barat 41704",
+    "kode_pos": "45847",
+    "maksud_tujuan": "Perdagangan umum dan jasa konsultan",
+    "modal_dasar": 565352664,
+    "modal_ditempatkan": 214363766,
+    "modal_disetor": 45988143,
+    "nilai_nominal_saham": 1000000,
+    "jumlah_saham": 214,
+    "pemegang_saham": [
+      {
+        "nama": "Maya Hakim",
+        "nik": "34711407659312",
+        "npwp": "93.477.423.4-656.167",
+        "persentase": 28.47
+      },
+      {
+        "nama": "Umar Wahyudi",
+        "nik": "32732603827007",
+        "npwp": "81.339.146.5-763.898",
+        "persentase": 7.06
+      },
+      {
+        "nama": "Citra Kusuma",
+        "nik": "32731004610043",
+        "npwp": "15.201.936.7-200.687",
+        "persentase": 22.3
+      },
+      {
+        "nama": "Zaki Maulana",
+        "nik": "31741805846529",
+        "npwp": "51.263.611.3-901.313",
+        "persentase": 6.9
+      },
+      {
+        "nama": "Eko Budiman",
+        "nik": "34713010922674",
+        "npwp": "38.374.191.4-609.373",
+        "persentase": 18.54
+      },
+      {
+        "nama": "Maya Firmansyah",
+        "nik": "32013101621170",
+        "npwp": "25.750.145.2-442.718",
+        "persentase": 16.730000000000004
+      }
+    ],
+    "direktur_utama": "Maya Sari",
+    "direktur_nik": "18710905734705",
+    "direktur_npwp": "89.664.987.9-204.140",
+    "komisaris_utama": "Fitri Setiawan",
+    "komisaris_nik": "32012605561497",
+    "komisaris_npwp": "10.635.744.4-126.343",
+    "jangka_waktu": "14 tahun",
+    "tanggal_akta": "2025-03-02",
+    "notaris": "Hamzah Hutasoit",
+    "npwp_perusahaan": "18.249.270.5-403.267",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": true,
+    "risk_score": 88
+  },
+  {
+    "company_id": "SH_0014",
+    "nama_perseroan": "CV BERKAH NUSANTARA",
+    "kbli": "77100",
+    "alamat_lengkap": "Jl. Bangka Raya No. 936\nBanjarmasin, LA 75455",
+    "kode_pos": "25907",
+    "maksud_tujuan": "Perdagangan umum dan jasa konsultan",
+    "modal_dasar": 680377326,
+    "modal_ditempatkan": 244567129,
+    "modal_disetor": 35564071,
+    "nilai_nominal_saham": 1000000,
+    "jumlah_saham": 244,
+    "pemegang_saham": [
+      {
+        "nama": "Maya Wijaya",
+        "nik": "64712510590433",
+        "npwp": "84.826.284.5-236.389",
+        "persentase": 14.06
+      },
+      {
+        "nama": "Oki Wibowo",
+        "nik": "31741203720008",
+        "npwp": "88.753.833.4-180.258",
+        "persentase": 7.82
+      },
+      {
+        "nama": "Bayu Darmawan",
+        "nik": "64712407621073",
+        "npwp": "37.748.880.8-119.878",
+        "persentase": 26.38
+      },
+      {
+        "nama": "Dewi Kusuma",
+        "nik": "64711101950842",
+        "npwp": "90.812.805.4-268.819",
+        "persentase": 51.74000000000001
+      }
+    ],
+    "direktur_utama": "Citra Darmawan",
+    "direktur_nik": "31742405849369",
+    "direktur_npwp": "15.562.214.8-246.838",
+    "komisaris_utama": "Vina Putra",
+    "komisaris_nik": "18712010775364",
+    "komisaris_npwp": "70.458.297.2-852.171",
+    "jangka_waktu": "8 tahun",
+    "tanggal_akta": "2024-12-13",
+    "notaris": "Paulin Sudiati",
+    "npwp_perusahaan": "88.970.710.2-962.382",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": true,
+    "risk_score": 83
+  },
+  {
+    "company_id": "SH_0015",
+    "nama_perseroan": "UD PRIMA SEJAHTERA",
+    "kbli": "62010",
+    "alamat_lengkap": "Jalan Raya Setiabudhi No. 83\nTarakan, KU 55382",
+    "kode_pos": "71750",
+    "maksud_tujuan": "Perdagangan umum dan jasa konsultan",
+    "modal_dasar": 524577469,
+    "modal_ditempatkan": 247415999,
+    "modal_disetor": 44318391,
+    "nilai_nominal_saham": 1000000,
+    "jumlah_saham": 247,
+    "pemegang_saham": [
+      {
+        "nama": "Citra Wijaya",
+        "nik": "32152311549176",
+        "npwp": "17.328.357.2-565.668",
+        "persentase": 16.9
+      },
+      {
+        "nama": "Linda Wahyudi",
+        "nik": "32731012695348",
+        "npwp": "29.607.880.3-554.364",
+        "persentase": 18.26
+      },
+      {
+        "nama": "Andi Maulana",
+        "nik": "64711210872058",
+        "npwp": "93.799.954.8-234.834",
+        "persentase": 64.83999999999999
+      }
+    ],
+    "direktur_utama": "Farid Putra",
+    "direktur_nik": "32732202725617",
+    "direktur_npwp": "96.943.753.6-849.183",
+    "komisaris_utama": "Hadi Santoso",
+    "komisaris_nik": "64712511697944",
+    "komisaris_npwp": "65.619.775.9-363.728",
+    "jangka_waktu": "9 tahun",
+    "tanggal_akta": "2025-05-10",
+    "notaris": "Pranata Palastri",
+    "npwp_perusahaan": "88.405.167.4-977.670",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": true,
+    "risk_score": 90
+  },
+  {
+    "company_id": "SH_0016",
+    "nama_perseroan": "CV BERKAH NUSANTARA",
+    "kbli": "08910",
+    "alamat_lengkap": "Jalan Suniaraja No. 66\nSorong, NT 71221",
+    "kode_pos": "33335",
+    "maksud_tujuan": "Perdagangan umum dan jasa konsultan",
+    "modal_dasar": 1276282697,
+    "modal_ditempatkan": 382809054,
+    "modal_disetor": 89240619,
+    "nilai_nominal_saham": 1000000,
+    "jumlah_saham": 382,
+    "pemegang_saham": [
+      {
+        "nama": "Vina Putri",
+        "nik": "64710710848371",
+        "npwp": "97.253.711.6-702.109",
+        "persentase": 11.24
+      },
+      {
+        "nama": "Citra Hakim",
+        "nik": "35781911997457",
+        "npwp": "12.258.119.2-604.963",
+        "persentase": 5.95
+      },
+      {
+        "nama": "Umar Kurniawan",
+        "nik": "64710207912509",
+        "npwp": "17.483.660.4-658.245",
+        "persentase": 29.26
+      },
+      {
+        "nama": "Putra Wahyudi",
+        "nik": "32732709772055",
+        "npwp": "35.944.311.9-454.574",
+        "persentase": 29.05
+      },
+      {
+        "nama": "Linda Rahman",
+        "nik": "31742112723132",
+        "npwp": "47.778.705.2-139.580",
+        "persentase": 18.0
+      },
+      {
+        "nama": "Sinta Santoso",
+        "nik": "64712211763096",
+        "npwp": "77.709.762.9-124.336",
+        "persentase": 6.4999999999999964
+      }
+    ],
+    "direktur_utama": "Bayu Hakim",
+    "direktur_nik": "31742008986686",
+    "direktur_npwp": "70.959.183.3-315.240",
+    "komisaris_utama": "Zaki Permana",
+    "komisaris_nik": "32730905677734",
+    "komisaris_npwp": "18.385.649.4-764.488",
+    "jangka_waktu": "9 tahun",
+    "tanggal_akta": "2025-04-24",
+    "notaris": "Olivia Waluyo",
+    "npwp_perusahaan": "67.234.910.8-244.518",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": true,
+    "risk_score": 83
+  },
+  {
+    "company_id": "SH_0017",
+    "nama_perseroan": "PT LESTARI MANDIRI",
+    "kbli": "70200",
+    "alamat_lengkap": "Jalan Jend. Sudirman No. 330\nSawahlunto, AC 08092",
+    "kode_pos": "42650",
+    "maksud_tujuan": "Perdagangan umum dan jasa konsultan",
+    "modal_dasar": 1852959717,
+    "modal_ditempatkan": 486385492,
+    "modal_disetor": 68403049,
+    "nilai_nominal_saham": 1000000,
+    "jumlah_saham": 486,
+    "pemegang_saham": [
+      {
+        "nama": "Kartika Hidayat",
+        "nik": "32730409974002",
+        "npwp": "45.587.860.7-992.281",
+        "persentase": 13.54
+      },
+      {
+        "nama": "Putra Putri",
+        "nik": "32732105752008",
+        "npwp": "70.239.623.1-990.659",
+        "persentase": 23.83
+      },
+      {
+        "nama": "Indra Syahputra",
+        "nik": "34712107753786",
+        "npwp": "31.342.736.6-309.539",
+        "persentase": 13.76
+      },
+      {
+        "nama": "Wati Rahman",
+        "nik": "31740201810012",
+        "npwp": "64.406.554.2-627.956",
+        "persentase": 20.23
+      },
+      {
+        "nama": "Ratna Hartono",
+        "nik": "18711308598506",
+        "npwp": "94.823.708.1-630.547",
+        "persentase": 28.64000000000001
+      }
+    ],
+    "direktur_utama": "Oki Sari",
+    "direktur_nik": "32731501815948",
+    "direktur_npwp": "67.958.813.3-762.901",
+    "komisaris_utama": "Indra Budiman",
+    "komisaris_nik": "32731707951840",
+    "komisaris_npwp": "56.935.567.4-270.418",
+    "jangka_waktu": "8 tahun",
+    "tanggal_akta": "2025-05-09",
+    "notaris": "Fitria Nasyidah",
+    "npwp_perusahaan": "88.105.276.8-575.861",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": true,
+    "risk_score": 93
+  },
+  {
+    "company_id": "SH_0018",
+    "nama_perseroan": "PT DUTA SEJAHTERA",
+    "kbli": "77100",
+    "alamat_lengkap": "Gg. Pacuan Kuda No. 71\nCimahi, BT 85600",
+    "kode_pos": "31112",
+    "maksud_tujuan": "Perdagangan umum dan jasa konsultan",
+    "modal_dasar": 952649465,
+    "modal_ditempatkan": 370860165,
+    "modal_disetor": 81749320,
+    "nilai_nominal_saham": 1000000,
+    "jumlah_saham": 370,
+    "pemegang_saham": [
+      {
+        "nama": "Wati Setiawan",
+        "nik": "32010901657608",
+        "npwp": "69.787.946.2-836.621",
+        "persentase": 27.3
+      },
+      {
+        "nama": "Dian Syahputra",
+        "nik": "18712407665880",
+        "npwp": "53.631.484.2-462.599",
+        "persentase": 28.07
+      },
+      {
+        "nama": "Farid Hartono",
+        "nik": "35781911622690",
+        "npwp": "37.206.840.3-634.903",
+        "persentase": 15.84
+      },
+      {
+        "nama": "Sari Rahman",
+        "nik": "31741909855955",
+        "npwp": "96.575.917.5-228.217",
+        "persentase": 6.91
+      },
+      {
+        "nama": "Citra Nugroho",
+        "nik": "31743103670138",
+        "npwp": "17.919.691.9-500.253",
+        "persentase": 5.76
+      },
+      {
+        "nama": "Vina Wardana",
+        "nik": "32011412950945",
+        "npwp": "50.550.256.3-563.532",
+        "persentase": 17.87
+      },
+      {
+        "nama": "Budi Permana",
+        "nik": "35781906826209",
+        "npwp": "48.455.729.2-849.951",
+        "persentase": -1.7499999999999964
+      }
+    ],
+    "direktur_utama": "Zaki Permana",
+    "direktur_nik": "35782211669858",
+    "direktur_npwp": "65.586.658.1-919.466",
+    "komisaris_utama": "Sari Pratama",
+    "komisaris_nik": "32011204987267",
+    "komisaris_npwp": "78.197.143.1-550.881",
+    "jangka_waktu": "6 tahun",
+    "tanggal_akta": "2025-05-03",
+    "notaris": "Cornelia Laksmiwati, M.Kom.",
+    "npwp_perusahaan": "70.907.394.1-425.112",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": true,
+    "risk_score": 88
+  },
+  {
+    "company_id": "SH_0019",
+    "nama_perseroan": "UD CAHAYA MANDIRI",
+    "kbli": "47911",
+    "alamat_lengkap": "Jl. Cikutra Barat No. 053\nCilegon, KR 46424",
+    "kode_pos": "91442",
+    "maksud_tujuan": "Perdagangan umum dan jasa konsultan",
+    "modal_dasar": 1951175066,
+    "modal_ditempatkan": 545149083,
+    "modal_disetor": 106167061,
+    "nilai_nominal_saham": 1000000,
+    "jumlah_saham": 545,
+    "pemegang_saham": [
+      {
+        "nama": "Citra Darmawan",
+        "nik": "32731502656898",
+        "npwp": "24.667.467.5-518.536",
+        "persentase": 14.87
+      },
+      {
+        "nama": "Zaki Maulana",
+        "nik": "18712710872984",
+        "npwp": "63.223.936.3-669.297",
+        "persentase": 15.21
+      },
+      {
+        "nama": "Kartika Wijaya",
+        "nik": "64711402802645",
+        "npwp": "55.392.898.9-293.561",
+        "persentase": 16.64
+      },
+      {
+        "nama": "Ratna Hidayat",
+        "nik": "35780105823944",
+        "npwp": "68.244.418.7-184.787",
+        "persentase": 15.56
+      },
+      {
+        "nama": "Umar Hakim",
+        "nik": "34711303680559",
+        "npwp": "39.296.568.2-295.254",
+        "persentase": 13.79
+      },
+      {
+        "nama": "Joko Wijaya",
+        "nik": "35782910814303",
+        "npwp": "62.938.240.2-873.677",
+        "persentase": 23.929999999999986
+      }
+    ],
+    "direktur_utama": "Endang Hidayat",
+    "direktur_nik": "64711908592260",
+    "direktur_npwp": "44.686.764.1-244.305",
+    "komisaris_utama": "Andi Kusuma",
+    "komisaris_nik": "31740212626634",
+    "komisaris_npwp": "61.807.805.8-702.866",
+    "jangka_waktu": "13 tahun",
+    "tanggal_akta": "2025-02-27",
+    "notaris": "Rina Haryanti",
+    "npwp_perusahaan": "84.155.448.3-823.316",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": true,
+    "risk_score": 98
+  },
+  {
+    "company_id": "SH_0020",
+    "nama_perseroan": "CV FAJAR CEMERLANG",
+    "kbli": "08910",
+    "alamat_lengkap": "Jl. BKR No. 5\nMataram, DI Yogyakarta 71449",
+    "kode_pos": "56108",
+    "maksud_tujuan": "Perdagangan umum dan jasa konsultan",
+    "modal_dasar": 1130643712,
+    "modal_ditempatkan": 403704551,
+    "modal_disetor": 107317006,
+    "nilai_nominal_saham": 1000000,
+    "jumlah_saham": 403,
+    "pemegang_saham": [
+      {
+        "nama": "Zaki Budiman",
+        "nik": "34712611692970",
+        "npwp": "36.176.974.8-718.402",
+        "persentase": 13.2
+      },
+      {
+        "nama": "Oki Kusuma",
+        "nik": "32732403727256",
+        "npwp": "17.229.746.2-482.714",
+        "persentase": 17.09
+      },
+      {
+        "nama": "Maya Putra",
+        "nik": "18711308664138",
+        "npwp": "12.642.118.6-704.348",
+        "persentase": 5.52
+      },
+      {
+        "nama": "Wati Pratama",
+        "nik": "32010304882967",
+        "npwp": "44.915.240.5-285.417",
+        "persentase": 23.41
+      },
+      {
+        "nama": "Oki Sari",
+        "nik": "64710502937839",
+        "npwp": "41.788.478.4-149.987",
+        "persentase": 40.78
+      }
+    ],
+    "direktur_utama": "Putra Darmawan",
+    "direktur_nik": "34711212546174",
+    "direktur_npwp": "22.507.979.6-689.387",
+    "komisaris_utama": "Umar Wardana",
+    "komisaris_nik": "18711608709629",
+    "komisaris_npwp": "56.362.870.3-768.701",
+    "jangka_waktu": "15 tahun",
+    "tanggal_akta": "2025-04-28",
+    "notaris": "Ika Damanik",
+    "npwp_perusahaan": "59.613.394.5-640.247",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": true,
+    "risk_score": 92
+  },
+  {
+    "company_id": "SH_0021",
+    "nama_perseroan": "UD MAJU BERSAMA",
+    "kbli": "62010",
+    "alamat_lengkap": "Gg. Jend. Sudirman No. 857\nYogyakarta, KS 32504",
+    "kode_pos": "90249",
+    "maksud_tujuan": "Perdagangan umum dan jasa konsultan",
+    "modal_dasar": 921130895,
+    "modal_ditempatkan": 288739160,
+    "modal_disetor": 68042923,
+    "nilai_nominal_saham": 1000000,
+    "jumlah_saham": 288,
+    "pemegang_saham": [
+      {
+        "nama": "Yudi Rahman",
+        "nik": "32731110561135",
+        "npwp": "31.264.796.5-501.901",
+        "persentase": 23.98
+      },
+      {
+        "nama": "Wati Rahman",
+        "nik": "18710909684761",
+        "npwp": "14.495.232.8-791.688",
+        "persentase": 25.44
+      },
+      {
+        "nama": "Dewi Kusuma",
+        "nik": "32011801918376",
+        "npwp": "90.493.288.6-743.374",
+        "persentase": 24.4
+      },
+      {
+        "nama": "Vina Sari",
+        "nik": "31741506771184",
+        "npwp": "53.113.421.3-411.483",
+        "persentase": 11.48
+      },
+      {
+        "nama": "Ahmad Wahyudi",
+        "nik": "32730609589924",
+        "npwp": "21.231.571.5-556.516",
+        "persentase": 18.23
+      },
+      {
+        "nama": "Fitri Rahman",
+        "nik": "32010611721860",
+        "npwp": "98.401.821.1-497.451",
+        "persentase": -3.530000000000001
+      }
+    ],
+    "direktur_utama": "Farid Rachmadi",
+    "direktur_nik": "64712403966746",
+    "direktur_npwp": "17.727.419.6-828.644",
+    "komisaris_utama": "Zaki Santoso",
+    "komisaris_nik": "64713004977442",
+    "komisaris_npwp": "97.861.353.6-948.219",
+    "jangka_waktu": "11 tahun",
+    "tanggal_akta": "2025-01-06",
+    "notaris": "Balijan Saefullah",
+    "npwp_perusahaan": "61.963.268.9-848.469",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": true,
+    "risk_score": 91
+  },
+  {
+    "company_id": "SH_0022",
+    "nama_perseroan": "PT JAYA MAKMUR",
+    "kbli": "77100",
+    "alamat_lengkap": "Jl. Indragiri No. 55\nKota Administrasi Jakarta Barat, KS 87915",
+    "kode_pos": "34052",
+    "maksud_tujuan": "Perdagangan umum dan jasa konsultan",
+    "modal_dasar": 1226656733,
+    "modal_ditempatkan": 598586001,
+    "modal_disetor": 68833458,
+    "nilai_nominal_saham": 1000000,
+    "jumlah_saham": 598,
+    "pemegang_saham": [
+      {
+        "nama": "Citra Kusuma",
+        "nik": "18710802696707",
+        "npwp": "88.552.262.5-526.351",
+        "persentase": 20.34
+      },
+      {
+        "nama": "Farid Kurniawan",
+        "nik": "18711501928760",
+        "npwp": "35.909.837.4-414.164",
+        "persentase": 21.1
+      },
+      {
+        "nama": "Hadi Pratama",
+        "nik": "64710901994620",
+        "npwp": "17.123.166.5-743.240",
+        "persentase": 19.23
+      },
+      {
+        "nama": "Andi Permana",
+        "nik": "34711205576919",
+        "npwp": "48.850.601.9-612.303",
+        "persentase": 5.09
+      },
+      {
+        "nama": "Putra Kurniawan",
+        "nik": "32011207600944",
+        "npwp": "41.659.361.5-153.911",
+        "persentase": 5.98
+      },
+      {
+        "nama": "Dewi Pratama",
+        "nik": "32152609890916",
+        "npwp": "41.432.967.3-609.617",
+        "persentase": 28.259999999999994
+      }
+    ],
+    "direktur_utama": "Citra Hidayat",
+    "direktur_nik": "32732404657946",
+    "direktur_npwp": "56.435.265.9-805.225",
+    "komisaris_utama": "Dewi Sari",
+    "komisaris_nik": "32010109809352",
+    "komisaris_npwp": "32.101.173.5-263.874",
+    "jangka_waktu": "15 tahun",
+    "tanggal_akta": "2025-05-06",
+    "notaris": "dr. Bala Mandala, S.Psi",
+    "npwp_perusahaan": "36.873.212.4-663.479",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": true,
+    "risk_score": 86
+  },
+  {
+    "company_id": "SH_0023",
+    "nama_perseroan": "UD HARAPAN BARU",
+    "kbli": "68100",
+    "alamat_lengkap": "Jalan Medokan Ayu No. 54\nPontianak, SU 04560",
+    "kode_pos": "01189",
+    "maksud_tujuan": "Perdagangan umum dan jasa konsultan",
+    "modal_dasar": 1226769460,
+    "modal_ditempatkan": 370797603,
+    "modal_disetor": 87966992,
+    "nilai_nominal_saham": 1000000,
+    "jumlah_saham": 370,
+    "pemegang_saham": [
+      {
+        "nama": "Vina Sari",
+        "nik": "31741812635285",
+        "npwp": "94.387.172.1-317.627",
+        "persentase": 27.86
+      },
+      {
+        "nama": "Indra Budiman",
+        "nik": "32732607691963",
+        "npwp": "54.697.871.3-653.993",
+        "persentase": 22.74
+      },
+      {
+        "nama": "Wati Nugroho",
+        "nik": "32152204793677",
+        "npwp": "24.927.433.8-876.662",
+        "persentase": 15.95
+      },
+      {
+        "nama": "Bayu Rachmadi",
+        "nik": "31740502586646",
+        "npwp": "25.957.897.9-783.976",
+        "persentase": 29.31
+      },
+      {
+        "nama": "Sari Pratama",
+        "nik": "32731212899080",
+        "npwp": "88.168.533.9-989.956",
+        "persentase": 19.75
+      },
+      {
+        "nama": "Umar Hakim",
+        "nik": "35780705009664",
+        "npwp": "17.829.518.3-989.462",
+        "persentase": 10.78
+      },
+      {
+        "nama": "Vina Sari",
+        "nik": "31742912991450",
+        "npwp": "63.251.862.6-714.173",
+        "persentase": -26.389999999999993
+      }
+    ],
+    "direktur_utama": "Joko Budiman",
+    "direktur_nik": "18713007724137",
+    "direktur_npwp": "24.929.556.5-107.239",
+    "komisaris_utama": "Endang Kusuma",
+    "komisaris_nik": "31740808948591",
+    "komisaris_npwp": "89.152.833.7-200.512",
+    "jangka_waktu": "8 tahun",
+    "tanggal_akta": "2024-11-29",
+    "notaris": "Lalita Nurdiyanti",
+    "npwp_perusahaan": "26.903.405.2-441.862",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": true,
+    "risk_score": 94
+  },
+  {
+    "company_id": "SH_0024",
+    "nama_perseroan": "CV FAJAR CEMERLANG",
+    "kbli": "47911",
+    "alamat_lengkap": "Gang M.H Thamrin No. 1\nPariaman, Kalimantan Barat 53588",
+    "kode_pos": "45865",
+    "maksud_tujuan": "Perdagangan umum dan jasa konsultan",
+    "modal_dasar": 832467172,
+    "modal_ditempatkan": 233561865,
+    "modal_disetor": 61182603,
+    "nilai_nominal_saham": 1000000,
+    "jumlah_saham": 233,
+    "pemegang_saham": [
+      {
+        "nama": "Putra Wijaya",
+        "nik": "31740601833237",
+        "npwp": "30.974.138.8-187.983",
+        "persentase": 25.65
+      },
+      {
+        "nama": "Putra Santoso",
+        "nik": "34710404971025",
+        "npwp": "17.480.148.8-588.881",
+        "persentase": 28.25
+      },
+      {
+        "nama": "Endang Wahyudi",
+        "nik": "18712706882498",
+        "npwp": "61.334.425.4-330.156",
+        "persentase": 6.04
+      },
+      {
+        "nama": "Endang Hartono",
+        "nik": "31741902894770",
+        "npwp": "50.542.902.2-732.920",
+        "persentase": 9.54
+      },
+      {
+        "nama": "Endang Hakim",
+        "nik": "31741009990020",
+        "npwp": "16.104.769.9-933.475",
+        "persentase": 30.519999999999996
+      }
+    ],
+    "direktur_utama": "Citra Wijaya",
+    "direktur_nik": "64712003649256",
+    "direktur_npwp": "66.313.244.9-280.253",
+    "komisaris_utama": "Vina Sari",
+    "komisaris_nik": "64712307834146",
+    "komisaris_npwp": "75.940.906.2-124.600",
+    "jangka_waktu": "5 tahun",
+    "tanggal_akta": "2025-02-12",
+    "notaris": "Gantar Pertiwi",
+    "npwp_perusahaan": "27.284.150.7-658.537",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": true,
+    "risk_score": 95
+  },
+  {
+    "company_id": "SH_0025",
+    "nama_perseroan": "UD CAHAYA MANDIRI",
+    "kbli": "77100",
+    "alamat_lengkap": "Jalan PHH. Mustofa No. 007\nBogor, Sumatera Utara 57410",
+    "kode_pos": "22183",
+    "maksud_tujuan": "Perdagangan umum dan jasa konsultan",
+    "modal_dasar": 1556029552,
+    "modal_ditempatkan": 603499950,
+    "modal_disetor": 64548820,
+    "nilai_nominal_saham": 1000000,
+    "jumlah_saham": 603,
+    "pemegang_saham": [
+      {
+        "nama": "Budi Syahputra",
+        "nik": "32011504933993",
+        "npwp": "55.330.766.7-457.789",
+        "persentase": 26.51
+      },
+      {
+        "nama": "Fitri Wardana",
+        "nik": "34710503989165",
+        "npwp": "13.141.642.8-345.256",
+        "persentase": 25.52
+      },
+      {
+        "nama": "Oki Budiman",
+        "nik": "18711803994832",
+        "npwp": "59.554.601.1-338.148",
+        "persentase": 12.66
+      },
+      {
+        "nama": "Gina Wibowo",
+        "nik": "64712012976984",
+        "npwp": "82.955.817.1-168.600",
+        "persentase": 14.49
+      },
+      {
+        "nama": "Wati Rahman",
+        "nik": "18711612814851",
+        "npwp": "64.954.199.7-556.418",
+        "persentase": 26.14
+      },
+      {
+        "nama": "Umar Kurniawan",
+        "nik": "32730209764711",
+        "npwp": "48.433.451.7-903.150",
+        "persentase": 11.96
+      },
+      {
+        "nama": "Dewi Santoso",
+        "nik": "35781809759726",
+        "npwp": "64.438.493.3-871.790",
+        "persentase": -17.28
+      }
+    ],
+    "direktur_utama": "Zaki Santoso",
+    "direktur_nik": "32011111945600",
+    "direktur_npwp": "24.882.481.3-998.394",
+    "komisaris_utama": "Hadi Pratama",
+    "komisaris_nik": "32011302660990",
+    "komisaris_npwp": "90.247.730.2-258.873",
+    "jangka_waktu": "8 tahun",
+    "tanggal_akta": "2025-02-18",
+    "notaris": "Ciaobella Anggraini",
+    "npwp_perusahaan": "30.130.601.3-205.699",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": true,
+    "risk_score": 92
+  },
+  {
+    "company_id": "SH_0026",
+    "nama_perseroan": "UD MAJU BERSAMA",
+    "kbli": "47911",
+    "alamat_lengkap": "Gang Rungkut Industri No. 22\nKota Administrasi Jakarta Timur, SU 08615",
+    "kode_pos": "96521",
+    "maksud_tujuan": "Perdagangan umum dan jasa konsultan",
+    "modal_dasar": 1651413944,
+    "modal_ditempatkan": 677190079,
+    "modal_disetor": 130452492,
+    "nilai_nominal_saham": 1000000,
+    "jumlah_saham": 677,
+    "pemegang_saham": [
+      {
+        "nama": "Farid Rachmadi",
+        "nik": "34712904816955",
+        "npwp": "24.413.627.5-319.516",
+        "persentase": 18.99
+      },
+      {
+        "nama": "Joko Gunawan",
+        "nik": "64712705637634",
+        "npwp": "21.705.807.6-300.273",
+        "persentase": 10.45
+      },
+      {
+        "nama": "Vina Hakim",
+        "nik": "32012509776371",
+        "npwp": "24.826.967.6-240.264",
+        "persentase": 19.0
+      },
+      {
+        "nama": "Indra Permana",
+        "nik": "32012802993137",
+        "npwp": "71.734.245.6-479.186",
+        "persentase": 29.15
+      },
+      {
+        "nama": "Sari Nugroho",
+        "nik": "32151007898959",
+        "npwp": "73.761.913.7-861.998",
+        "persentase": 27.98
+      },
+      {
+        "nama": "Wati Santoso",
+        "nik": "32151307797406",
+        "npwp": "38.120.781.1-606.838",
+        "persentase": 17.23
+      },
+      {
+        "nama": "Dewi Sari",
+        "nik": "64712307629366",
+        "npwp": "43.413.215.8-944.142",
+        "persentase": 18.17
+      },
+      {
+        "nama": "Linda Rahman",
+        "nik": "32151404784980",
+        "npwp": "21.437.244.7-788.442",
+        "persentase": -40.97
+      }
+    ],
+    "direktur_utama": "Budi Budiman",
+    "direktur_nik": "32153004737393",
+    "direktur_npwp": "93.135.708.1-258.433",
+    "komisaris_utama": "Citra Hidayat",
+    "komisaris_nik": "32010309990486",
+    "komisaris_npwp": "22.115.211.9-326.804",
+    "jangka_waktu": "10 tahun",
+    "tanggal_akta": "2025-02-26",
+    "notaris": "Ella Thamrin",
+    "npwp_perusahaan": "24.137.147.1-728.916",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": true,
+    "risk_score": 96
+  },
+  {
+    "company_id": "SH_0027",
+    "nama_perseroan": "UD HARAPAN BARU",
+    "kbli": "70200",
+    "alamat_lengkap": "Gg. Asia Afrika No. 2\nBontang, Sumatera Selatan 03184",
+    "kode_pos": "27767",
+    "maksud_tujuan": "Perdagangan umum dan jasa konsultan",
+    "modal_dasar": 641609313,
+    "modal_ditempatkan": 217754210,
+    "modal_disetor": 34850844,
+    "nilai_nominal_saham": 1000000,
+    "jumlah_saham": 217,
+    "pemegang_saham": [
+      {
+        "nama": "Putra Hartono",
+        "nik": "32011703599292",
+        "npwp": "58.860.783.8-696.208",
+        "persentase": 11.11
+      },
+      {
+        "nama": "Joko Budiman",
+        "nik": "32151411980307",
+        "npwp": "42.768.518.6-902.389",
+        "persentase": 13.6
+      },
+      {
+        "nama": "Maya Putra",
+        "nik": "18711201921304",
+        "npwp": "41.283.364.8-879.778",
+        "persentase": 27.84
+      },
+      {
+        "nama": "Kartika Wijaya",
+        "nik": "18712705877603",
+        "npwp": "73.977.695.4-773.180",
+        "persentase": 25.96
+      },
+      {
+        "nama": "Indra Permana",
+        "nik": "31740803567208",
+        "npwp": "45.427.611.2-460.231",
+        "persentase": 21.490000000000002
+      }
+    ],
+    "direktur_utama": "Budi Permana",
+    "direktur_nik": "32010106546188",
+    "direktur_npwp": "13.868.541.5-804.461",
+    "komisaris_utama": "Wati Rahman",
+    "komisaris_nik": "32732209609181",
+    "komisaris_npwp": "12.224.115.1-656.724",
+    "jangka_waktu": "10 tahun",
+    "tanggal_akta": "2024-12-15",
+    "notaris": "Farah Utami",
+    "npwp_perusahaan": "97.814.959.2-958.291",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": true,
+    "risk_score": 85
+  },
+  {
+    "company_id": "SH_0028",
+    "nama_perseroan": "UD INDAH PERMAI",
+    "kbli": "62010",
+    "alamat_lengkap": "Gg. Pacuan Kuda No. 040\nBanjarmasin, Kalimantan Tengah 42703",
+    "kode_pos": "37315",
+    "maksud_tujuan": "Perdagangan umum dan jasa konsultan",
+    "modal_dasar": 1359905739,
+    "modal_ditempatkan": 485257496,
+    "modal_disetor": 54911460,
+    "nilai_nominal_saham": 1000000,
+    "jumlah_saham": 485,
+    "pemegang_saham": [
+      {
+        "nama": "Umar Hakim",
+        "nik": "32010212911853",
+        "npwp": "57.545.810.7-244.172",
+        "persentase": 6.27
+      },
+      {
+        "nama": "Indra Pratama",
+        "nik": "32012503969463",
+        "npwp": "90.697.763.9-528.447",
+        "persentase": 11.41
+      },
+      {
+        "nama": "Dian Sari",
+        "nik": "32151401881621",
+        "npwp": "42.396.733.1-843.835",
+        "persentase": 12.66
+      },
+      {
+        "nama": "Sari Pratama",
+        "nik": "32730909921102",
+        "npwp": "27.835.989.7-571.381",
+        "persentase": 11.37
+      },
+      {
+        "nama": "Wati Rahman",
+        "nik": "32733107604003",
+        "npwp": "61.562.279.4-263.383",
+        "persentase": 58.29000000000001
+      }
+    ],
+    "direktur_utama": "Eko Permana",
+    "direktur_nik": "34711011715565",
+    "direktur_npwp": "46.252.558.4-621.408",
+    "komisaris_utama": "Wati Pratama",
+    "komisaris_nik": "64710908599191",
+    "komisaris_npwp": "89.521.203.9-994.278",
+    "jangka_waktu": "14 tahun",
+    "tanggal_akta": "2025-01-30",
+    "notaris": "Puti Yessi Wibowo",
+    "npwp_perusahaan": "26.192.728.9-325.320",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": true,
+    "risk_score": 97
+  },
+  {
+    "company_id": "SH_0029",
+    "nama_perseroan": "CV KARYA UTAMA",
+    "kbli": "77100",
+    "alamat_lengkap": "Gang Rungkut Industri No. 13\nJayapura, Sulawesi Utara 78519",
+    "kode_pos": "29553",
+    "maksud_tujuan": "Perdagangan umum dan jasa konsultan",
+    "modal_dasar": 1946015946,
+    "modal_ditempatkan": 866524665,
+    "modal_disetor": 161403283,
+    "nilai_nominal_saham": 1000000,
+    "jumlah_saham": 866,
+    "pemegang_saham": [
+      {
+        "nama": "Ahmad Kusuma",
+        "nik": "32151307886563",
+        "npwp": "56.243.509.2-837.846",
+        "persentase": 20.7
+      },
+      {
+        "nama": "Putra Putri",
+        "nik": "34712401565184",
+        "npwp": "11.228.221.8-318.358",
+        "persentase": 9.55
+      },
+      {
+        "nama": "Citra Nugroho",
+        "nik": "35782203831721",
+        "npwp": "65.435.839.6-122.533",
+        "persentase": 22.31
+      },
+      {
+        "nama": "Citra Wijaya",
+        "nik": "18711907826194",
+        "npwp": "13.553.400.3-196.603",
+        "persentase": 5.4
+      },
+      {
+        "nama": "Wati Rahman",
+        "nik": "64713008653630",
+        "npwp": "14.371.914.8-279.908",
+        "persentase": 8.85
+      },
+      {
+        "nama": "Putra Sari",
+        "nik": "31740903698357",
+        "npwp": "25.931.336.6-610.537",
+        "persentase": 18.45
+      },
+      {
+        "nama": "Putra Santoso",
+        "nik": "64710312919670",
+        "npwp": "26.728.935.5-676.942",
+        "persentase": 14.739999999999998
+      }
+    ],
+    "direktur_utama": "Dian Syahputra",
+    "direktur_nik": "35782411780005",
+    "direktur_npwp": "12.187.104.6-899.681",
+    "komisaris_utama": "Bayu Rachmadi",
+    "komisaris_nik": "32151702736618",
+    "komisaris_npwp": "99.128.610.5-600.688",
+    "jangka_waktu": "15 tahun",
+    "tanggal_akta": "2025-04-14",
+    "notaris": "Hesti Wastuti",
+    "npwp_perusahaan": "86.489.956.9-235.556",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": true,
+    "risk_score": 98
+  },
+  {
+    "company_id": "SH_0030",
+    "nama_perseroan": "UD INDAH PERMAI",
+    "kbli": "68100",
+    "alamat_lengkap": "Gang Pasteur No. 025\nCilegon, Kepulauan Bangka Belitung 54057",
+    "kode_pos": "26216",
+    "maksud_tujuan": "Perdagangan umum dan jasa konsultan",
+    "modal_dasar": 598803161,
+    "modal_ditempatkan": 210409000,
+    "modal_disetor": 31022950,
+    "nilai_nominal_saham": 1000000,
+    "jumlah_saham": 210,
+    "pemegang_saham": [
+      {
+        "nama": "Kartika Santoso",
+        "nik": "18710808929307",
+        "npwp": "16.406.850.5-383.345",
+        "persentase": 14.71
+      },
+      {
+        "nama": "Citra Budiman",
+        "nik": "31742509551513",
+        "npwp": "35.405.212.3-759.487",
+        "persentase": 28.24
+      },
+      {
+        "nama": "Kartika Hidayat",
+        "nik": "64712608945999",
+        "npwp": "59.980.983.7-811.851",
+        "persentase": 57.05
+      }
+    ],
+    "direktur_utama": "Citra Nugroho",
+    "direktur_nik": "32152708770621",
+    "direktur_npwp": "10.650.416.9-359.288",
+    "komisaris_utama": "Maya Darmawan",
+    "komisaris_nik": "64710603697067",
+    "komisaris_npwp": "16.237.964.1-677.167",
+    "jangka_waktu": "7 tahun",
+    "tanggal_akta": "2025-01-28",
+    "notaris": "Wahyu Mandasari",
+    "npwp_perusahaan": "88.859.135.2-809.987",
+    "status_perusahaan": "Aktif",
+    "is_suspicious": true,
+    "risk_score": 83
+  }
+]

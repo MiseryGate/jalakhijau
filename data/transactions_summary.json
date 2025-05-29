@@ -1,0 +1,13 @@
+{
+  "total_transactions": 8000,
+  "high_risk_transactions": 4812,
+  "total_amount_idr": 6304994569184,
+  "suspicious_clusters": 140,
+  "flagged_transactions": 4812,
+  "cross_border_transactions": 318,
+  "average_risk_score": 64.66825,
+  "date_range": {
+    "earliest": "2023-03-01 08:22:00",
+    "latest": "2025-05-29 00:23:39"
+  }
+}
