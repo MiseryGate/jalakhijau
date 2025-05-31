@@ -15,3 +15,4 @@ shapely
 streamlit_folium
 networkx
 osmnx
+openai
