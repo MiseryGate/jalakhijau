@@ -2197,13 +2197,7 @@ def main():
     - **🗺️ Geospatial Data:** {geo_status}
     - **🤖 AI Engine:** Online
     - **🔗 Integration:** Operational
-    - **🔥 PT SAWIT NUSANTARA:** ACTIVE CASE
-    
-    ### 🎯 Featured Case
-    **ALT-CRIT-001**  
-    PT SAWIT NUSANTARA  
-    Status: 🔥 Critical Investigation  
-    Progress: 75% Complete  
+
     """)
     
     # Execute selected page
