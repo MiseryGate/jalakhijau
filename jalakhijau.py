@@ -14,16 +14,16 @@ from shapely.geometry import Point, Polygon
 from openai import AzureOpenAI
 import os
 from pathlib import Path
+from io import BytesIO
+import base64
 
 # Page config
 st.set_page_config(
-    page_title="🛰️ JALAK-HIJAU | Environmental Crime Detection",
-    page_icon="🌿",
     layout="wide",
     initial_sidebar_state="expanded"
 )
 
-# Custom CSS
+# Custom CSS with improved styling
 def load_css():
     st.markdown("""
     <style>
@@ -35,6 +35,7 @@ def load_css():
         --success-green: #28A745;
         --warning-orange: #FFA500;
         --danger-red: #DC3545;
+        --investigation-purple: #6A4C93;
     }
     
     .main-header {
@@ -80,7 +81,15 @@ def load_css():
     }
     
     .investigation-panel {
-        background: linear-gradient(135deg, #FF6B35, #DC3545);
+        background: linear-gradient(135deg, var(--investigation-purple), #DC3545);
+        color: white;
+        padding: 1.5rem;
+        border-radius: 10px;
+        margin: 1rem 0;
+    }
+    
+    .report-panel {
+        background: linear-gradient(135deg, #4A90E2, #357ABD);
         color: white;
         padding: 1.5rem;
         border-radius: 10px;
@@ -109,10 +118,36 @@ def load_css():
         margin: 1rem 0;
     }
     
+    .berkah-highlight {
+        background: linear-gradient(135deg, #FF6B35, #DC3545);
+        color: white;
+        padding: 1rem;
+        border-radius: 8px;
+        margin: 1rem 0;
+        border: 2px solid #FF4444;
+    }
+    
     @keyframes pulse {
         0% { box-shadow: 0 0 0 0 rgba(220, 53, 69, 0.7); }
         70% { box-shadow: 0 0 0 10px rgba(220, 53, 69, 0); }
         100% { box-shadow: 0 0 0 0 rgba(220, 53, 69, 0); }
+    }
+    
+    .nav-button {
+        width: 100%;
+        margin: 0.2rem 0;
+        background: linear-gradient(45deg, #2E8B57, #228B22);
+        color: white;
+        border: none;
+        padding: 0.8rem;
+        border-radius: 8px;
+        font-weight: bold;
+    }
+    
+    .nav-button:hover {
+        background: linear-gradient(45deg, #228B22, #2E8B57);
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     }
     </style>
     """, unsafe_allow_html=True)
@@ -127,11 +162,13 @@ def init_session_state():
         st.session_state.investigation_mode = False
     if 'investigation_data' not in st.session_state:
         st.session_state.investigation_data = {}
+    if 'current_page' not in st.session_state:
+        st.session_state.current_page = "🏠 Dashboard Overview"
 
 # Data loading functions
 @st.cache_data
 def load_geospatial_data():
-    """Load actual shapefiles or create realistic demo data"""
+    """Load geospatial data with PT BERKAH focus"""
     try:
         forest_gdf = gpd.read_file("forest.shp")
         sawit_gdf = gpd.read_file("sawit.shp")
@@ -139,16 +176,16 @@ def load_geospatial_data():
         st.success("✅ Loaded actual shapefiles successfully!")
         return forest_gdf, sawit_gdf, overlap_gdf
     except Exception as e:
-        st.warning(f"⚠️ Shapefiles not found, using demo data. Error: {str(e)}")
-        return generate_realistic_geodata()
+        #st.warning(f"⚠️ Shapefiles not found, using demo data. Error: {str(e)}")
+        return generate_realistic_geodata_with_berkah()
 
 @st.cache_data
 def load_financial_data():
-    """Load financial transaction data"""
+    """Load financial data with PT BERKAH case study"""
     data_dir = Path("data")
     
     if not data_dir.exists():
-        st.warning("⚠️ Data directory not found. Run financial_data_generator.py first or using demo data.")
+        st.warning("⚠️ Data directory not found. Run financial_data_generator.py first.")
         return generate_demo_financial_data()
     
     try:
@@ -161,82 +198,118 @@ def load_financial_data():
         transactions_df['transaction_date'] = pd.to_datetime(transactions_df['transaction_date'])
         high_risk_df['transaction_date'] = pd.to_datetime(high_risk_df['transaction_date'])
         
-        st.success(f"✅ Loaded financial data: {len(transactions_df):,} transactions, {len(high_risk_df):,} high-risk")
-        return transactions_df, high_risk_df, clusters_df, bank_accounts_df
+        # Load PT BERKAH case study if available
+        berkah_case_df = None
+        try:
+            berkah_case_df = pd.read_csv(data_dir / "pt_berkah_case_study.csv")
+            berkah_case_df['transaction_date'] = pd.to_datetime(berkah_case_df['transaction_date'])
+            #st.success(f"✅ Loaded PT BERKAH case study: {len(berkah_case_df)} transactions")
+        except:
+            pass
+        
+        #st.success(f"✅ Loaded financial data: {len(transactions_df):,} transactions, {len(high_risk_df):,} high-risk")
+        return transactions_df, high_risk_df, clusters_df, bank_accounts_df, berkah_case_df
         
     except Exception as e:
-        st.warning(f"⚠️ Error loading financial data. Using demo data.")
+        st.warning(f"⚠️ Error loading financial data: {str(e)}")
         return generate_demo_financial_data()
 
 @st.cache_data  
 def load_company_data():
-    """Load company data"""
+    """Load company data with PT BERKAH highlighted"""
     data_dir = Path("data")
     
     try:
-        # Try to load generated PT data first
         pt_df = pd.read_csv(data_dir / "pt_data.csv")
-        st.success(f"✅ Loaded {len(pt_df)} companies from generated data")
+        #st.success(f"✅ Loaded {len(pt_df)} companies from generated data")
         return pt_df
     except:
         try:
-            # Fallback to jalak_hijau_pt_data.csv
-            pt_df = pd.read_csv("jalak_hijau_pt_data.csv")
-            st.success(f"✅ Loaded {len(pt_df)} companies from jalak_hijau_pt_data.csv")
+            pt_df = pd.read_csv("pt_data.csv")
+            st.success(f"✅ Loaded {len(pt_df)} companies from pt_data.csv")
             return pt_df
         except:
             st.warning("⚠️ No company data found, using demo data")
-            return generate_demo_companies()
+            return generate_demo_companies_with_berkah()
 
-def generate_realistic_geodata():
-    """Generate realistic geospatial data for demo"""
+def generate_realistic_geodata_with_berkah():
+    """Generate geospatial data highlighting PT BERKAH case"""
     regions = {
         'Riau': {'center': [0.5, 101.4], 'bbox': [(-1, 100), (2, 103)]},
         'Kalimantan Selatan': {'center': [-2.2, 115.0], 'bbox': [(-4, 113), (-1, 117)]},
-        'Sumatera Utara': {'center': [2.0, 99.0], 'bbox': [(0, 97), (4, 101)]}
     }
     
     forest_areas = []
     sawit_concessions = []
     overlap_areas = []
     
+    # Create PT BERKAH specific case in Riau
+    center_lat, center_lon = 0.5, 101.4
+    
+    # Protected forest area
+    forest_lat, forest_lon = center_lat + 0.2, center_lon + 0.3
+    forest_polygon = Point(forest_lon, forest_lat).buffer(0.15)
+    
+    forest_areas.append({
+        'geometry': forest_polygon,
+        'name': 'Hutan Lindung Riau Tengah',
+        'region': 'Riau',
+        'status': 'Protected',
+        'area_ha': 16700,
+        'center_lat': forest_lat,
+        'center_lon': forest_lon
+    })
+    
+    # PT BERKAH concession overlapping with forest
+    berkah_lat, berkah_lon = forest_lat + 0.02, forest_lon - 0.01
+    berkah_polygon = Point(berkah_lon, berkah_lat).buffer(0.12)
+    
+    sawit_concessions.append({
+        'geometry': berkah_polygon,
+        'company': 'PT SAWIT NUSANTARA',
+        'region': 'Riau',
+        'permit_status': 'Active',
+        'area_ha': 14500,
+        'center_lat': berkah_lat,
+        'center_lon': berkah_lon,
+        'overlap_percentage': 35.2,
+        'is_overlapping': True,
+        'risk_score': 95
+    })
+    
+    # Overlap area
+    overlap_polygon = Point(berkah_lon, berkah_lat).buffer(0.08)
+    overlap_areas.append({
+        'geometry': overlap_polygon,
+        'company': 'PT SAWIT NUSANTARA',
+        'forest_area': 'Hutan Lindung Riau Tengah',
+        'overlap_ha': 5100,
+        'overlap_percentage': 35.2,
+        'severity': 'CRITICAL',
+        'center_lat': berkah_lat,
+        'center_lon': berkah_lon
+    })
+    
+    # Add other normal concessions
     for region_name, region_data in regions.items():
         center_lat, center_lon = region_data['center']
         
-        # Generate forest protected areas
-        for i in range(15):
-            lat = center_lat + np.random.uniform(-1, 1)
-            lon = center_lon + np.random.uniform(-1.5, 1.5)
-            size = np.random.uniform(0.1, 0.3)
+        for i in range(8):
+            lat = center_lat + np.random.uniform(-0.8, 0.8)
+            lon = center_lon + np.random.uniform(-1.2, 1.2)
+            size = np.random.uniform(0.05, 0.15)
             
-            forest_polygon = Point(lon, lat).buffer(size)
-            forest_areas.append({
-                'geometry': forest_polygon,
-                'name': f'Hutan Lindung {region_name} {i+1}',
-                'region': region_name,
-                'status': 'Protected',
-                'area_ha': int(size * 111000 * 111000),
-                'center_lat': lat,
-                'center_lon': lon
-            })
-        
-        # Generate palm concessions (some overlapping)
-        for i in range(10):
-            if i < 3:  # Create overlapping concessions
-                base_forest = forest_areas[-3 + i]
-                lat = base_forest['center_lat'] + np.random.uniform(-0.05, 0.05)
-                lon = base_forest['center_lon'] + np.random.uniform(-0.05, 0.05)
-                overlap_pct = np.random.uniform(0.15, 0.45)
+            if i < 2:  # Some additional overlaps
+                overlap_pct = np.random.uniform(0.1, 0.25)
+                risk_score = np.random.randint(70, 85)
             else:
-                lat = center_lat + np.random.uniform(-1, 1)
-                lon = center_lon + np.random.uniform(-1.5, 1.5)
                 overlap_pct = 0
+                risk_score = np.random.randint(20, 40)
             
-            size = np.random.uniform(0.05, 0.2)
             company_id = f"PT SAWIT {region_name.upper()} {i+1:02d}"
             
             sawit_polygon = Point(lon, lat).buffer(size)
-            concession_data = {
+            sawit_concessions.append({
                 'geometry': sawit_polygon,
                 'company': company_id,
                 'region': region_name,
@@ -246,24 +319,8 @@ def generate_realistic_geodata():
                 'center_lon': lon,
                 'overlap_percentage': overlap_pct * 100,
                 'is_overlapping': overlap_pct > 0,
-                'risk_score': 85 + int(overlap_pct * 15) if overlap_pct > 0 else np.random.randint(20, 40)
-            }
-            sawit_concessions.append(concession_data)
-            
-            # Create overlap areas for overlapping concessions
-            if overlap_pct > 0:
-                overlap_size = size * overlap_pct
-                overlap_polygon = Point(lon, lat).buffer(overlap_size)
-                overlap_areas.append({
-                    'geometry': overlap_polygon,
-                    'company': company_id,
-                    'forest_area': base_forest['name'],
-                    'overlap_ha': int(overlap_size * 111000 * 111000),
-                    'overlap_percentage': overlap_pct * 100,
-                    'severity': 'CRITICAL' if overlap_pct > 0.3 else 'HIGH',
-                    'center_lat': lat,
-                    'center_lon': lon
-                })
+                'risk_score': risk_score
+            })
     
     forest_gdf = gpd.GeoDataFrame(forest_areas)
     sawit_gdf = gpd.GeoDataFrame(sawit_concessions)
@@ -272,56 +329,28 @@ def generate_realistic_geodata():
     return forest_gdf, sawit_gdf, overlap_gdf
 
 def generate_demo_financial_data():
-    """Generate demo financial data"""
-    # Generate demo transactions
-    transactions = []
-    for i in range(1000):
-        transactions.append({
-            'transaction_id': f'TXN_{i+1:06d}',
-            'transaction_date': datetime.now() - timedelta(days=np.random.randint(0, 365)),
-            'sender_company': f'PT Company {np.random.randint(1, 20)}',
-            'receiver_company': f'PT Company {np.random.randint(1, 20)}',
-            'amount_idr': random.randint(1000000, 5000000000),  # Use random instead of np.random
-            'risk_score': np.random.randint(0, 100),
-            'is_flagged': np.random.random() < 0.2,
-            'transaction_type': np.random.choice(['normal_business', 'structuring', 'layering'])
-        })
+    """Generate demo financial data with PT BERKAH case"""
+    # Return placeholder data structure
+    transactions_df = pd.DataFrame()
+    high_risk_df = pd.DataFrame()
+    clusters_df = pd.DataFrame()
+    bank_accounts_df = pd.DataFrame()
+    berkah_case_df = pd.DataFrame()
     
-    transactions_df = pd.DataFrame(transactions)
-    high_risk_df = transactions_df[transactions_df['risk_score'] > 70]
-    
-    clusters = []
-    for i in range(5):
-        clusters.append({
-            'cluster_id': f'CLUSTER_{i+1:03d}',
-            'companies_involved': [f'PT Company {j}' for j in range(i+1, i+4)],
-            'transaction_count': np.random.randint(10, 50),
-            'total_amount': random.randint(1000000000, 10000000000),  # Use random instead of np.random
-            'risk_level': np.random.choice(['HIGH', 'MEDIUM', 'LOW'])
-        })
-    
-    clusters_df = pd.DataFrame(clusters)
-    bank_accounts_df = pd.DataFrame()  # Empty for demo
-    
-    return transactions_df, high_risk_df, clusters_df, bank_accounts_df
+    return transactions_df, high_risk_df, clusters_df, bank_accounts_df, berkah_case_df
 
-def generate_demo_companies():
-    """Generate demo company data"""
-    companies = []
-    company_names = [
-        'PT BERKAH SAWIT NUSANTARA', 'PT HIJAU SEJAHTERA ABADI',
-        'PT CAHAYA PALM MANDIRI', 'PT DUTA KELAPA SAWIT',
-        'PT KARYA UTAMA CONSULTING', 'PT PRIMA JAYA TRADING'
+def generate_demo_companies_with_berkah():
+    """Generate demo company data with PT BERKAH highlighted"""
+    companies = [
+        {
+            'company_id': 'PALM_001',
+            'nama_perseroan': 'PT SAWIT NUSANTARA',
+            'is_suspicious': True,
+            'risk_score': 95,
+            'direktur_utama': 'Ahmad Wijaya',
+            'direktur_nik': '1471010101800001'
+        }
     ]
-    
-    for i, name in enumerate(company_names):
-        companies.append({
-            'company_id': f'COMP_{i+1:03d}',
-            'nama_perseroan': name,
-            'is_suspicious': i >= 4,
-            'risk_score': np.random.randint(70, 95) if i >= 4 else np.random.randint(20, 50),
-            'modal_disetor': np.random.randint(1000000000, 10000000000)
-        })
     
     return pd.DataFrame(companies)
 
@@ -390,7 +419,7 @@ def start_investigation(alert_id, alert_data):
     investigation_data = {
         'alert_id': alert_id,
         'status': 'ACTIVE',
-        'priority': 'HIGH',
+        'priority': 'CRITICAL' if 'BERKAH' in alert_data.get('company', '') else 'HIGH',
         'assigned_to': 'Tim Investigasi PPATK',
         'start_date': datetime.now(),
         'case_summary': alert_data,
@@ -399,32 +428,33 @@ def start_investigation(alert_id, alert_data):
         'timeline': []
     }
     
-    # Add evidence based on alert type
-    if 'overlap' in alert_data.get('type', '').lower():
+    # Special handling for PT BERKAH case
+    if 'BERKAH' in alert_data.get('company', ''):
         investigation_data['evidence_collected'] = [
-            '🛰️ Citra satelit menunjukkan overlap 127 ha',
-            '📋 Izin HGU tidak mencakup area hutan lindung', 
-            '💰 Transfer Rp 45M ke shell company sehari setelah clearing',
-            '🏢 Beneficial owner: Ahmad Wijaya'
+            '🛰️ Citra satelit: overlap 35.2% dengan Hutan Lindung Riau (5,100 ha)',
+            '💰 Transfer Rp 45M ke PT KARYA UTAMA CONSULTING sehari setelah clearing',
+            '🔗 Beneficial owner sama: Ahmad Wijaya (NIK: 1471010101800001)',
+            '📊 Pola structuring: 5 transaksi @Rp 400-499M dalam 5 hari',
+            '🏢 Shell company: modal disetor rendah, alamat berbeda'
         ]
         investigation_data['next_actions'] = [
-            '🔍 Verifikasi lapangan koordinat overlap',
-            '📞 Koordinasi dengan KLHK untuk status kawasan',
-            '🏦 Request rekening koran semua entitas terkait',
-            '👤 Background check beneficial owner'
+            '🔍 Verifikasi lapangan koordinat overlap (0.52°S, 101.43°E)',
+            '📞 Koordinasi dengan KLHK untuk status izin HGU',
+            '🏦 Request rekening koran PT BERKAH dan PT KARYA UTAMA',
+            '👤 Background check Ahmad Wijaya - kepemilikan multi-entity',
+            '⚖️ Persiapan STR dan koordinasi dengan Kejaksaan'
         ]
-    elif 'transaksi' in alert_data.get('type', '').lower():
+    else:
+        # General case evidence
         investigation_data['evidence_collected'] = [
-            '💰 Pola structuring: 12 transaksi di bawah Rp 500M',
-            '🕸️ Network: 5 perusahaan shell terkait',
-            '📊 Total dana mencurigakan: Rp 2.8 miliar',
-            '⏰ Timing: Semua transaksi dalam 48 jam'
+            '💰 Transfer mencurigakan terdeteksi sistem',
+            '📊 Pola transaksi tidak wajar',
+            '🔗 Potensi jaringan shell company'
         ]
         investigation_data['next_actions'] = [
             '🔍 Analisis mendalam pola transaksi',
-            '🏦 Freeze account sementara',
             '📋 Trace beneficial ownership',
-            '👥 Koordinasi dengan unit cyber crime'
+            '🏦 Review rekening koran terkait'
         ]
     
     st.session_state.investigation_data = investigation_data
@@ -437,14 +467,24 @@ def create_investigation_dashboard():
     
     inv_data = st.session_state.investigation_data
     
-    st.markdown(f"""
-    <div class="investigation-panel">
-        <h2>🔍 INVESTIGATION MODE - {inv_data['alert_id']}</h2>
-        <p><strong>Status:</strong> {inv_data['status']} | <strong>Priority:</strong> {inv_data['priority']} | <strong>Assigned:</strong> {inv_data['assigned_to']}</p>
-    </div>
-    """, unsafe_allow_html=True)
+    # Special header for PT BERKAH case
+    if 'BERKAH' in inv_data.get('case_summary', {}).get('company', ''):
+        st.markdown(f"""
+        <div class="berkah-highlight">
+            <h2>🔥 CRITICAL INVESTIGATION - {inv_data['alert_id']}</h2>
+            <h3>PT SAWIT NUSANTARA - Environmental Crime + Money Laundering</h3>
+            <p><strong>Status:</strong> {inv_data['status']} | <strong>Priority:</strong> CRITICAL | <strong>Assigned:</strong> {inv_data['assigned_to']}</p>
+        </div>
+        """, unsafe_allow_html=True)
+    else:
+        st.markdown(f"""
+        <div class="investigation-panel">
+            <h2>🔍 INVESTIGATION MODE - {inv_data['alert_id']}</h2>
+            <p><strong>Status:</strong> {inv_data['status']} | <strong>Priority:</strong> {inv_data['priority']} | <strong>Assigned:</strong> {inv_data['assigned_to']}</p>
+        </div>
+        """, unsafe_allow_html=True)
     
-    tab1, tab2, tab3, tab4 = st.tabs(["📋 Case Overview", "🔍 Evidence", "🎯 Actions", "📊 Analysis"])
+    tab1, tab2, tab3, tab4, tab5 = st.tabs(["📋 Case Overview", "🔍 Evidence", "🎯 Actions", "📊 Analysis", "📄 Generate STR"])
     
     with tab1:
         st.subheader("Case Summary")
@@ -464,8 +504,20 @@ def create_investigation_dashboard():
             st.markdown(f"""
             **Investigation Start:** {inv_data['start_date'].strftime('%Y-%m-%d %H:%M')}  
             **Days Active:** {(datetime.now() - inv_data['start_date']).days}  
-            **Progress:** 35% Complete  
-            **Est. Completion:** 7 days
+            **Progress:** 65% Complete  
+            **Est. Completion:** 3 days
+            """)
+        
+        # PT BERKAH specific timeline
+        if 'BERKAH' in case.get('company', ''):
+            st.subheader("📅 Case Timeline")
+            st.markdown("""
+            - **Day -15:** Satellite imagery shows forest clearing activity
+            - **Day -14:** PT BERKAH transfers Rp 45B to shell company
+            - **Day -13 to -9:** Structuring pattern: 5 transactions under threshold
+            - **Day -7 to -3:** Layering through multiple shell companies
+            - **Day 0:** JALAK-HIJAU alert triggered
+            - **Today:** Investigation initiated
             """)
     
     with tab2:
@@ -496,22 +548,36 @@ def create_investigation_dashboard():
             st.rerun()
     
     with tab4:
-        # Network analysis for investigation
-        st.subheader("📊 Investigation Analysis")
+        # Enhanced network analysis for PT BERKAH
+        st.subheader("📊 Investigation Network Analysis")
         
         G = nx.DiGraph()
-        G.add_node("PT BERKAH SAWIT", type="front_company", risk=95)
-        G.add_node("Ahmad Wijaya", type="beneficial_owner", risk=90)
-        G.add_node("PT KARYA SHELL", type="shell_company", risk=85)
-        G.add_node("Bank Account A", type="account", risk=70)
-        G.add_node("Bank Account B", type="account", risk=80)
         
-        G.add_edge("Ahmad Wijaya", "PT BERKAH SAWIT", weight=0.9, relation="owner")
-        G.add_edge("PT BERKAH SAWIT", "Bank Account A", weight=0.8, relation="transfer")
-        G.add_edge("Bank Account A", "Bank Account B", weight=0.7, relation="layering")
-        G.add_edge("Bank Account B", "PT KARYA SHELL", weight=0.9, relation="placement")
+        if 'BERKAH' in case.get('company', ''):
+            # PT BERKAH specific network
+            G.add_node("Ahmad Wijaya", type="beneficial_owner", risk=95, color="red")
+            G.add_node("PT BERKAH SAWIT", type="front_company", risk=95, color="orange")
+            G.add_node("PT KARYA UTAMA", type="shell_company", risk=90, color="darkred")
+            G.add_node("Hutan Lindung Riau", type="protected_area", risk=100, color="green")
+            G.add_node("Bank Account A", type="account", risk=85, color="lightblue")
+            G.add_node("Bank Account B", type="account", risk=80, color="lightblue")
+            
+            G.add_edge("Ahmad Wijaya", "PT BERKAH SAWIT", weight=0.95, relation="100% owner")
+            G.add_edge("Ahmad Wijaya", "PT KARYA UTAMA", weight=0.90, relation="hidden owner")
+            G.add_edge("PT BERKAH SAWIT", "Hutan Lindung Riau", weight=0.85, relation="illegal overlap")
+            G.add_edge("PT BERKAH SAWIT", "Bank Account A", weight=0.90, relation="Rp 45B transfer")
+            G.add_edge("Bank Account A", "Bank Account B", weight=0.80, relation="layering")
+        else:
+            # Generic network
+            G.add_node("Company A", type="company", risk=70, color="orange")
+            G.add_node("Shell Company", type="shell", risk=85, color="red")
+            G.add_node("Bank Account", type="account", risk=75, color="lightblue")
+            
+            G.add_edge("Company A", "Shell Company", weight=0.8, relation="transfer")
+            G.add_edge("Shell Company", "Bank Account", weight=0.7, relation="placement")
         
-        pos = nx.spring_layout(G)
+        # Create network visualization
+        pos = nx.spring_layout(G, k=2, iterations=50)
         
         edge_x, edge_y = [], []
         for edge in G.edges():
@@ -520,72 +586,160 @@ def create_investigation_dashboard():
             edge_x.extend([x0, x1, None])
             edge_y.extend([y0, y1, None])
         
-        node_x, node_y, node_text, node_colors = [], [], [], []
+        node_x, node_y, node_text, node_colors, node_sizes = [], [], [], [], []
         for node in G.nodes():
             x, y = pos[node]
             node_x.append(x)
             node_y.append(y)
             node_text.append(node)
-            
-            node_type = G.nodes[node].get('type', 'unknown')
-            if node_type == 'beneficial_owner':
-                node_colors.append('red')
-            elif node_type == 'front_company':
-                node_colors.append('orange')
-            elif node_type == 'shell_company':
-                node_colors.append('darkred')
-            else:
-                node_colors.append('lightblue')
+            node_colors.append(G.nodes[node].get('color', 'lightblue'))
+            node_sizes.append(max(20, G.nodes[node].get('risk', 50)/3))
         
         fig = go.Figure()
         fig.add_trace(go.Scatter(x=edge_x, y=edge_y, line=dict(width=2, color='gray'), 
-                                hoverinfo='none', mode='lines'))
+                                hoverinfo='none', mode='lines', showlegend=False))
         fig.add_trace(go.Scatter(x=node_x, y=node_y, mode='markers+text', hoverinfo='text',
-                                text=node_text, textposition="top center",
-                                marker=dict(size=30, color=node_colors, line=dict(width=2, color='white')),
-                                hovertext=[f"{node}<br>Risk: {G.nodes[node].get('risk', 0)}" for node in G.nodes()]))
+                                text=node_text, textposition="bottom center",
+                                marker=dict(size=node_sizes, color=node_colors, line=dict(width=2, color='white')),
+                                hovertext=[f"{node}<br>Risk: {G.nodes[node].get('risk', 0)}/100" for node in G.nodes()],
+                                showlegend=False))
         
-        fig.update_layout(title="Network Analysis - Investigation Case", showlegend=False, hovermode='closest',
+        fig.update_layout(title="Suspicious Network - Investigation Focus", showlegend=False, hovermode='closest',
                          xaxis=dict(showgrid=False, zeroline=False, showticklabels=False),
                          yaxis=dict(showgrid=False, zeroline=False, showticklabels=False), height=400)
         
         st.plotly_chart(fig, use_container_width=True)
+    
+    with tab5:
+        st.subheader("📄 Generate STR Report")
+        
+        if st.button("🚀 Generate Automatic STR", type="primary"):
+            str_content = generate_str_report(inv_data)
+            st.markdown("### Generated STR Report:")
+            st.text_area("STR Content", str_content, height=400)
+            
+            # Download button
+            st.download_button(
+                label="📥 Download STR Report",
+                data=str_content,
+                file_name=f"STR_{inv_data['alert_id']}_{datetime.now().strftime('%Y%m%d')}.txt",
+                mime="text/plain"
+            )
+
+def generate_str_report(investigation_data):
+    """Generate STR report content"""
+    case = investigation_data['case_summary']
+    
+    if 'BERKAH' in case.get('company', ''):
+        report = f"""
+SUSPICIOUS TRANSACTION REPORT (STR)
+=======================================
+
+ALERT ID: {investigation_data['alert_id']}
+DATE: {datetime.now().strftime('%Y-%m-%d')}
+PRIORITY: CRITICAL
+CASE TYPE: Environmental Crime + Money Laundering
+
+I. EXECUTIVE SUMMARY
+-------------------
+PT SAWIT NUSANTARA telah melakukan clearing ilegal terhadap Hutan Lindung Riau 
+seluas 5,100 ha (35.2% overlap) dan mencuci hasil kejahatan melalui jaringan shell company 
+dengan total transaksi mencurigakan Rp 67+ miliar.
+
+II. ENTITIES INVOLVED
+--------------------
+1. PT SAWIT NUSANTARA
+   - NPWP: 73.590.760.9-174.110
+   - Direktur: Ahmad Wijaya (NIK: 1471010101800001)
+   - Alamat: Jalan Sawit Raya No. 10, Pekanbaru, Riau
+
+2. PT KARYA UTAMA CONSULTING (Shell Company)
+   - NPWP: 82.591.670.8-175.210
+   - Direktur: Ahmad Wijaya (NIK: 1471010101800001)
+   - Alamat: Jalan Sudirman No. 100, Jakarta Pusat
+
+III. SUSPICIOUS TRANSACTIONS
+----------------------------
+1. TXN_BERKAH_001: Rp 45,000,000,000 (Placement)
+   Tanggal: {(datetime.now() - timedelta(days=14)).strftime('%Y-%m-%d')}
+   From: PT BERKAH SAWIT → PT KARYA UTAMA CONSULTING
+
+2. Structuring Pattern (5 transactions):
+   Total: Rp 2,200,000,000
+   Pattern: Amounts just under Rp 500M threshold
+
+IV. ENVIRONMENTAL EVIDENCE
+--------------------------
+- Satellite imagery confirms illegal forest clearing
+- Coordinates: 0.52°S, 101.43°E
+- Protected area: Hutan Lindung Riau Tengah
+- Overlap area: 5,100 hectares
+
+V. RECOMMENDATION
+-----------------
+1. Immediate account freeze PT BERKAH & PT KARYA UTAMA
+2. Coordinate with KLHK for permit verification
+3. Asset tracing for Ahmad Wijaya
+4. Criminal investigation for environmental crimes
+
+Prepared by: JALAK-HIJAU System
+Investigation Team: PPATK Environmental Crime Unit
+"""
+    else:
+        report = f"""
+SUSPICIOUS TRANSACTION REPORT (STR)
+=======================================
+
+ALERT ID: {investigation_data['alert_id']}
+DATE: {datetime.now().strftime('%Y-%m-%d')}
+PRIORITY: {investigation_data['priority']}
+
+SUMMARY: Suspicious transaction pattern detected requiring further investigation.
+
+ENTITIES: {case.get('company', 'Unknown')}
+RISK LEVEL: {case.get('risk', 'Unknown')}
+TYPE: {case.get('type', 'Unknown')}
+
+RECOMMENDATION: Further investigation recommended.
+"""
+    
+    return report
 
 # Enhanced Dashboard Functions
-
-
 def create_overview_dashboard():
-    
+    """Enhanced overview dashboard with PT BERKAH focus"""
     
     # Load all data
     forest_gdf, sawit_gdf, overlap_gdf = load_geospatial_data()
-    transactions_df, high_risk_df, clusters_df, bank_accounts_df = load_financial_data()
+    financial_data = load_financial_data()
+    transactions_df, high_risk_df, clusters_df, bank_accounts_df, berkah_case_df = financial_data
     companies_df = load_company_data()
+    
     
     # Key metrics
     col1, col2, col3, col4 = st.columns(4)
     
     with col1:
-        critical_overlaps = len(overlap_gdf[overlap_gdf.get('severity', '') == 'CRITICAL']) if len(overlap_gdf) > 0 else 3
-        st.metric("🚨 Critical Overlaps", f"{critical_overlaps}", delta="Real-time Detection")
+        critical_overlaps = len(overlap_gdf[overlap_gdf.get('severity', '') == 'CRITICAL']) if len(overlap_gdf) > 0 else 1
+        st.metric("🚨 Critical Cases", f"{critical_overlaps}", delta="Real-time Detection")
     
     with col2:
-        high_risk_transactions = len(high_risk_df) if len(high_risk_df) > 0 else 156
-        st.metric("💰 High Risk Transactions", f"{high_risk_transactions:,}", delta="+23 today")
+        berkah_amount = 67000000000 if berkah_case_df is not None and len(berkah_case_df) > 0 else 67000000000
+        st.metric("💰 Suspicious Amount", f"Rp {berkah_amount/1e9:.0f}B", delta="+1 today")
     
     with col3:
-        total_companies = len(companies_df)
-        suspicious_companies = len(companies_df[companies_df.get('is_suspicious', False) == True]) if 'is_suspicious' in companies_df.columns else 8
-        st.metric("🏢 Suspicious Companies", f"{suspicious_companies}/{total_companies}", delta="Network Detected")
+        forest_damage = 5100 if len(overlap_gdf) > 0 else 5100
+        st.metric("🌲 Forest Damage", f"{forest_damage:,} ha", delta="Illegal Clearing")
     
     with col4:
-        st.metric("⏱️ Detection Time", "< 10 days", delta="-30% improvement", delta_color="inverse")
+        st.metric("⏱️ Detection Time", "< 24 hours", delta="Real-time Alert", delta_color="inverse")
     
-    # Full-width map
-    st.subheader("🗺️ Real-time Environmental Risk Map")
+    # Full-width map with PT BERKAH focus
+    st.subheader("🗺️ Environmental Risk Map")
     
-    center_lat, center_lon = -2.5, 118.0
-    m = folium.Map(location=[center_lat, center_lon], zoom_start=5)
+    # Center map on Riau (PT BERKAH location)
+    center_lat, center_lon = 0.5, 101.4
+    m = folium.Map(location=[center_lat, center_lon], zoom_start=8)
     
     # Add forest areas
     if len(forest_gdf) > 0:
@@ -593,405 +747,221 @@ def create_overview_dashboard():
             if hasattr(forest, 'center_lat') and hasattr(forest, 'center_lon'):
                 folium.CircleMarker(
                     location=[forest.center_lat, forest.center_lon],
-                    radius=8,
-                    popup=f"🌲 {forest.get('name', 'Protected Forest')}<br>Region: {forest.get('region', 'Unknown')}<br>Area: {forest.get('area_ha', 0):,} ha",
-                    color='green', fill=True, fillColor='green', fillOpacity=0.4
+                    radius=12,
+                    popup=f"🌲 {forest.get('name', 'Protected Forest')}<br>Status: {forest.get('status', 'Protected')}<br>Area: {forest.get('area_ha', 0):,} ha",
+                    color='green', fill=True, fillColor='green', fillOpacity=0.6
                 ).add_to(m)
     
-    # Add palm concessions
+    # Add palm concessions with PT BERKAH highlighted
     if len(sawit_gdf) > 0:
         for idx, sawit in sawit_gdf.iterrows():
             if hasattr(sawit, 'center_lat') and hasattr(sawit, 'center_lon'):
+                is_berkah = 'BERKAH' in sawit.get('company', '')
                 is_overlapping = sawit.get('is_overlapping', False)
                 risk_score = sawit.get('risk_score', 30)
                 
-                if is_overlapping or risk_score > 70:
+                if is_berkah:
                     color, risk_level, icon = 'red', 'CRITICAL', 'exclamation-triangle'
-                elif risk_score > 40:
-                    color, risk_level, icon = 'orange', 'MEDIUM', 'warning'
+                    popup_extra = ""
+                elif is_overlapping or risk_score > 70:
+                    color, risk_level, icon = 'orange', 'HIGH', 'warning'
+                    popup_extra = ""
                 else:
                     color, risk_level, icon = 'blue', 'LOW', 'leaf'
+                    popup_extra = ""
                 
                 folium.Marker(
                     location=[sawit.center_lat, sawit.center_lon],
-                    popup=f"""<div style="width: 300px;">
+                    popup=f"""<div style="width: 350px;">
                         <h4>🏭 {sawit.get('company', 'Palm Company')}</h4><hr>
                         <b>Region:</b> {sawit.get('region', 'Unknown')}<br>
                         <b>Area:</b> {sawit.get('area_ha', 0):,} ha<br>
                         <b>Risk Score:</b> {risk_score}/100<br>
                         <b>Risk Level:</b> <span style="color: {color}; font-weight: bold;">{risk_level}</span><br>
                         {"<b style='color: red;'>⚠️ OVERLAPS WITH PROTECTED FOREST</b><br>" if is_overlapping else ""}
-                        <b>Overlap:</b> {sawit.get('overlap_percentage', 0):.1f}%</div>""",
+                        <b>Overlap:</b> {sawit.get('overlap_percentage', 0):.1f}%{popup_extra}</div>""",
                     icon=folium.Icon(color=color, icon=icon)
                 ).add_to(m)
     
-    # Display full-width map
-    map_data = st_folium(m, width=None, height=600)
+    # Display map
+    map_data = st_folium(m, width=None, height=500)
     
-    # Live detection simulation
-    if np.random.random() < 0.3:  # 30% chance to show live detection
-        st.markdown("""
-        <div class="live-detection">
-            <h4>🔴 LIVE DETECTION - New suspicious activity detected!</h4>
-            <p>⚠️ <strong>PT SAWIT BARU 123</strong> - CRITICAL RISK<br>
-            💰 Transfer: Rp 67M | 🕐 Detected: Real-time<br>
-            📍 Location: Overlap dengan Hutan Lindung Riau</p>
-        </div>
-        """, unsafe_allow_html=True)
     
-    # Enhanced alert feed with mixed scenarios
-    st.subheader("🚨 Real-time Alert Feed")
+    # Enhanced alert feed
+    st.subheader("🚨 Live Alert Feed")
     
-    alerts = []
+    alerts = [
+        {
+            'id': 'ALT-CRIT-001', 'time': '14:23 WIB', 'location': 'Riau Province',
+            'type': 'Forest-Concession Overlap + Money Laundering', 'risk': 'CRITICAL',
+            'company': 'PT SAWIT NUSANTARA', 
+            'details': 'Overlap: 35.2% (5,100 ha) + Rp 67B suspicious transfers',
+            'alert_source': 'integrated'
+        },
+        {
+            'id': 'ALT-FIN-002', 'time': '13:45 WIB', 'location': 'Financial Network',
+            'type': 'Structuring Pattern', 'risk': 'HIGH',
+            'company': 'PT HIJAU SAWIT KALIMANTAN', 
+            'details': 'Pattern: 8 transactions < Rp 500M threshold',
+            'alert_source': 'financial'
+        }
+    ]
     
-    # Environmental alerts from geospatial data
-    if len(overlap_gdf) > 0:
-        for idx, overlap in overlap_gdf.head(2).iterrows():
-            alerts.append({
-                'id': f'ALT-GEO-{1156 + idx:04d}',
-                'time': f'{14 - idx}:23 WIB',
-                'location': overlap.get('forest_area', 'Protected Area'),
-                'type': 'Forest-Concession Overlap',
-                'risk': overlap.get('severity', 'HIGH'),
-                'company': overlap.get('company', 'Unknown'),
-                'details': f"Overlap: {overlap.get('overlap_percentage', 0):.1f}% ({overlap.get('overlap_ha', 0):,} ha)",
-                'alert_source': 'geospatial'
-            })
-    
-    # Financial alerts from transaction data
-    if len(high_risk_df) > 0:
-        recent_high_risk = high_risk_df.nlargest(2, 'risk_score')
-        for idx, trans in recent_high_risk.iterrows():
-            alerts.append({
-                'id': f'ALT-FIN-{2156 + idx:04d}',
-                'time': f'{13 - idx}:45 WIB',
-                'location': 'Financial Network',
-                'type': 'Suspicious Transaction Pattern',
-                'risk': 'HIGH' if trans['risk_score'] > 85 else 'MEDIUM',
-                'company': trans.get('sender_company', 'Unknown'),
-                'details': f"Amount: Rp {trans['amount_idr']:,} | Risk: {trans['risk_score']}/100",
-                'alert_source': 'financial'
-            })
-    
-    # Fallback demo alerts
-    if not alerts:
-        alerts = [
-            {
-                'id': 'ALT-GEO-0156', 'time': '14:23 WIB', 'location': 'Riau Province',
-                'type': 'Forest-Concession Overlap', 'risk': 'CRITICAL',
-                'company': 'PT BERKAH SAWIT NUSANTARA', 'details': 'Overlap: 35.2% (127 ha)',
-                'alert_source': 'geospatial'
-            },
-            {
-                'id': 'ALT-FIN-0157', 'time': '13:45 WIB', 'location': 'Financial Network',
-                'type': 'Suspicious Transaction Pattern', 'risk': 'HIGH',
-                'company': 'PT HIJAU SEJAHTERA ABADI', 'details': 'Structuring: 12 transactions < Rp 500M',
-                'alert_source': 'financial'
-            }
-        ]
-    
-    # Display alerts
-    for alert in alerts[:4]:  # Show top 4 alerts
+    # Display alerts with PT BERKAH highlighted
+    for alert in alerts:
+        is_berkah = 'BERKAH' in alert['company']
+        alert_class = "berkah-highlight" if is_berkah else ("alert-critical" if alert['risk'] == 'CRITICAL' else "alert-warning")
         risk_class = f"risk-{alert['risk'].lower()}"
-        alert_class = "alert-critical" if alert['risk'] == 'CRITICAL' else "alert-warning" if alert['risk'] == 'HIGH' else "alert-info"
         
-        # Icon based on alert source
-        icon = '🛰️' if alert['alert_source'] == 'geospatial' else '💰'
+        icon = '🔥' if is_berkah else ('🛰️' if alert['alert_source'] == 'geospatial' else '💰')
         
         st.markdown(f"""
         <div class="{alert_class}">
             <strong>{icon} Alert {alert['id']}</strong> - {alert['time']}<br>
-            <strong>Source:</strong> {alert['alert_source'].title()}<br>
-            <strong>Location:</strong> {alert['location']}<br>
-            <strong>Type:</strong> {alert['type']}<br>
             <strong>Company:</strong> {alert['company']}<br>
+            <strong>Type:</strong> {alert['type']}<br>
             <strong>Details:</strong> {alert.get('details', 'N/A')}<br>
             <strong>Risk Level:</strong> <span class="{risk_class}">{alert['risk']}</span>
+            {' <b>🔥 INVESTIGATION ACTIVE</b>' if is_berkah else ''}
         </div>
         """, unsafe_allow_html=True)
         
-        if st.button(f"🔍 Start Investigation", key=f"investigate_{alert['id']}"):
+        if st.button(f"🔍 {'View Investigation' if is_berkah else 'Start Investigation'}", key=f"investigate_{alert['id']}"):
             start_investigation(alert['id'], alert)
-            st.success(f"✅ Investigation {alert['id']} started!")
+            st.success(f"✅ Investigation {alert['id']} {'accessed' if is_berkah else 'started'}!")
             st.rerun()
 
 def create_analysis_page():
-    """Enhanced analysis page with side-by-side map and network analysis"""
+    """Enhanced analysis page"""
     st.header("📊 Advanced Analysis Dashboard")
-    st.subheader("Comprehensive Geospatial & Network Intelligence")
     
     # Load data
     forest_gdf, sawit_gdf, overlap_gdf = load_geospatial_data()
-    transactions_df, high_risk_df, clusters_df, bank_accounts_df = load_financial_data()
+    financial_data = load_financial_data()
+    transactions_df, high_risk_df, clusters_df, bank_accounts_df, berkah_case_df = financial_data
     companies_df = load_company_data()
     
-    # Single column controls
-    st.markdown("### 🎛️ Analysis Controls")
+    # PT BERKAH case highlight
+    if berkah_case_df is not None and len(berkah_case_df) > 0:
+        st.markdown("""
+        <div class="berkah-highlight">
+            <h3>🎯 PT SAWIT NUSANTARA - Featured Case Analysis</h3>
+            <p>Complete timeline: Forest clearing → Money laundering → Investigation</p>
+        </div>
+        """, unsafe_allow_html=True)
+    
+    # Analysis controls
     col1, col2, col3 = st.columns(3)
     
     with col1:
         analysis_mode = st.selectbox("Analysis Mode", 
-                                   ["Comprehensive Overview", "Geospatial Focus", "Network Focus", "Financial Focus"])
+                                   ["ALT-CRIT-001", "Comprehensive Overview", "Network Focus"])
     
     with col2:
-        risk_filter = st.selectbox("Risk Level Filter", ["All Levels", "Critical Only", "High+", "Medium+"])
+        risk_filter = st.selectbox("Risk Level", ["All Levels", "Critical Only", "High+"])
     
     with col3:
-        time_period = st.selectbox("Time Period", ["Last 30 days", "Last 90 days", "Last Year", "All Time"])
+        time_period = st.selectbox("Time Period", ["Last 30 days", "Last 90 days", "All Time"])
     
-    # Two-column layout for Map and Network Analysis
-    st.markdown("### 🗺️ Geospatial Analysis | 🕸️ Network Analysis")
-    
-    col_map, col_network = st.columns(2)
-    
-    # LEFT COLUMN - Geospatial Analysis
-    with col_map:
-        st.markdown("#### 🛰️ Satellite-based Risk Detection")
-        
-        # Create focused map
-        center_lat, center_lon = -2.5, 118.0
-        m = folium.Map(location=[center_lat, center_lon], zoom_start=6)
-        
-        # Add geospatial data to map
-        if len(forest_gdf) > 0:
-            for idx, forest in forest_gdf.iterrows():
-                if hasattr(forest, 'center_lat') and hasattr(forest, 'center_lon'):
-                    folium.CircleMarker(
-                        location=[forest.center_lat, forest.center_lon], radius=6,
-                        popup=f"🌲 {forest.get('name', 'Protected Forest')}", color='green',
-                        fill=True, fillColor='green', fillOpacity=0.3
-                    ).add_to(m)
-        
-        if len(sawit_gdf) > 0:
-            for idx, sawit in sawit_gdf.iterrows():
-                if hasattr(sawit, 'center_lat') and hasattr(sawit, 'center_lon'):
-                    is_overlapping = sawit.get('is_overlapping', False)
-                    color = 'red' if is_overlapping else 'orange'
-                    
-                    folium.CircleMarker(
-                        location=[sawit.center_lat, sawit.center_lon], radius=8,
-                        popup=f"🏭 {sawit.get('company', 'Palm Company')}<br>Risk: {'HIGH' if is_overlapping else 'MEDIUM'}",
-                        color=color, fill=True, fillColor=color, fillOpacity=0.7
-                    ).add_to(m)
-        
-        # Display map
-        map_data = st_folium(m, width=400, height=400)
-        
-        # Geospatial metrics
-        if len(overlap_gdf) > 0:
-            total_overlap_area = overlap_gdf['overlap_ha'].sum() if 'overlap_ha' in overlap_gdf.columns else 456
-            critical_overlaps = len(overlap_gdf[overlap_gdf.get('severity', '') == 'CRITICAL'])
-            
-            st.metric("🌲 Total Illegal Overlap", f"{total_overlap_area:,} ha")
-            st.metric("🚨 Critical Cases", critical_overlaps)
-    
-    # RIGHT COLUMN - Network Analysis  
-    with col_network:
-        st.markdown("#### 🕸️ Corporate Network Intelligence")
-        
-        # Create network graph from company and transaction data
-        G = nx.Graph()
-        
-        # Add company nodes
-        suspicious_companies = companies_df[companies_df.get('is_suspicious', False) == True] if 'is_suspicious' in companies_df.columns else companies_df.head(3)
-        
-        for idx, company in suspicious_companies.iterrows():
-            company_name = company.get('nama_perseroan', f'Company {idx}')
-            risk_score = company.get('risk_score', 50)
-            G.add_node(company_name, 
-                      type='company', 
-                      risk=risk_score, 
-                      suspicious=company.get('is_suspicious', False))
-        
-        # Add connections based on transaction patterns
-        if len(high_risk_df) > 0:
-            # Create edges between companies that have transactions
-            company_pairs = set()
-            for idx, trans in high_risk_df.head(20).iterrows():
-                sender = trans.get('sender_company', '')
-                receiver = trans.get('receiver_company', '')
-                if sender and receiver and sender != receiver:
-                    company_pairs.add((sender, receiver))
-            
-            for sender, receiver in list(company_pairs)[:10]:  # Limit connections
-                if sender in G.nodes() or receiver in G.nodes():
-                    if sender not in G.nodes():
-                        G.add_node(sender, type='related', risk=60)
-                    if receiver not in G.nodes():
-                        G.add_node(receiver, type='related', risk=60)
-                    G.add_edge(sender, receiver, weight=0.8)
-        
-        # If no transaction data, create demo network
-        if len(G.nodes()) < 3:
-            demo_companies = ['PT BERKAH SAWIT', 'PT KARYA SHELL', 'Ahmad Wijaya', 'PT PRIMA TRADING']
-            for company in demo_companies:
-                G.add_node(company, type='company', risk=np.random.randint(60, 95))
-            G.add_edge('Ahmad Wijaya', 'PT BERKAH SAWIT', weight=0.9)
-            G.add_edge('PT BERKAH SAWIT', 'PT KARYA SHELL', weight=0.8)
-            G.add_edge('PT KARYA SHELL', 'PT PRIMA TRADING', weight=0.7)
-        
-        # Create network visualization
-        if len(G.nodes()) > 0:
-            pos = nx.spring_layout(G, k=2, iterations=50)
-            
-            # Prepare data for plotly
-            edge_x, edge_y = [], []
-            for edge in G.edges():
-                if edge[0] in pos and edge[1] in pos:
-                    x0, y0 = pos[edge[0]]
-                    x1, y1 = pos[edge[1]]
-                    edge_x.extend([x0, x1, None])
-                    edge_y.extend([y0, y1, None])
-            
-            node_x, node_y, node_text, node_colors, node_sizes = [], [], [], [], []
-            for node in G.nodes():
-                if node in pos:
-                    x, y = pos[node]
-                    node_x.append(x)
-                    node_y.append(y)
-                    node_text.append(node[:20] + '...' if len(node) > 20 else node)
-                    
-                    risk = G.nodes[node].get('risk', 50)
-                    if risk > 80:
-                        node_colors.append('red')
-                    elif risk > 60:
-                        node_colors.append('orange')
-                    else:
-                        node_colors.append('lightblue')
-                    
-                    node_sizes.append(max(15, risk/4))
-            
-            # Create plotly network graph
-            fig_network = go.Figure()
-            
-            # Add edges
-            fig_network.add_trace(go.Scatter(
-                x=edge_x, y=edge_y, line=dict(width=1, color='gray'),
-                hoverinfo='none', mode='lines', showlegend=False
-            ))
-            
-            # Add nodes
-            fig_network.add_trace(go.Scatter(
-                x=node_x, y=node_y, mode='markers+text', hoverinfo='text',
-                text=node_text, textposition="bottom center", textfont=dict(size=8),
-                marker=dict(size=node_sizes, color=node_colors, 
-                           line=dict(width=1, color='white')),
-                hovertext=[f"{node}<br>Risk: {G.nodes[node].get('risk', 0)}/100" for node in G.nodes() if node in pos],
-                showlegend=False
-            ))
-            
-            fig_network.update_layout(
-                title="Suspicious Network Connections",
-                showlegend=False, hovermode='closest',
-                xaxis=dict(showgrid=False, zeroline=False, showticklabels=False),
-                yaxis=dict(showgrid=False, zeroline=False, showticklabels=False),
-                height=400, margin=dict(t=30, b=0, l=0, r=0)
-            )
-            
-            st.plotly_chart(fig_network, use_container_width=True)
-            
-            # Network metrics
-            st.metric("🕸️ Network Nodes", len(G.nodes()))
-            st.metric("🔗 Connections", len(G.edges()))
-        else:
-            st.info("No network data available")
-    
-    # Single column continuation - Financial Analysis
-    st.markdown("### 💰 Financial Intelligence Dashboard")
-    
-    if len(transactions_df) > 0:
-        # Financial metrics row
-        col1, col2, col3, col4 = st.columns(4)
-        
-        with col1:
-            total_amount = transactions_df['amount_idr'].sum() if 'amount_idr' in transactions_df.columns else 125500000000000
-            st.metric("Total Transaction Value", f"Rp {total_amount/1e12:.1f}T")
-        
-        with col2:
-            high_risk_count = len(high_risk_df)
-            st.metric("High Risk Transactions", f"{high_risk_count:,}")
-        
-        with col3:
-            clusters_count = len(clusters_df) if len(clusters_df) > 0 else 5
-            st.metric("Suspicious Clusters", clusters_count)
-        
-        with col4:
-            risk_rate = (len(high_risk_df) / len(transactions_df) * 100) if len(transactions_df) > 0 else 15.3
-            st.metric("Risk Detection Rate", f"{risk_rate:.1f}%")
-        
-        # Transaction analysis charts
-        col1, col2 = st.columns(2)
-        
-        with col1:
-            st.markdown("#### 📈 Transaction Volume Trend")
-            
-            # Create time series of transactions
-            if 'transaction_date' in transactions_df.columns:
-                daily_stats = transactions_df.groupby(transactions_df['transaction_date'].dt.date).agg({
-                    'amount_idr': 'sum',
-                    'transaction_id': 'count'
-                }).reset_index()
-                daily_stats.columns = ['Date', 'Total_Amount', 'Count']
-                
-                fig_trend = px.line(daily_stats.tail(30), x='Date', y='Count',
-                                   title="Daily Transaction Count (Last 30 days)")
-                st.plotly_chart(fig_trend, use_container_width=True)
-            else:
-                # Demo time series
-                dates = pd.date_range(start='2024-11-01', end='2024-12-05', freq='D')
-                counts = np.random.poisson(45, len(dates))
-                fig_trend = px.line(x=dates, y=counts, title="Daily Transaction Count")
-                st.plotly_chart(fig_trend, use_container_width=True)
-        
-        with col2:
-            st.markdown("#### 🎯 Risk Score Distribution")
-            
-            if 'risk_score' in transactions_df.columns:
-                risk_scores = transactions_df['risk_score']
-            else:
-                risk_scores = np.random.normal(35, 20, 1000)
-                risk_scores = np.clip(risk_scores, 0, 100)
-            
-            fig_risk = px.histogram(x=risk_scores, nbins=20, 
-                                   title="Risk Score Distribution",
-                                   color_discrete_sequence=['#2E8B57'])
-            fig_risk.update_layout(xaxis_title="Risk Score", yaxis_title="Count")
-            st.plotly_chart(fig_risk, use_container_width=True)
-    
-    # High-risk cases table
-    st.markdown("### 🚨 High-Risk Cases Requiring Investigation")
-    
-    if len(high_risk_df) > 0:
-        # Display top high-risk transactions
-        display_df = high_risk_df.nlargest(10, 'risk_score')[
-            ['transaction_id', 'transaction_date', 'sender_company', 'receiver_company', 
-             'amount_idr', 'risk_score', 'transaction_type']
-        ].copy()
-        
-        # Format for display
-        display_df['amount_formatted'] = display_df['amount_idr'].apply(lambda x: f"Rp {x:,}")
-        display_df['risk_indicator'] = display_df['risk_score'].apply(
-            lambda x: '🔴' if x > 90 else '🟠' if x > 80 else '🟡'
-        )
-        
-        st.dataframe(display_df[['transaction_id', 'transaction_date', 'sender_company', 
-                                'receiver_company', 'amount_formatted', 'risk_score', 
-                                'risk_indicator', 'transaction_type']], 
-                    use_container_width=True)
+    if analysis_mode == "ALT-CRIT-001":
+        create_berkah_analysis(berkah_case_df, forest_gdf, sawit_gdf, overlap_gdf)
     else:
-        st.info("No high-risk transaction data available")
+        create_general_analysis(transactions_df, high_risk_df, clusters_df)
+
+def create_berkah_analysis(berkah_case_df, forest_gdf, sawit_gdf, overlap_gdf):
+    """Detailed PT BERKAH case analysis"""
+    
+    col1, col2 = st.columns(2)
+    
+    with col1:
+        st.markdown("#### 🛰️ Geospatial Evidence")
+        
+        # PT BERKAH specific metrics
+        st.metric("🌲 Forest Area Damaged", "5,100 ha", delta="Illegal clearing")
+        st.metric("📍 Overlap Percentage", "35.2%", delta="Protected forest")
+        st.metric("🚨 Violation Severity", "CRITICAL", delta="Immediate action required")
+        
+        # Timeline
+        st.markdown("#### 📅 Investigation Timeline")
+        timeline_data = pd.DataFrame({
+            'Date': pd.date_range(start=datetime.now().date() - timedelta(days=15), periods=16),
+            'Event': ['Forest clearing detected'] + ['Suspicious transaction']*10 + ['Alert triggered']*5
+        })
+        
+        fig_timeline = px.scatter(timeline_data, x='Date', y='Event', 
+                                 title="PT BERKAH Activity Timeline")
+        st.plotly_chart(fig_timeline, use_container_width=True)
+    
+    with col2:
+        st.markdown("#### 💰 Financial Evidence")
+        
+        if berkah_case_df is not None and len(berkah_case_df) > 0:
+            total_amount = berkah_case_df['amount_idr'].sum()
+            transaction_count = len(berkah_case_df)
+        else:
+            total_amount = 67000000000
+            transaction_count = 12
+        
+        st.metric("💰 Total Suspicious Amount", f"Rp {total_amount/1e9:.1f}B")
+        st.metric("📊 Transaction Count", f"{transaction_count}")
+        st.metric("🏢 Entities Involved", "5", delta="Shell companies")
+        
+        # Money flow diagram
+        st.markdown("#### 🔄 Money Flow Pattern")
+        flow_data = pd.DataFrame({
+            'Stage': ['Placement', 'Layering', 'Integration'],
+            'Amount_B': [45, 15, 7],
+            'Description': ['Initial transfer to shell', 'Multiple entity transfers', 'Final placement']
+        })
+        
+        fig_flow = px.bar(flow_data, x='Stage', y='Amount_B', 
+                         title="Money Laundering Stages (Billion Rp)")
+        st.plotly_chart(fig_flow, use_container_width=True)
+
+def create_general_analysis(transactions_df, high_risk_df, clusters_df):
+    """General analysis dashboard"""
+    
+    col1, col2 = st.columns(2)
+    
+    with col1:
+        st.markdown("#### 📈 Transaction Trends")
+        if len(transactions_df) > 0:
+            daily_stats = transactions_df.groupby(transactions_df['transaction_date'].dt.date)['amount_idr'].sum().reset_index()
+            fig_trend = px.line(daily_stats.tail(30), x='transaction_date', y='amount_idr',
+                               title="Daily Transaction Volume")
+            st.plotly_chart(fig_trend, use_container_width=True)
+        else:
+            st.info("No transaction data available")
+    
+    with col2:
+        st.markdown("#### 🎯 Risk Distribution")
+        if len(high_risk_df) > 0:
+            risk_dist = high_risk_df['risk_score'].value_counts().reset_index()
+            fig_risk = px.histogram(high_risk_df, x='risk_score', nbins=20,
+                                   title="Risk Score Distribution")
+            st.plotly_chart(fig_risk, use_container_width=True)
+        else:
+            st.info("No high-risk data available")
 
 def create_ai_assistant():
-    """AI Assistant page"""
+    """Enhanced AI Assistant with PT BERKAH context"""
     st.header("🤖 AI Assistant JALAK-HIJAU")
-    st.subheader("Analisis Cerdas & Rekomendasi Investigasi")
+    st.subheader("Expert Analysis & Investigation Support")
     
     client = setup_openai()
+    
+    # PT BERKAH context banner
+    st.markdown("""
+    <div class="berkah-highlight">
+        <h4>🎯 AI Context: PT SAWIT NUSANTARA Case Active</h4>
+        <p>AI trained on environmental crime patterns and money laundering detection</p>
+    </div>
+    """, unsafe_allow_html=True)
     
     col1, col2 = st.columns([2, 1])
     
     with col1:
-        st.subheader("💬 Chat dengan AI Assistant")
+        st.subheader("💬 Expert Analysis Chat")
         
         # Display chat history
         for chat in st.session_state.chat_history:
@@ -1004,13 +974,13 @@ def create_ai_assistant():
             else:
                 st.markdown(f"""
                 <div style="background-color: #F0F8FF; padding: 10px; border-radius: 10px; margin: 5px 0;">
-                    <strong>🤖 AI Assistant:</strong> {chat['content']}
+                    <strong>🤖 AI Expert:</strong> {chat['content']}
                 </div>
                 """, unsafe_allow_html=True)
         
         # Chat input
-        user_query = st.text_input("Tanya AI Assistant:", 
-                                  placeholder="Contoh: Analisis pola transaksi PT BERKAH SAWIT")
+        user_query = st.text_input("Konsultasi dengan AI Expert:", 
+                                  placeholder="Contoh: Analisis pola money laundering PT BERKAH SAWIT")
         
         col_send, col_clear = st.columns([1, 4])
         
@@ -1019,9 +989,12 @@ def create_ai_assistant():
                 st.session_state.chat_history.append({'role': 'user', 'content': user_query})
                 
                 data_context = """
-                JALAK-HIJAU telah mendeteksi 3 overlap kritis konsesi sawit dengan hutan lindung,
-                156 transaksi berisiko tinggi dengan total nilai Rp 125T, dan 8 perusahaan shell
-                dengan pola structuring dan layering yang mencurigakan.
+                PT SAWIT NUSANTARA Case:
+                - 5,100 ha illegal forest clearing (35.2% overlap)
+                - Rp 67B suspicious transactions
+                - Money laundering through shell companies
+                - Ahmad Wijaya beneficial owner
+                - Active investigation in progress
                 """
                 
                 ai_response = generate_ai_analysis(client, data_context, user_query)
@@ -1034,22 +1007,22 @@ def create_ai_assistant():
                 st.rerun()
     
     with col2:
-        st.subheader("🎯 Quick Actions")
+        st.subheader("🎯 Expert Queries")
         
-        quick_queries = [
-            "Analisis PT BERKAH SAWIT NUSANTARA",
-            "Pola transaksi mencurigakan hari ini", 
-            "Perusahaan dengan risk score tertinggi",
-            "Generate laporan investigasi",
-            "Rekomendasi prioritas tindakan",
-            "Prediksi tren kejahatan lingkungan"
+        expert_queries = [
+            "Analisis kasus PT BERKAH SAWIT",
+            "Pola structuring yang terdeteksi", 
+            "Network shell companies",
+            "Rekomendasi investigasi lanjutan",
+            "Generate laporan executive summary",
+            "Prediksi modus operandi serupa"
         ]
         
-        for query in quick_queries:
-            if st.button(f"💡 {query}", key=f"quick_{hash(query)}"):
+        for query in expert_queries:
+            if st.button(f"💡 {query}", key=f"expert_{hash(query)}"):
                 st.session_state.chat_history.append({'role': 'user', 'content': query})
                 
-                data_context = "Konteks sistem JALAK-HIJAU dengan data kasus aktual..."
+                data_context = "PT BERKAH case context with environmental and financial evidence..."
                 ai_response = generate_ai_analysis(client, data_context, query)
                 
                 st.session_state.chat_history.append({'role': 'assistant', 'content': ai_response})
@@ -1058,14 +1031,235 @@ def create_ai_assistant():
         st.markdown("---")
         st.subheader("🧠 AI Capabilities")
         st.markdown("""
-        **AI Assistant dapat:**
-        - 🔍 Analisis pola geospasial dan transaksi
-        - 📋 Generate laporan STR otomatis
-        - 🎯 Rekomendasi investigasi prioritas
-        - 🕸️ Identifikasi jaringan shell company
-        - 📈 Prediksi tren kejahatan lingkungan
-        - ⚡ Natural language investigation
+        **Expert AI dapat:**
+        - 🔍 Analisis pola environmental crime
+        - 💰 Deteksi money laundering schemes
+        - 📋 Generate STR otomatis
+        - 🕸️ Network analysis shell companies
+        - 📈 Predictive risk modeling
+        - ⚖️ Legal recommendation
         """)
+
+def create_report_generation():
+    """New automatic report generation page"""
+    st.header("📄 Automatic Report Generation")
+    st.subheader("AI-Powered Investigation Reports")
+    
+    # Load data for reports
+    financial_data = load_financial_data()
+    transactions_df, high_risk_df, clusters_df, bank_accounts_df, berkah_case_df = financial_data
+    companies_df = load_company_data()
+    
+    # Report type selection
+    col1, col2 = st.columns([2, 1])
+    
+    with col1:
+        report_type = st.selectbox("Select Report Type", [
+            "🔥 PT BERKAH Case Report (Featured)",
+            "📊 Weekly Risk Summary", 
+            "🕸️ Network Analysis Report",
+            "🛰️ Environmental Impact Assessment",
+            "💰 STR Executive Summary",
+            "📈 Trend Analysis Report"
+        ])
+        
+        if st.button("🚀 Generate Report", type="primary"):
+            with st.spinner("Generating comprehensive report..."):
+                report_content = generate_automatic_report(report_type, berkah_case_df, high_risk_df, clusters_df)
+                
+                st.markdown("### Generated Report:")
+                st.markdown(report_content)
+                
+                # Download options
+                col_download1, col_download2 = st.columns(2)
+                
+                with col_download1:
+                    st.download_button(
+                        label="📥 Download as Text",
+                        data=report_content,
+                        file_name=f"JALAK_HIJAU_Report_{datetime.now().strftime('%Y%m%d_%H%M')}.txt",
+                        mime="text/plain"
+                    )
+                
+                with col_download2:
+                    # Create PDF-ready version
+                    pdf_content = report_content.replace('#', '').replace('*', '')
+                    st.download_button(
+                        label="📄 Download for PDF",
+                        data=pdf_content,
+                        file_name=f"JALAK_HIJAU_Report_{datetime.now().strftime('%Y%m%d_%H%M')}.txt",
+                        mime="text/plain"
+                    )
+    
+    with col2:
+        st.markdown("""
+        <div class="report-panel">
+            <h4>📊 Report Features</h4>
+            <ul>
+                <li>🤖 AI-powered analysis</li>
+                <li>📈 Data visualizations</li>
+                <li>🎯 Actionable insights</li>
+                <li>⚖️ Legal recommendations</li>
+                <li>📋 Executive summaries</li>
+                <li>🔗 Cross-reference evidence</li>
+            </ul>
+        </div>
+        """, unsafe_allow_html=True)
+        
+        st.subheader("📈 Report Statistics")
+        st.metric("Reports Generated Today", "12")
+        st.metric("Average Generation Time", "< 30 seconds")
+        st.metric("Investigation Success Rate", "87%")
+
+def generate_automatic_report(report_type, berkah_case_df, high_risk_df, clusters_df):
+    """Generate different types of reports"""
+    
+    if "PT BERKAH" in report_type:
+        return f"""
+# 🔥 PT SAWIT NUSANTARA - CRITICAL CASE REPORT
+
+**Generated:** {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}  
+**Classification:** CRITICAL PRIORITY  
+**Case ID:** ALT-CRIT-001
+
+## EXECUTIVE SUMMARY
+
+PT SAWIT NUSANTARA telah melakukan kejahatan lingkungan sistematis dengan mengkliring 5,100 hektar Hutan Lindung Riau secara ilegal, diikuti dengan pencucian uang senilai Rp 67+ miliar melalui jaringan shell companies.
+
+## KEY FINDINGS
+
+### 🛰️ Environmental Crime Evidence
+- **Illegal Forest Clearing:** 5,100 hectares (35.2% overlap)
+- **Protected Area:** Hutan Lindung Riau Tengah
+- **Coordinates:** 0.52°S, 101.43°E
+- **Detection Method:** Satellite imagery analysis
+
+### 💰 Money Laundering Evidence
+- **Total Suspicious Amount:** Rp 67,200,000,000
+- **Primary Transfer:** Rp 45B to shell company (Day +1 after clearing)
+- **Structuring Pattern:** 5 transactions under Rp 500M threshold
+- **Layering:** Multiple shell company transfers
+- **Integration:** Final placement into legitimate business
+
+### 🏢 Corporate Network
+- **Beneficial Owner:** Ahmad Wijaya (NIK: 1471010101800001)
+- **Front Company:** PT SAWIT NUSANTARA
+- **Primary Shell:** PT KARYA UTAMA CONSULTING
+- **Secondary Shells:** 3+ additional entities
+
+## TIMELINE OF EVENTS
+
+- **Day -15:** Satellite detects forest clearing activity
+- **Day -14:** Rp 45B transfer to shell company
+- **Day -13 to -9:** Structuring pattern (5 transactions)
+- **Day -7 to -3:** Layering through network
+- **Day 0:** JALAK-HIJAU alert triggered
+- **Today:** Full investigation active
+
+## LEGAL VIOLATIONS
+
+1. **UU No. 18/2013 (Pencegahan dan Pemberantasan Perusakan Hutan)**
+2. **UU No. 8/2010 (Pencegahan dan Pemberantasan Tindak Pidana Pencucian Uang)**
+3. **UU No. 32/2009 (Perlindungan dan Pengelolaan Lingkungan Hidup)**
+
+## RECOMMENDATIONS
+
+### Immediate Actions (0-7 days)
+1. 🏦 Freeze all accounts PT BERKAH and shell companies
+2. 📞 Coordinate with KLHK for permit verification
+3. 👤 Asset tracing for Ahmad Wijaya and affiliates
+4. ⚖️ Prepare criminal charges documentation
+
+### Medium Term (1-4 weeks)
+1. 🔍 Field verification of forest damage
+2. 📋 Complete beneficial ownership mapping
+3. 🌍 International cooperation if offshore accounts found
+4. 📺 Public disclosure for deterrent effect
+
+### Long Term (1-6 months)
+1. 🛠️ System enhancement based on case lessons
+2. 📚 Training for similar pattern recognition
+3. 🤝 Inter-agency coordination strengthening
+4. 📊 Policy recommendations for prevention
+
+## RISK ASSESSMENT
+
+**Environmental Damage:** CRITICAL - Irreversible forest loss  
+**Financial Crime:** HIGH - Sophisticated laundering scheme  
+**Reputational Risk:** HIGH - International attention likely  
+**Investigation Success:** HIGH - Strong evidence chain
+
+---
+**Report generated by JALAK-HIJAU AI System**  
+**Next Review:** {(datetime.now() + timedelta(days=7)).strftime('%Y-%m-%d')}
+"""
+    
+    elif "Weekly Risk" in report_type:
+        return f"""
+# 📊 WEEKLY RISK SUMMARY REPORT
+
+**Period:** {(datetime.now() - timedelta(days=7)).strftime('%Y-%m-%d')} to {datetime.now().strftime('%Y-%m-%d')}  
+**Generated:** {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
+
+## SUMMARY METRICS
+
+- **New Alerts:** 23 (↑15% from last week)
+- **Critical Cases:** 1 (PT BERKAH SAWIT)
+- **High Risk Transactions:** 156 (Total value: Rp 2.8T)
+- **Environmental Violations:** 3 confirmed
+
+## TOP RISKS THIS WEEK
+
+1. **PT SAWIT NUSANTARA** - CRITICAL
+   - Forest clearing + money laundering
+   - Investigation active
+
+2. **PT HIJAU SAWIT KALIMANTAN** - HIGH
+   - Structuring pattern detected
+   - Under monitoring
+
+3. **Financial Network Cluster-005** - MEDIUM
+   - Complex layering scheme
+   - Requires deeper analysis
+
+## TREND ANALYSIS
+
+Environmental crime detection improving with satellite integration.
+Money laundering patterns becoming more sophisticated.
+Need for enhanced cross-sector coordination.
+
+---
+**Next weekly report:** {(datetime.now() + timedelta(days=7)).strftime('%Y-%m-%d')}
+"""
+    
+    else:
+        return f"""
+# 📄 JALAK-HIJAU SYSTEM REPORT
+
+**Type:** {report_type}  
+**Generated:** {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
+
+## SYSTEM STATUS
+
+JALAK-HIJAU operational and detecting environmental crimes effectively.
+AI-powered analysis providing actionable intelligence for PPATK.
+
+## CURRENT CASES
+
+Active investigations ongoing with strong evidence chains.
+Cross-sector data integration proving highly effective.
+
+## RECOMMENDATIONS
+
+Continue current monitoring protocols.
+Enhance inter-agency coordination.
+Expand satellite coverage areas.
+
+---
+**Report generated by JALAK-HIJAU AI System**
+"""
+    
+    return report
 
 # Main application
 def main():
@@ -1089,46 +1283,47 @@ def main():
         create_investigation_dashboard()
         return
     
-    # Sidebar
+    # Enhanced Sidebar with better navigation
+    st.sidebar.image("logotext.png", width=280)
     
-    st.sidebar.image("logotext.png", width=300)
-    st.sidebar.markdown("""
-    <div style="text-align: center; padding: 20px;">
-        <p style="color: white;">Environmental Crime Detection</p>
-    </div>
-    """,
-    unsafe_allow_html=True
-)
+    # Enhanced Navigation Menu
+    st.sidebar.markdown("### 🧭 Navigation")
     
-    # Navigation
     pages = {
-        "🏠 Dashboard Utama": create_overview_dashboard,
+        "🏠 Dashboard Overview": create_overview_dashboard,
         "📊 Advanced Analysis": create_analysis_page,
-        "🤖 AI Assistant": create_ai_assistant
+        "🤖 AI Expert Assistant": create_ai_assistant,
+        "📄 Report Generation": create_report_generation
     }
     
-    selected_page = st.sidebar.selectbox("Pilih Halaman", list(pages.keys()))
+    # Create navigation buttons
+    for page_name in pages.keys():
+        if st.sidebar.button(page_name, key=f"nav_{page_name}", use_container_width=True):
+            st.session_state.current_page = page_name
+            st.rerun()
     
-    # System status
-    data_status = "✅ Loaded" if Path("data").exists() else "⚠️ Demo Mode"
-    geo_status = "✅ Loaded" if Path("forest.shp").exists() else "⚠️ Demo Mode" 
+    # Current page indicator
+    current_page = st.session_state.get('current_page', "🏠 Dashboard Overview")
+    
+    # System status with enhanced metrics
+    data_status = "✅ Live" if Path("data").exists() else "⚠️ Demo" 
+    geo_status = "✅ Active" if Path("forest.shp").exists() else "⚠️ Demo"
     
     st.sidebar.markdown(f"""
     ---
     ### 📊 System Status
-    - **🟢 Satellite Feed:** Active
-    - **🟢 Financial Data:** {data_status}
-    - **🟢 Geospatial Data:** {geo_status}
-    - **🟢 AI Engine:** Online
+    - **🛰️ Satellite Feed:** Active
+    - **💾 Financial Data:** {data_status}
+    - **🗺️ Geospatial Data:** {geo_status}
+    - **🤖 AI Engine:** Online
+    - **🔗 Integration:** Operational
     
-    ### 📈 Today's Stats
-    - **New Alerts:** 5
-    - **High Risk Cases:** 12
-    - **Active Investigations:** {1 if st.session_state.investigation_mode else 0}
     """)
     
+
+    
     # Execute selected page
-    pages[selected_page]()
+    pages[current_page]()
 
 if __name__ == "__main__":
     main()
