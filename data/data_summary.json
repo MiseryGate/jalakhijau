@@ -1,0 +1,11 @@
+{
+  "total_transactions": 5000,
+  "high_risk_transactions": 1457,
+  "pt_berkah_transactions": 0,
+  "clusters_detected": 98,
+  "companies_involved": 110,
+  "bank_accounts": 455,
+  "data_generation_date": "2025-06-01T22:20:24.080721",
+  "use_real_data": true,
+  "featured_case": "PT BERKAH SAWIT NUSANTARA - Environmental Crime + Money Laundering"
+}
