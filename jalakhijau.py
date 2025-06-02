@@ -1255,13 +1255,20 @@ def create_overview_dashboard():
                 
                 folium.Marker(
                     location=[sawit.center_lat, sawit.center_lon],
-                    popup=f"""<div style="width: 350px;">
-                        <h4>🏭 {sawit.get('company', 'Palm Company')}</h4><hr>
-                        <b>Region:</b> {sawit.get('region', 'Unknown')}<br>
-                        <b>Area:</b> {sawit.get('area_ha', 0):,} ha<br>
-                        <b>Risk Score:</b> {risk_score}/100<br>
-                        <b>Risk Level:</b> <span style="color: {color}; font-weight: bold;">{risk_level}</span><br>" if is_overlapping else ""}
-                        <b>Overlap:</b> {sawit.get('overlap_percentage', 0):.1f}%{popup_extra}</div>""",
+                    popup=f"""
+                <div style="width: 350px;">
+                  <h4>🏭 {sawit.get('company', 'Palm Company')}</h4><hr>
+                  <b>Region:</b> {sawit.get('region', 'Unknown')}<br>
+                  <b>Area:</b> {sawit.get('area_ha', 0):,} ha<br>
+                  <b>Risk Score:</b> {risk_score}/100<br>
+                  <b>Risk Level:</b> 
+                    <span style="color: {color}; font-weight: bold;">
+                      {risk_level}
+                    </span><br>
+                  {f"<b>Overlap:</b> {sawit.get('overlap_percentage', 0):.1f}%{popup_extra}" 
+                    if is_overlapping else ""}
+                </div>
+                """,
                     icon=folium.Icon(color=color, icon=icon)
                 ).add_to(m)
     
