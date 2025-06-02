@@ -231,7 +231,7 @@ def load_financial_data():
 
 @st.cache_data  
 def load_company_data():
-    """Load company data with PT SAWIT NUSANTARA highlighted"""
+    """Load company data"""
     try:
         # Try current directory first
         if Path("pt_data.csv").exists():
@@ -423,7 +423,7 @@ def generate_demo_financial_data():
     return transactions_df, high_risk_df, clusters_df, bank_accounts_df, sawit_case_df
 
 def generate_demo_companies_with_sawit_nusantara():
-    """Generate demo company data with PT SAWIT NUSANTARA highlighted"""
+    """Generate demo company data"""
     companies = [
         {
             'company_id': 'PALM_001',
@@ -1218,7 +1218,7 @@ def create_overview_dashboard():
         st.metric("⏱️ Detection Time", "< 24 hours", delta="Real-time Alert", delta_color="inverse")
     
     # Full-width map with PT SAWIT NUSANTARA focus
-    st.subheader("🗺️ Environmental Risk Map - PT SAWIT NUSANTARA Highlighted")
+    st.subheader("🗺️ Environmental Risk Map")
     
     # Center map on Riau (PT SAWIT NUSANTARA location)
     center_lat, center_lon = 0.5, 101.4
@@ -1276,7 +1276,7 @@ def create_overview_dashboard():
     map_data = st_folium(m, width=None, height=500)
     
     # Enhanced alert feed
-    st.subheader("🚨 Live Alert Feed - PT SAWIT NUSANTARA Case Active")
+    st.subheader("🚨 Live Alert Feed")
     
     alerts = [
         {
