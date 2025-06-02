@@ -1245,7 +1245,6 @@ def create_overview_dashboard():
                 
                 if is_sawit_nusantara:
                     color, risk_level, icon = 'red', 'CRITICAL', 'exclamation-triangle'
-                    popup_extra = "<br><b style='color: red;'>🔥 UNDER INVESTIGATION</b>"
                 elif is_overlapping or risk_score > 70:
                     color, risk_level, icon = 'orange', 'HIGH', 'warning'
                     popup_extra = ""
