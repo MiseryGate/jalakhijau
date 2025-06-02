@@ -1752,16 +1752,33 @@ def create_ai_assistant():
             if st.button("📤 Kirim") and user_query:
                 st.session_state.chat_history.append({'role': 'user', 'content': user_query})
                 
-                data_context = """
-                PT SAWIT NUSANTARA Case:
-                - 5,100 ha illegal forest clearing (35.2% overlap)
-                - Rp 67B suspicious transactions
-                - Money laundering through shell companies
-                - Ahmad Wijaya beneficial owner
-                - Active investigation in progress
-                """
+                # Check if query matches any predefined prompts
+                predefined_responses = {
+                    "Analisis kasus PT SAWIT NUSANTARA": get_sawit_nusantara_ai_insights("general"),
+                    "Pola structuring yang terdeteksi": get_sawit_nusantara_ai_insights("structuring"),
+                    "Network shell companies": get_sawit_nusantara_ai_insights("network"),
+                    "Rekomendasi investigasi lanjutan": get_sawit_nusantara_ai_insights("legal"),
+                    "Generate laporan executive summary": get_sawit_nusantara_ai_insights("general"),
+                    "Prediksi modus operandi serupa": get_sawit_nusantara_ai_insights("network"),
+                    "Legal violations analysis": get_sawit_nusantara_ai_insights("legal"),
+                    "Environmental impact assessment": get_sawit_nusantara_ai_insights("general")
+                }
                 
-                ai_response = generate_ai_analysis(client, data_context, user_query)
+                # Use predefined response if query matches, otherwise use AI
+                if user_query in predefined_responses:
+                    ai_response = predefined_responses[user_query]
+                else:
+                    # Use AI for free-form queries
+                    data_context = """
+                    PT SAWIT NUSANTARA Case:
+                    - 5,100 ha illegal forest clearing (35.2% overlap)
+                    - Rp 67B suspicious transactions
+                    - Money laundering through shell companies
+                    - Ahmad Wijaya beneficial owner
+                    - Active investigation in progress
+                    """
+                    ai_response = generate_ai_analysis(client, data_context, user_query)
+                
                 st.session_state.chat_history.append({'role': 'assistant', 'content': ai_response})
                 st.rerun()
         
@@ -1788,9 +1805,19 @@ def create_ai_assistant():
             if st.button(f"💡 {query}", key=f"expert_{hash(query)}"):
                 st.session_state.chat_history.append({'role': 'user', 'content': query})
                 
-                data_context = "PT SAWIT NUSANTARA case context with environmental and financial evidence..."
-                ai_response = generate_ai_analysis(client, data_context, query)
+                # Use predefined responses for expert queries
+                predefined_responses = {
+                    "Analisis kasus PT SAWIT NUSANTARA": get_sawit_nusantara_ai_insights("general"),
+                    "Pola structuring yang terdeteksi": get_sawit_nusantara_ai_insights("structuring"),
+                    "Network shell companies": get_sawit_nusantara_ai_insights("network"),
+                    "Rekomendasi investigasi lanjutan": get_sawit_nusantara_ai_insights("legal"),
+                    "Generate laporan executive summary": get_sawit_nusantara_ai_insights("general"),
+                    "Prediksi modus operandi serupa": get_sawit_nusantara_ai_insights("network"),
+                    "Legal violations analysis": get_sawit_nusantara_ai_insights("legal"),
+                    "Environmental impact assessment": get_sawit_nusantara_ai_insights("general")
+                }
                 
+                ai_response = predefined_responses.get(query, get_sawit_nusantara_ai_insights("general"))
                 st.session_state.chat_history.append({'role': 'assistant', 'content': ai_response})
                 st.rerun()
         
