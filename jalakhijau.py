@@ -1245,7 +1245,7 @@ def create_overview_dashboard():
                 
                 if is_sawit_nusantara:
                     color, risk_level, icon = 'red', 'CRITICAL', 'exclamation-triangle'
-                    popup_extra = "<br><b style='color: red;'>🔥 UNDER INVESTIGATION</b>"
+                    popup_extra = ""
                 elif is_overlapping or risk_score > 70:
                     color, risk_level, icon = 'orange', 'HIGH', 'warning'
                     popup_extra = ""
@@ -1260,8 +1260,7 @@ def create_overview_dashboard():
                         <b>Region:</b> {sawit.get('region', 'Unknown')}<br>
                         <b>Area:</b> {sawit.get('area_ha', 0):,} ha<br>
                         <b>Risk Score:</b> {risk_score}/100<br>
-                        <b>Risk Level:</b> <span style="color: {color}; font-weight: bold;">{risk_level}</span><br>
-                        {"<b style='color: red;'>⚠️ OVERLAPS WITH PROTECTED FOREST</b><br>" if is_overlapping else ""}
+                        <b>Risk Level:</b> <span style="color: {color}; font-weight: bold;">{risk_level}</span><br>" if is_overlapping else ""}
                         <b>Overlap:</b> {sawit.get('overlap_percentage', 0):.1f}%{popup_extra}</div>""",
                     icon=folium.Icon(color=color, icon=icon)
                 ).add_to(m)
